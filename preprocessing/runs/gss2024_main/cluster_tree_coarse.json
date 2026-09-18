@@ -1,0 +1,961 @@
+[
+ {
+  "cluster_id": "pop",
+  "level": 0,
+  "parent": null,
+  "definition": {},
+  "n_raw": 3309,
+  "n_eff": 1683.6011302932375,
+  "n_weighted": 3309.0000000000045,
+  "pop_share": 1.0,
+  "definition_text": "the whole adult population",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "l1:midwest:False",
+  "level": 1,
+  "parent": "pop",
+  "definition": {
+   "region": "midwest",
+   "urban": "False"
+  },
+  "n_raw": 130,
+  "n_eff": 74.90722304399456,
+  "n_weighted": 104.6321751350725,
+  "pop_share": 0.03162048205955647,
+  "definition_text": "rural, the Midwest",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:midwest:False:18-24,25-34,35-44,45-54,55-64,65+:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:midwest:False",
+  "definition": {
+   "region": "midwest",
+   "urban": "False",
+   "age_band": [
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 110,
+  "n_eff": 60.80739397439215,
+  "n_weighted": 85.66687354773343,
+  "pop_share": 0.025889052144978334,
+  "definition_text": "either sex, any age, any education level, any income, rural, the Midwest",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "l1:midwest:True",
+  "level": 1,
+  "parent": "pop",
+  "definition": {
+   "region": "midwest",
+   "urban": "True"
+  },
+  "n_raw": 682,
+  "n_eff": 305.17968082683865,
+  "n_weighted": 573.6592697343821,
+  "pop_share": 0.17336333325306175,
+  "definition_text": "urban/suburban, the Midwest",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:midwest:True:18-24,25-34:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:midwest:True",
+  "definition": {
+   "region": "midwest",
+   "urban": "True",
+   "age_band": [
+    "18-24",
+    "25-34"
+   ],
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 138,
+  "n_eff": 69.47068956496685,
+  "n_weighted": 145.79878208759268,
+  "pop_share": 0.04406128198476654,
+  "definition_text": "either sex, aged 18-34, any education level, any income, urban/suburban, the Midwest",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:midwest:True:35-44:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:midwest:True",
+  "definition": {
+   "region": "midwest",
+   "urban": "True",
+   "age_band": "35-44",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 126,
+  "n_eff": 65.81161745984062,
+  "n_weighted": 101.081138727488,
+  "pop_share": 0.03054733717965786,
+  "definition_text": "either sex, aged 35-44, any education level, any income, urban/suburban, the Midwest",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:midwest:True:45-54:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:midwest:True",
+  "definition": {
+   "region": "midwest",
+   "urban": "True",
+   "age_band": "45-54",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 100,
+  "n_eff": 45.194868637557235,
+  "n_weighted": 92.71815403350493,
+  "pop_share": 0.028019992152766637,
+  "definition_text": "either sex, aged 45-54, any education level, any income, urban/suburban, the Midwest",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:midwest:True:55-64:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:midwest:True",
+  "definition": {
+   "region": "midwest",
+   "urban": "True",
+   "age_band": "55-64",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 98,
+  "n_eff": 53.60146497565699,
+  "n_weighted": 82.14218479915391,
+  "pop_share": 0.024823869688471986,
+  "definition_text": "either sex, aged 55-64, any education level, any income, urban/suburban, the Midwest",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:midwest:True:65+:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:midwest:True",
+  "definition": {
+   "region": "midwest",
+   "urban": "True",
+   "age_band": "65+",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 148,
+  "n_eff": 76.79469445206674,
+  "n_weighted": 86.18273118448388,
+  "pop_share": 0.026044947471889925,
+  "definition_text": "either sex, aged 65+, any education level, any income, urban/suburban, the Midwest",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "l1:northeast:False,True",
+  "level": 1,
+  "parent": "pop",
+  "definition": {
+   "region": "northeast",
+   "urban": [
+    "False",
+    "True"
+   ]
+  },
+  "n_raw": 541,
+  "n_eff": 283.3412426751531,
+  "n_weighted": 574.4137139337763,
+  "pop_share": 0.17359133089567105,
+  "definition_text": "urban or rural, the Northeast",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:northeast:False,True:18-24,25-34,35-44,45-54:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female",
+  "level": 2,
+  "parent": "l1:northeast:False,True",
+  "definition": {
+   "region": "northeast",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "age_band": [
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54"
+   ],
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": "female"
+  },
+  "n_raw": 139,
+  "n_eff": 68.96021801481241,
+  "n_weighted": 140.51402997380842,
+  "pop_share": 0.04246419763487707,
+  "definition_text": "women, aged 18-54, any education level, any income, urban or rural, the Northeast",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:northeast:False,True:18-24,25-34,35-44,45-54:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:male",
+  "level": 2,
+  "parent": "l1:northeast:False,True",
+  "definition": {
+   "region": "northeast",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "age_band": [
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54"
+   ],
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": "male"
+  },
+  "n_raw": 95,
+  "n_eff": 52.80907080613733,
+  "n_weighted": 113.25743211884097,
+  "pop_share": 0.03422708737347864,
+  "definition_text": "men, aged 18-54, any education level, any income, urban or rural, the Northeast",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:northeast:False,True:55-64:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:northeast:False,True",
+  "definition": {
+   "region": "northeast",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "age_band": "55-64",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 101,
+  "n_eff": 50.21453590908845,
+  "n_weighted": 115.20776686176785,
+  "pop_share": 0.03481649043873306,
+  "definition_text": "either sex, aged 55-64, any education level, any income, urban or rural, the Northeast",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:northeast:False,True:65+:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:northeast:False,True",
+  "definition": {
+   "region": "northeast",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "age_band": "65+",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 142,
+  "n_eff": 75.87909865418183,
+  "n_weighted": 135.3064737651133,
+  "pop_share": 0.04089044235875283,
+  "definition_text": "either sex, aged 65+, any education level, any income, urban or rural, the Northeast",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "l1:south:False",
+  "level": 1,
+  "parent": "pop",
+  "definition": {
+   "region": "south",
+   "urban": "False"
+  },
+  "n_raw": 96,
+  "n_eff": 47.86222812982859,
+  "n_weighted": 82.56418885563936,
+  "pop_share": 0.02495140189049237,
+  "definition_text": "rural, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:False:18-24,25-34,35-44,45-54,55-64,65+:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:False",
+  "definition": {
+   "region": "south",
+   "urban": "False",
+   "age_band": [
+    "18-24",
+    "25-34",
+    "35-44",
+    "45-54",
+    "55-64",
+    "65+"
+   ],
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 80,
+  "n_eff": 38.26149688795517,
+  "n_weighted": 66.28282304446364,
+  "pop_share": 0.02003107375172667,
+  "definition_text": "either sex, any age, any education level, any income, rural, the South",
+  "below_min_cell": true
+ },
+ {
+  "cluster_id": "l1:south:True",
+  "level": 1,
+  "parent": "pop",
+  "definition": {
+   "region": "south",
+   "urban": "True"
+  },
+  "n_raw": 1214,
+  "n_eff": 629.8442257262019,
+  "n_weighted": 1193.8524360347667,
+  "pop_share": 0.3607894941174872,
+  "definition_text": "urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:True:18-24:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "age_band": "18-24",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 95,
+  "n_eff": 48.1295863306724,
+  "n_weighted": 142.236614381271,
+  "pop_share": 0.04298477315843784,
+  "definition_text": "either sex, aged 18-24, any education level, any income, urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:True:25-34:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "age_band": "25-34",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 194,
+  "n_eff": 106.22594908676075,
+  "n_weighted": 192.0144940442592,
+  "pop_share": 0.0580279522648108,
+  "definition_text": "either sex, aged 25-34, any education level, any income, urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:True:35-44:primary,secondary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "age_band": "35-44",
+   "education": [
+    "primary",
+    "secondary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 90,
+  "n_eff": 50.14771598839151,
+  "n_weighted": 84.68539540983838,
+  "pop_share": 0.025592443460211018,
+  "definition_text": "either sex, aged 35-44, less than HS to high school, any income, urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:True:35-44:higher_secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "age_band": "35-44",
+   "education": [
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 98,
+  "n_eff": 54.58751711913977,
+  "n_weighted": 75.52554805469006,
+  "pop_share": 0.022824281672617092,
+  "definition_text": "either sex, aged 35-44, some college to college+, any income, urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:True:45-54:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "age_band": "45-54",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 162,
+  "n_eff": 79.33573572970656,
+  "n_weighted": 180.17736670937785,
+  "pop_share": 0.05445070012371641,
+  "definition_text": "either sex, aged 45-54, any education level, any income, urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:True:55-64:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "age_band": "55-64",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 165,
+  "n_eff": 89.63325017561057,
+  "n_weighted": 138.37596392863426,
+  "pop_share": 0.041818061024065906,
+  "definition_text": "either sex, aged 55-64, any education level, any income, urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:True:65+:primary,secondary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "age_band": "65+",
+   "education": [
+    "primary",
+    "secondary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 135,
+  "n_eff": 80.50966091790768,
+  "n_weighted": 125.23221676772359,
+  "pop_share": 0.037845940395202,
+  "definition_text": "either sex, aged 65+, less than HS to high school, any income, urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:south:True:65+:higher_secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "age_band": "65+",
+   "education": [
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 115,
+  "n_eff": 66.34864454360616,
+  "n_weighted": 98.40174542644999,
+  "pop_share": 0.029737608167558133,
+  "definition_text": "either sex, aged 65+, some college to college+, any income, urban/suburban, the South",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "l1:south:True:unclassified",
+  "level": 2,
+  "parent": "l1:south:True",
+  "definition": {
+   "region": "south",
+   "urban": "True",
+   "_note": "missing >=1 level-2 partition axis"
+  },
+  "n_raw": 160,
+  "n_eff": 86.88991006141137,
+  "n_weighted": 157.20309131252247,
+  "pop_share": 0.04750773385086801,
+  "definition_text": "urban/suburban, the South, [missing >=1 level-2 partition axis]",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "l1:west:False,True",
+  "level": 1,
+  "parent": "pop",
+  "definition": {
+   "region": "west",
+   "urban": [
+    "False",
+    "True"
+   ]
+  },
+  "n_raw": 646,
+  "n_eff": 355.8279380085394,
+  "n_weighted": 779.8782163063672,
+  "pop_share": 0.23568395778373108,
+  "definition_text": "urban or rural, the West",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:west:False,True:18-24,25-34:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:west:False,True",
+  "definition": {
+   "region": "west",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "age_band": [
+    "18-24",
+    "25-34"
+   ],
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 116,
+  "n_eff": 71.75937240329456,
+  "n_weighted": 156.74725615516599,
+  "pop_share": 0.047369977683640305,
+  "definition_text": "either sex, aged 18-34, any education level, any income, urban or rural, the West",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:west:False,True:35-44:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:west:False,True",
+  "definition": {
+   "region": "west",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "age_band": "35-44",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 127,
+  "n_eff": 71.50166652810665,
+  "n_weighted": 154.28787682322658,
+  "pop_share": 0.046626738236091377,
+  "definition_text": "either sex, aged 35-44, any education level, any income, urban or rural, the West",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:west:False,True:45-54,55-64:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:west:False,True",
+  "definition": {
+   "region": "west",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "age_band": [
+    "45-54",
+    "55-64"
+   ],
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 171,
+  "n_eff": 103.64511558634233,
+  "n_weighted": 192.02531035205152,
+  "pop_share": 0.058031221019054474,
+  "definition_text": "either sex, aged 45-64, any education level, any income, urban or rural, the West",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:west:False,True:65+:higher_secondary,primary,secondary,tertiary:q1,q2,q3,q4,q5:female,male",
+  "level": 2,
+  "parent": "l1:west:False,True",
+  "definition": {
+   "region": "west",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "age_band": "65+",
+   "education": [
+    "primary",
+    "secondary",
+    "higher_secondary",
+    "tertiary"
+   ],
+   "income_band": [
+    "q1",
+    "q2",
+    "q3",
+    "q4",
+    "q5"
+   ],
+   "sex": [
+    "female",
+    "male"
+   ]
+  },
+  "n_raw": 132,
+  "n_eff": 62.23605443795059,
+  "n_weighted": 127.71131824360594,
+  "pop_share": 0.03859513999504556,
+  "definition_text": "either sex, aged 65+, any education level, any income, urban or rural, the West",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "l1:west:False,True:unclassified",
+  "level": 2,
+  "parent": "l1:west:False,True",
+  "definition": {
+   "region": "west",
+   "urban": [
+    "False",
+    "True"
+   ],
+   "_note": "missing >=1 level-2 partition axis"
+  },
+  "n_raw": 100,
+  "n_eff": 53.42780416777653,
+  "n_weighted": 149.10645473231725,
+  "pop_share": 0.04506088084989938,
+  "definition_text": "urban or rural, the West, [missing >=1 level-2 partition axis]",
+  "below_min_cell": false
+ },
+ {
+  "cluster_id": "gss:unclassified",
+  "level": 2,
+  "parent": "pop",
+  "definition": {
+   "_note": "missing >=1 partition axis"
+  },
+  "n_raw": 172,
+  "n_eff": 75.6497112914663,
+  "n_weighted": 171.1109575149193,
+  "pop_share": 0.0517107759186821,
+  "definition_text": "[missing >=1 partition axis]",
+  "below_min_cell": false
+ }
+]

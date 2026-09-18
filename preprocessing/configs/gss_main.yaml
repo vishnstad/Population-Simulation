@@ -1,0 +1,48 @@
+# B17 -- GSS 2024 main preprocessing run.
+# Per spec §3.2: "every run fully specified by one file".
+
+run_name: gss2024_main
+
+data:
+  path: data_raw/GSS2024.dta
+  recodes: codebooks/recodes_gss.yaml
+  taxonomy: codebooks/item_taxonomy_gss.yaml
+  wave: "2024"
+  min_item_coverage: 0.20     # GSS rotates items across ballots; a one-ballot
+                              # item sits near 0.33 weighted coverage
+  min_scale: 2                # §5.1: scale length 2-7
+  max_scale: 7
+  strict_guards: true         # fail loudly on any recode/label mismatch
+
+clustering:
+  l1_axes: [region, urban]
+  l2_axes: [age_band, education, income_band, sex]
+  # §3.3 M2 gives min_cell=40 as the default AND §2.2/§1.4 ask for K≈150 on a
+  # ~3.5k survey. On GSS 2024 those two cannot both hold (see manifest): 40
+  # yields K≈41. We therefore search min_cell for the largest value landing K
+  # inside target_k, and record the achieved value. Set `min_cell` explicitly
+  # to override the search.
+  min_cell: null
+  target_k: [100, 200]
+  min_cell_search: [60, 50, 40, 34, 28, 24, 20, 17, 14, 12]
+  anchor_profile_items: 12    # items used for the Hellinger merge distance
+  max_leaves: 400
+
+# K sweep for §5.5 / §5.7. Achieved by varying min_cell, since the partition
+# is constrained-interpretable rather than free-K.
+k_sweep:
+  min_cells: [200, 90, 40, 18]
+
+split:
+  anchor_frac: 0.60
+  seed: 20260818
+  heterogeneity_col: h_icc    # debiased ICC, not the naive share
+
+scoring:
+  min_neff: 30                # §5.2: cells below this are excluded from scoring
+  coarse_min_pct: 50          # finest partition where >= this % of cells are
+                              # scoreable; emitted alongside the main one
+
+output:
+  dir: runs/gss2024_main
+  figures: figures

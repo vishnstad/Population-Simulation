@@ -1,0 +1,270 @@
+# B17 main US run.
+#
+# EVERY value here comes from B17_build_checklist.md, which outranks
+# B17_architecture_spec.md on all tuning parameters. Where the spec's Appendix
+# disagrees, the spec is wrong and the `spec_said` comment records what it said
+# so the divergence is deliberate and auditable.
+
+run_id: gss_main
+seed: 17
+
+paths:
+  data_root: "../data"          # relative to the repo root
+  runs_root: "runs"
+  codebooks: "codebooks"
+
+# ---------------------------------------------------------------- the bed
+bed:
+  dataset: gss
+  file: "gss/data/GSS_stata/gss7224_r3a.dta"
+  encoding: latin1              # UTF-8 decode throws on this file's value labels
+  waves: [2010, 2012, 2014, 2016, 2018, 2021, 2022]
+  exclude_waves: [2024]
+  exclude_reason: >
+    GSS 2024: region_7222 and srcbelt are 0% populated for all 3,309 respondents
+    in the 7224 R3a release, so complete-demo n = 0. Checklist step 1.3.
+  weight_var: wtssps
+  weight_fallback: wtssall      # no wtsscomp in this release
+  # spec_said: bed = GSS 2022, or pooled 2016-2024
+
+# ---------------------------------------------------------- the partition
+partition:
+  axes: [age_band, degree, sex]
+  # spec_said: level-1 = region_7222 x urban, then age x education x income x sex.
+  # Measured: adding urban/rural drops usable items 74 -> 35. Geography is a
+  # stat-card MARGINAL, never a partition axis.
+  min_cell: 60                  # spec_said: 40 (at 40 truth is noisier than the effect)
+  k_target: 56                  # spec_said: 150
+  method: supervised_tree       # spec_said: greedy sibling merge (undefined on 1.6-person cells)
+  min_item_snr: 1.5
+  tau_pooling: 100
+
+dynamics_bed:                   # Stage B, K ~ 18
+  axes: [age3, edu3, sex]
+  k_target: 18
+  min_item_snr: 1.5
+
+# -------------------------------------------------------------- item split
+item_split:
+  n_targets: 40                 # spec_said: 60% anchors / 40% targets -> only 29 targets
+  n_anchors: 34
+  n_anchor_only_low_snr: 14
+  stratify_by: topic
+  freeze_path: "codebooks/item_split.frozen.yaml"   # never regenerated once written
+  # Amendment 1 is RETIRED as the default arm. It was applied, it made the gate
+  # worse, and PREREGISTRATION.md §7a records why: adding five anchors re-derived
+  # every cross-fit fold and put `nataid` back on the spending cards, confounding
+  # the rule being tested with the battery outlier returning. Set true to run it
+  # as an ablation; the file stays on disk untouched either way.
+  use_amendments: false
+  sanity_items: [finrela, satfin]    # income restated; can never reach a headline table
+  drop_items: [colrac, librac, colmil]  # SNR 0.64 / 1.21 / 1.48, below the gate
+
+# ------------------------------------------------------------ elicitation
+elicitation:
+  # ---- FROZEN 16 Sep 2026, before the §7.2 rung-1 run. See PREREGISTRATION.md.
+  # Three card configurations were run and inspected on the dev model before
+  # this was fixed. Any further change to the four values below is a new
+  # pre-registration entry, not a tweak.
+  anchors_per_card: 12          # spec §M3 caps the card at 12
+  # 3.4's three clauses, all enforced: no target on its own card, no
+  # near-duplicate of it, and no anchor from the target's own fold. The third
+  # was specified, documented in assert_card_contract's docstring, and checked
+  # nowhere until 16 Sep — which is how `nataid` (the spending battery's
+  # outlier, 57.7% "too much" against a battery median near 10%) came to be the
+  # single spending anchor on every spending card.
+  enforce_fold_exclusion: true
+  # Anchors are picked by topic diversity with an alphabetical tiebreak, which
+  # is deterministic and reproducible but gives a battery target ONE arbitrary
+  # exemplar of its own battery. Measured consequence: the 7B uses that
+  # exemplar's level as its prior for the target's level, r = -0.853 between
+  # |anchor level - target level| and the change in W1. Left as-is on purpose —
+  # the selection-free remedy is several same-battery exemplars, and the frozen
+  # split does not contain enough of them (2 civil-liberties anchors for 12
+  # civil-liberties targets; 0 for religion, crime, family, politics).
+  anchor_pick: topic_diverse_alpha
+  temperature: 0.7
+  max_retries: 2
+  refusal_exclusion_rate: 0.10
+  ensemble_profiles:            # the 9x quota swing, checklist §1.2a
+    dev:         {n_paraphrase: 1, n_repeat: 1}
+    permutation: {n_paraphrase: 1, n_repeat: 3}
+    minieval:    {n_paraphrase: 3, n_repeat: 3}
+    headline:    {n_paraphrase: 3, n_repeat: 3}
+  active_profile: dev
+
+# ------------------------------------------------------------ calibration
+calibration:
+  crossfit_folds: 3
+  stratify_by: topic
+  ordinal: isotonic_on_cdf
+  nominal: dirichlet
+  # Fitted always; USED only when it lowers out-of-fold anchor W1. On the
+  # level/structure design it does not: the prediction inherits the national
+  # histogram's shape, so its within-cluster SD is already right (variance ratio
+  # 1.000 on the 8B arm with no restoration at all). F1 — the within-cluster
+  # variance collapse this whole method family is known for — does not arise
+  # when the shape is not generated token by token, so the repair has nothing to
+  # repair. The decision is made on anchors, never on targets.
+  variance_restoration: auto
+  shrink_to_parent: true
+  # The subgroup subspace: the top-r principal directions of the anchor
+  # deviation matrix. A deviation measured from 3 draws is mostly noise and
+  # noise is isotropic, so the component outside the space real subgroups
+  # occupy is discarded. r is chosen by out-of-fold anchor W1.
+  subspace_ranks: [0, 1, 2, 3, 4, 6, 8, 12]
+  # Candidate parameterisations for the deviation scale, chosen out of fold on
+  # the anchors. PREREGISTRATION.md §8.5 fixed this list before any Phase 5
+  # number existed; per-topic and per-cluster are reported as ablation arms.
+  scale_schemes: [global, by_k]
+  # Looser than truth_min_neff on purpose: the basis is never scored against,
+  # it only has to point in the right direction, and dropping a whole anchor
+  # because one small cluster is thin costs a direction for nothing.
+  basis_min_neff: 8
+
+# ------------------------------------------------------------ aggregation
+aggregation:
+  margins: "acs/acs2024_margins.parquet"
+  margins_geo: "acs/acs2024_margins_geo.parquet"
+  # Margins are on the GSS `degree` scale (0 lt-HS, 1 HS, 2 associate, 3 bachelor,
+  # 4 graduate). If the GSS adapter changes its education scale, REGENERATE THEM
+  # or raking is meaningless.
+  degree_scale_fingerprint: "gss_degree_0_4"
+  rake_max_iter: 200
+  rake_tol: 1.0e-6
+  n_boot: 500
+  ci_alpha: 0.10
+
+# ------------------------------------------------------------- evaluation
+evaluation:
+  truth_min_neff: 30
+  topline_tolerance_pp: 0.5
+  topline_min_items: 10
+  topline_min_crosstabs: 1
+  # Pre-registered pass marks. Written BEFORE the first elicitation run.
+  # A pass mark chosen after seeing results is not a pass mark.
+  pass_marks:
+    all_targets:       {baseline_w1: 0.0695, pass_w1: 0.0556, noise_floor: 0.0273}
+    top_quartile_het:  {baseline_w1: 0.1043, pass_w1: 0.0834, noise_floor: 0.0402}
+    leakage_resistant: {baseline_w1: 0.0767, pass_w1: 0.0614, noise_floor: 0.0324}
+  variance_ratio_band: [0.8, 1.2]
+  leakage_resistant_items:
+    [natroad, finrela, satfin, spkcom, colath, natarms, natsoc, libcom, pornlaw,
+     libhomo, consci, spkhomo, colhomo, spkmil, conmedic, conlegis, suicide1,
+     natspac, natenvir, sexeduc, spanking, postlife, colcom, libath, natmass,
+     libmil, spkath, conlabor, spkrac, nateduc, fair, life]
+  demo_item: natroad            # least deniable, not most impressive
+
+# ----------------------------------------------------------------- router
+router:
+  # word(1,2) + char_wb(3,5) TF-IDF, parenthetical battery stems stripped, option
+  # labels folded in. HuggingFace is blocked in the sandbox and §M7 says the
+  # embedder is not load-bearing; this is also the reproducible choice.
+  method: tfidf_word_char_cosine
+  # spec_said: 0.85. Measured on 42 hand-labeled pairs (codebooks/router_duplicate_pairs.yaml),
+  # 0.85 has a recall of ZERO — no human paraphrase of a GSS item shares enough
+  # vocabulary with its verbatim instrument wording to clear it, and taking the
+  # spec's number on faith would have routed every real question to the LLM and
+  # quietly retired the whole F3 defence. Recall/precision are flat from 0.05 to
+  # 0.25 at 0.81/0.96, so 0.25 is the top of the plateau: it rejects the most
+  # borderline matches at no cost in recall. Re-tune if the labeled set grows.
+  threshold: 0.25
+  labeled_pairs: "codebooks/router_duplicate_pairs.yaml"
+
+# ------------------------------------------------------------------- llm
+llm:
+  budget_cap_usd: 0.0           # spec_said: 1200. The project runs on free tiers.
+  # Guard against a loop bug burning a day's quota. Raised from 2000 to cover
+  # Gate 3 at full scope: 10 items x 56 clusters x 2 arms x 1x3 = 3,360 calls.
+  # Raising it is meant to be a deliberate act, which is why the guard reports
+  # the intended run size rather than simply being large.
+  # Raised from 4,000 for Phase 4/5. The core run is 34 anchors + 40 targets
+  # over 56 clusters at 1x3 = 12,432 calls, and §1.2a budgets 37,296 for the
+  # 3x3 headline. The guard is still a guard: it reports the intended run size
+  # and refuses anything past this, so a loop bug cannot burn a day's quota.
+  # Sharded windows each count their own calls, so this is a per-process ceiling.
+  max_calls_per_run: 40000
+  # Context window the prompts are built against. A stat card with 12 anchors
+  # plus the target question runs well past Ollama's DEFAULT of 2048, and
+  # llama.cpp truncates the OLDEST tokens silently — that is the top of the
+  # card, i.e. the cluster definition, i.e. the whole conditioning signal.
+  # The result is indistinguishable from F2. The client refuses to send a prompt
+  # that would not fit; `popsim doctor` checks the model actually has this window.
+  num_ctx: 8192
+  cache_dir: ".llm_cache"
+  state_dir: ".llm_state"
+  checkpoint_every_call: true
+  # Order is the fallthrough order. Caps below are the DAILY binding limits.
+  #
+  # `daily_token_cap` matters more than `daily_call_cap` and is the number
+  # people forget: Groq advertises 1,000 requests/day but also caps 200,000
+  # tokens/day, and at this project's ~1,550 tokens per elicitation call that is
+  # ~129 calls, not 1,000. The router schedules on min(call cap, token caps).
+  #
+  # ⚠ Mistral and Google publish free-tier limits only inside their consoles, so
+  # the values below are placeholders marked `verify_in_console: true`. Confirm
+  # them before planning a run — the checklist says these move, and they do.
+  providers:
+    # Two local arms, two different jobs — do not conflate them.
+    #
+    # `ollama` is the DEV model (checklist 0.6). Its job is to find plumbing bugs
+    # — JSON parsing, cache keys, cross-fit wiring, calibration math — for free
+    # and unlimited. For that, boring and predictable beats capable. Qwen 2.5 has
+    # no thinking mode, so it cannot emit a reasoning preamble that inflates the
+    # malformed-JSON rate M4 reports as a metric, and it cannot blow past the
+    # ~250-output-token assumption the §1.2a cost table is built on.
+    #
+    # `ollama_modern` is an ABLATION arm for §7.3a (open vs Groq-class vs
+    # Mistral-large-class) and §7.3b (logprobs, which frontier APIs do not
+    # expose). A current-generation open model belongs here, NOT in the dev slot:
+    # §7.3a's interesting claim is "does the calibration layer rescue a *weak*
+    # model?", which needs a genuinely weak arm to be worth answering. Having
+    # both a 2024-era and a 2026-era open model is a better result than either.
+    # If it is a reasoning model, thinking must be disabled — see `think: false`.
+    - {name: ollama,        model: "qwen2.5-ctx8k:7b-instruct-8192", daily_call_cap: 0, daily_token_cap: 0, role: dev, note: "built from Modelfile: qwen2.5:7b-instruct at num_ctx 8192 — the stock tag defaults to 2048 and truncates silently"}
+    - {name: ollama_modern, model: "REPLACE_WITH_PINNED_TAG", daily_call_cap: 0, daily_token_cap: 0, role: ablation_open_modern, think: false, enabled: false, note: "pin a concrete tag; see STATUS.md"}
+    # PINNED 16 Sep 2026 from `popsim doctor` (46 tags offered; `mistral-small-2603`
+    # is the only dated small tag). NOT `mistral-small-latest`: the provider
+    # repoints that alias without notice and cache.py keys responses on the model
+    # string, so a run resumed across a repoint mixes two sets of weights into one
+    # ensemble and reports the difference as elicitation variance. Re-pin
+    # deliberately, never by reaching for `-latest`.
+    # `min_interval_s` is the per-second cap, which 0.4a did not account for:
+    # "rate-capped per day, not per dollar" is true and incomplete.
+    #
+    # Capacity on this workspace is allocated PER MODEL, not per workspace as
+    # the Mistral docs imply. Measured 16 Sep 2026 via x-ratelimit-limit-req-minute:
+    #
+    #   mistral-medium-2604        0/min      magistral-medium-latest   0/min
+    #   mistral-small-2603         0/min      ministral-14b-2512       30/min
+    #   ministral-8b-2512        188/min      ministral-3b-2512       750/min
+    #
+    # So `mistral-small-2603` could never have run, whatever the pacing — the
+    # first Gate 3 attempt on it was refused with 0 req/min allocated. The
+    # largest model with capacity is ministral-14b, and 14B is the size class
+    # STATUS.md identifies as the meaningful step up from the 7B dev arm.
+    # 30/min -> 2.1s between sends, with a little headroom.
+    - {name: mistral,  model: "ministral-14b-2512",     daily_call_cap: 0,    monthly_token_cap: 1000000000, role: primary,  verify_in_console: true, pinned: "2026-09-16, largest tag with non-zero req/min", min_interval_s: 2.1}
+    # Throughput and tier-curve arms on the same account. Capacity is per model
+    # (measured again 16 Sep, session 2, from x-ratelimit-limit-req-minute:
+    # 3b 750/min, 8b 188/min, 14b 30/min, everything larger 0/min), so each one
+    # is its own provider entry with its own pacing and its own quota ledger.
+    # `_family_default` resolves the endpoint and the key from the part of the
+    # name before the underscore.
+    #
+    # The intervals below are per PROCESS. A window of the chunked runner may
+    # run several processes over disjoint item sets, so the interval is set for
+    # the configured degree of parallelism rather than for one sender —
+    # `scripts/run_elicitation.sh` is the thing that knows how many.
+    - {name: mistral_8b, model: "ministral-8b-2512", daily_call_cap: 0, monthly_token_cap: 1000000000, role: throughput,      min_interval_s: 1.9, pinned: "2026-09-16, 188 req/min measured"}
+    - {name: mistral_3b, model: "ministral-3b-2512", daily_call_cap: 0, monthly_token_cap: 1000000000, role: tier_curve_low,  min_interval_s: 0.5, pinned: "2026-09-16, 750 req/min measured"}
+    # Google: `gemini-2.0-flash` in the earlier config is RETIRED and the API
+    # says so. 41 tags support generateContent as of 16 Sep 2026. The pinned tag
+    # below has no thinking mode, which matters twice: a reasoning preamble
+    # inflates the malformed-JSON rate M4 reports as a metric, and thinking
+    # tokens blow past the ~250-output-token assumption the §1.2a cost table is
+    # built on (gemini-3.8-flash spent 102 thought tokens answering {"ok": 1}).
+    - {name: google,   model: "gemini-3.5-flash-lite",  daily_call_cap: 1000, daily_token_cap: 0,      role: third_arm,   verify_in_console: true, min_interval_s: 4.1}
+    - {name: groq,     model: "llama-3.3-70b-versatile", daily_call_cap: 1000, daily_token_cap: 200000, role: second_tier, verified: "2026-09-15, console.groq.com/docs/rate-limits", min_interval_s: 2.2}
+    - {name: cerebras, model: "llama-3.3-70b",           daily_call_cap: 0,    daily_token_cap: 1000000, role: overflow,   verify_in_console: true}
+  active_providers: [ollama]

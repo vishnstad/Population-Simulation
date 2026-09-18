@@ -1,0 +1,23 @@
+{{ paraphrase.preamble }}
+
+{{ card_text }}
+
+THE QUESTION TO ESTIMATE
+
+{{ item.text }}
+
+Answer options:
+{% for label in item.labels %}
+  {{ loop.index }}. {{ label }}
+{% endfor %}
+
+{{ paraphrase.instruction }}
+
+Respond with JSON only, in exactly this form:
+{"percentages": {{ '{' }}{% for label in item.labels %}"{{ label }}": <number>{% if not loop.last %}, {% endif %}{% endfor %}{{ '}' }}}
+
+Use those {{ item.labels | length }} option names as the keys, exactly as written
+above, and give a number for every one. The keys identify the options, so the
+order they appear in does not matter — and where the question wording above
+mentions the options in some other order, ignore that order and go by the names.
+The numbers must sum to 100.

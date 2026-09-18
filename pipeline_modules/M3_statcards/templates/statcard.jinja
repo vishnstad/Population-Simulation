@@ -1,0 +1,28 @@
+{# Stat card -> prompt context. Numbers are weighted percentages from survey microdata. #}
+=== DEMOGRAPHIC SUBGROUP PROFILE ===
+Subgroup: {{ card.definition_prose }}
+Share of the adult population: {{ (card.pop_share * 100) | round(2) }}%
+Survey respondents in this subgroup: {{ card.n_raw }} (effective sample size {{ card.n_eff | round(1) }})
+
+{% if card.demo_marginals %}
+Composition of this subgroup:
+{% for field_name, dist in card.demo_marginals.items() %}
+- {{ field_name | replace('_', ' ') | capitalize }}: {% for label, pct in dist.items() %}{{ label }} {{ (pct * 100) | round(1) }}%{% if not loop.last %}, {% endif %}{% endfor %}
+{% endfor %}
+{% endif %}
+
+=== OBSERVED RESPONSES FROM THIS SUBGROUP ===
+These are real, weighted response distributions measured in the survey for this
+exact subgroup, alongside the national figure for the same question. Use them to
+judge how this subgroup differs from the country as a whole.
+
+{% for item in card.anchor_items %}
+[{{ loop.index }}] {{ item.topic | replace('_', ' ') | capitalize }}
+Question: "{{ item.text }}"
+Options: [{% for opt in item.options %}"{{ opt }}"{% if not loop.last %}, {% endif %}{% endfor %}]
+- This subgroup: [{% for p in item.cluster_hist %}{{ (p * 100) | round(1) }}%{% if not loop.last %}, {% endif %}{% endfor %}]
+{% if item.national_hist %}
+- National:      [{% for p in item.national_hist %}{{ (p * 100) | round(1) }}%{% if not loop.last %}, {% endif %}{% endfor %}]
+{% endif %}
+
+{% endfor %}

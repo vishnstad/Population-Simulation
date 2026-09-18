@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'></head><body><title>B17 Subgroup Distributions</title><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:wght@500;600&display=swap"><style>
+:root{color-scheme:light;--bg:#fbfaf7;--surface:#ffffff;--ink:#14130f;--ink2:#4e4c45;
+--ink3:#7c796f;--line:#e5e2d9;--accent:#2a78d6;--good:#008300;--bad:#e34948;
+--code:#f3f1ea;
+--sans:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+--serif:"IBM Plex Serif",Georgia,"Times New Roman",serif;
+--mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+--bg:#14140f;--surface:#1d1d18;--ink:#f7f6f1;--ink2:#c3c1b5;--ink3:#93918a;
+--line:#32312b;--accent:#3987e5;--good:#4caf50;--bad:#e66767;--code:#24241d;}}
+:root[data-theme="dark"]{--bg:#14140f;--surface:#1d1d18;--ink:#f7f6f1;--ink2:#c3c1b5;
+--ink3:#93918a;--line:#32312b;--accent:#3987e5;--good:#4caf50;--bad:#e66767;
+--code:#24241d;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+font:400 16px/1.62 var(--sans);-webkit-font-smoothing:antialiased;}
+main{max-width:1040px;margin:0 auto;padding-block:48px 96px;padding-inline:16px;
+display:flex;flex-direction:column;gap:2px}
+h1{font:600 31px/1.2 var(--serif);margin:0 0 6px;letter-spacing:-.015em;
+text-wrap:balance}
+h2{font:600 21px/1.3 var(--serif);margin:44px 0 10px;letter-spacing:-.01em;
+border-top:1px solid var(--line);padding-top:22px;text-wrap:balance}
+h3{font:600 15px/1.4 var(--sans);margin:26px 0 8px;color:var(--ink2);
+letter-spacing:.02em;text-transform:uppercase}
+p,li{color:var(--ink2)} b,strong{color:var(--ink)}
+.sub{color:var(--ink3);font-size:14px;margin:0 0 28px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;
+padding:20px 22px;margin:18px 0}
+.hero{font:500 40px/1 var(--mono);letter-spacing:-.03em;color:var(--ink);
+font-variant-numeric:tabular-nums}
+.triple{font-size:15px}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:14px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{color:var(--ink3);font-weight:600;font-size:11.5px;text-transform:uppercase;
+letter-spacing:.06em}
+/* A Greek letter has no sensible uppercase here: text-transform turns rho into
+   a capital that reads as a Latin P. */
+th.nocaps{text-transform:none;letter-spacing:.02em}
+td.num{text-align:right;font-family:var(--mono);font-size:13px;
+font-variant-numeric:tabular-nums}
+td.yes{color:var(--good);font-weight:650} td.no{color:var(--ink3)}
+td.small,.small{font-size:12.5px;color:var(--ink3)}
+code{background:var(--code);padding:1px 5px;border-radius:4px;font-size:12.5px;
+font-family:var(--mono)}
+p{max-width:68ch}
+.wrap{overflow-x:auto}
+.ch-title{font-size:13px;font-weight:600;fill:var(--ink2)}
+.ch-label{font-size:12.5px;fill:var(--ink2)}
+.ch-value{font:500 12px var(--mono);fill:var(--ink);font-variant-numeric:tabular-nums}
+.ch-tick{font:400 11px var(--mono);fill:var(--ink3)}
+.ch-axis{font-size:12px;fill:var(--ink3)}
+.ch-legend{font-size:12px;fill:var(--ink2)}
+.ch-rule{stroke:var(--ink3);stroke-width:1;stroke-dasharray:3 3}
+.ch-rule-label{font-size:11px;fill:var(--ink3)}
+.ch-bar{fill:var(--ink3);opacity:.45}
+.ch-bar-hi{fill:var(--accent);opacity:1}
+.ch-plot{fill:none;stroke:var(--line)}
+.ch-line{fill:none;stroke:var(--accent);stroke-width:2}
+.ch-dot{fill:var(--accent)}
+.ch-dot-good{fill:var(--good)} .ch-dot-bad{fill:var(--bad)}
+.note{border-left:3px solid var(--accent);padding:2px 0 2px 14px;margin:16px 0}
+.warn{border-left-color:var(--bad)}
+ul{padding-left:20px}
+</style><main><h1>B17 — held-out subgroup distributions from stat-card elicitation</h1>
+<p class="sub">Generated 17 Sep 2026 03:54 UTC from <code>runs/</code>. Every figure is
+regenerable with <code>popsim report</code>. Headline arm: <code>ministral-14b-2512</code>,
+scored on 39 held-out items &times; 56
+clusters. An arm marked <i>partial</i> or <code>*</code> is still eliciting and is
+scored on the items it has.</p>
+
+<div class="card">
+  <div class="hero">0.0602</div>
+  <p class="triple">macro Wasserstein-1 over 39 held-out
+  GSS items at K&nbsp;=&nbsp;56 clusters
+  — against a national-marginal baseline of
+  0.0807 and a truth-noise floor of
+  0.0273. That is
+  <b>38%</b> of the signal
+  available between the two.</p>
+</div>
+
+<p><b>The question.</b> Given a demographic subgroup described only by its
+population marginals and its answers to a set of <i>other</i> survey questions,
+what is the full distribution of its answers to a question it was never asked?
+Not the average — the whole histogram, because the distribution is what
+persona-prompting gets wrong and what a cross-tab cannot give you for an unasked
+question.</p>
+
+<p><b>The baseline that matters.</b> B0a copies the true national marginal onto
+every cluster. Beating it requires real between-cluster signal, and it is
+deliberately unfair: it is handed the population answer. The system is handed the
+same national marginal, so the only thing being compared is whether it adds
+subgroup structure on top — and the deviation scale <code>s&nbsp;=&nbsp;0</code>
+reproduces B0a exactly, which makes the baseline an ablation of the method rather
+than an outside competitor.</p><h2>The verdict</h2><div class='wrap'><table><thead><tr><th>item set</th><th>achieved W1</th><th>B0a here</th><th>noise floor</th><th>vs B0a</th><th>signal captured</th><th>absolute</th><th>relative</th><th>items</th></tr></thead><tbody><tr><td>all targets</td><td class='num'><b>0.0602</b></td><td class='num'>0.0807</td><td class='num'>0.0273</td><td class='num'>-25.3%</td><td class='num'>38%</td><td class='no'>fail</td><td class='yes'>PASS</td><td class='num'>39</td></tr><tr><td>top quartile het</td><td class='num'><b>0.0787</b></td><td class='num'>0.1139</td><td class='num'>0.0402</td><td class='num'>-30.9%</td><td class='num'>48%</td><td class='yes'>PASS</td><td class='yes'>PASS</td><td class='num'>10</td></tr><tr><td>leakage resistant</td><td class='num'><b>0.0565</b></td><td class='num'>0.0757</td><td class='num'>0.0324</td><td class='num'>-25.4%</td><td class='num'>44%</td><td class='yes'>PASS</td><td class='yes'>PASS</td><td class='num'>30</td></tr><tr><td>minus leaky</td><td class='num'><b>0.0611</b></td><td class='num'>0.0822</td><td class='num'>0.0273</td><td class='num'>-25.7%</td><td class='num'>38%</td><td class='no'>fail</td><td class='yes'>PASS</td><td class='num'>37</td></tr></tbody></table></div><p class="small"><b>Two verdicts, both reported.</b> <i>absolute</i>
+is the pass mark frozen in the config before any elicitation ran. <i>relative</i>
+is §1.4(i)'s own wording — 20% below the B0a measured on the scope being scored.
+They differ because the pre-registered mark was derived from a baseline measured
+on the feasibility bed (2016–2022, n&nbsp;=&nbsp;11,045, 88 items) and the frozen
+bed is pooled 2010–2022, n&nbsp;=&nbsp;18,772. Neither was moved after the fact;
+both are shown so neither can be chosen after the fact.</p><ul><li><b>Population variance ratio 1.009</b> (target band [0.8, 1.2]) — <b>passes</b> §1.4(ii). Weights raked to ACS 2024: raking: converged in 4 iterations, worst margin gap 0.0000.</li><li><b>Tolerance-battery ordering ρ = +0.879</b> across 49 clusters and 12 items — whether the system reproduces the ordering of the five target groups <i>within</i> each subgroup, which a national marginal cannot do at all.</li><li><b>90 % interval coverage 0.899</b> against a nominal 0.90. The interval carries two terms: the elicitation ensemble's spread, and the out-of-fold anchor residual — how far the finished prediction sat from the truth on questions where the truth is known. The first alone covers 15.7 %, which is what an interval built only from ensemble spread is worth.</li><li><b>Between-cluster spread: predicted 0.0550 against a true 0.0979.</b> The system under-disperses across clusters by about half — the price of the shrinkage that minimises W1. It orders the subgroups correctly and places them too close together, which is a milder relative of F2. Reported rather than tuned away: matching the spread would cost W1.</li></ul><h2>Every arm, side by side</h2><svg viewBox="0 0 720 384" width="100%" height="auto" role="img" aria-label="Macro W1 over the scored targets — lower is better" style="max-width:720px;font-family:inherit">
+<text x="0" y="14" class="ch-title">Macro W1 over the scored targets — lower is better</text>
+<line x1="235.0" y1="26" x2="235.0" y2="358" class="ch-rule"/>
+<text x="235.0" y="374" class="ch-rule-label" text-anchor="middle">noise floor 0.0273</text>
+<text x="182" y="47" class="ch-label" text-anchor="end">B3</text>
+<rect x="190" y="34" width="46.5" height="17" rx="4" class="ch-bar"><title>B3: 0.0282 — skyline: gradient boosting trained on the real target labels</title></rect>
+<text x="243.5" y="47" class="ch-value">0.0282</text>
+<text x="182" y="77" class="ch-label" text-anchor="end">system</text>
+<rect x="190" y="64" width="99.3" height="17" rx="4" class="ch-bar ch-bar-hi"><title>system: 0.0602 — the method</title></rect>
+<text x="296.3" y="77" class="ch-value">0.0602</text>
+<text x="182" y="107" class="ch-label" text-anchor="end">system adversarial</text>
+<rect x="190" y="94" width="99.9" height="17" rx="4" class="ch-bar"><title>system adversarial: 0.0606</title></rect>
+<text x="296.9" y="107" class="ch-value">0.0606</text>
+<text x="182" y="137" class="ch-label" text-anchor="end">system s1</text>
+<rect x="190" y="124" width="100.5" height="17" rx="4" class="ch-bar"><title>system s1: 0.0609 — ablation: deviation scale fixed at 1, nothing fitted</title></rect>
+<text x="297.5" y="137" class="ch-value">0.0609</text>
+<text x="182" y="167" class="ch-label" text-anchor="end">system percluster</text>
+<rect x="190" y="154" width="101.0" height="17" rx="4" class="ch-bar"><title>system percluster: 0.0612 — ablation: per-cluster scale, shrunk to the global one</title></rect>
+<text x="298.0" y="167" class="ch-value">0.0612</text>
+<text x="182" y="197" class="ch-label" text-anchor="end">system nosubspace</text>
+<rect x="190" y="184" width="103.2" height="17" rx="4" class="ch-bar"><title>system nosubspace: 0.0626 — ablation: no subgroup-subspace projection</title></rect>
+<text x="300.2" y="197" class="ch-value">0.0626</text>
+<text x="182" y="227" class="ch-label" text-anchor="end">B0a national</text>
+<rect x="190" y="214" width="133.0" height="17" rx="4" class="ch-bar"><title>B0a national: 0.0806 — baseline: the full-population marginal (vs the in-scope mixture)</title></rect>
+<text x="330.0" y="227" class="ch-value">0.0806</text>
+<text x="182" y="257" class="ch-label" text-anchor="end">B0a</text>
+<rect x="190" y="244" width="133.1" height="17" rx="4" class="ch-bar"><title>B0a: 0.0807 — baseline: the true national marginal copied to every cluster</title></rect>
+<text x="330.1" y="257" class="ch-value">0.0807</text>
+<text x="182" y="287" class="ch-label" text-anchor="end">B0b</text>
+<rect x="190" y="274" width="294.8" height="17" rx="4" class="ch-bar"><title>B0b: 0.1787 — baseline: a population-level LLM call copied to every cluster</title></rect>
+<text x="491.8" y="287" class="ch-value">0.1787</text>
+<text x="182" y="317" class="ch-label" text-anchor="end">B4</text>
+<rect x="190" y="304" width="317.7" height="17" rx="4" class="ch-bar"><title>B4: 0.1926 — ablation: raw elicitation, uncalibrated</title></rect>
+<text x="514.7" y="317" class="ch-value">0.1926</text>
+<text x="182" y="347" class="ch-label" text-anchor="end">B1</text>
+<rect x="190" y="334" width="386.4" height="17" rx="4" class="ch-bar"><title>B1: 0.2343 — baseline: copy the most textually similar anchor item</title></rect>
+<text x="583.4" y="347" class="ch-value">0.2343</text>
+</svg><table><thead><tr><th>arm</th><th>what it is</th></tr></thead><tbody><tr><td><code>system</code></td><td>the method</td></tr><tr><td><code>system_percluster</code></td><td>ablation: per-cluster scale, shrunk to the global one</td></tr><tr><td><code>system_s1</code></td><td>ablation: deviation scale fixed at 1, nothing fitted</td></tr><tr><td><code>system_nosubspace</code></td><td>ablation: no subgroup-subspace projection</td></tr><tr><td><code>B0a</code></td><td>baseline: the true national marginal copied to every cluster</td></tr><tr><td><code>B0a_national</code></td><td>baseline: the full-population marginal (vs the in-scope mixture)</td></tr><tr><td><code>B0b</code></td><td>baseline: a population-level LLM call copied to every cluster</td></tr><tr><td><code>B1</code></td><td>baseline: copy the most textually similar anchor item</td></tr><tr><td><code>B3</code></td><td>skyline: gradient boosting trained on the real target labels</td></tr><tr><td><code>B4</code></td><td>ablation: raw elicitation, uncalibrated</td></tr></tbody></table><h2>Capability</h2><svg viewBox="0 0 620 240" width="100%" height="auto" role="img" aria-label="Capability curve — improvement on B0a, all scored targets" style="max-width:620px;font-family:inherit">
+<text x="0" y="14" class="ch-title">Capability curve — improvement on B0a, all scored targets</text>
+<line x1="62" y1="52.5" x2="576" y2="52.5" class="ch-rule"/>
+<text x="54" y="56.5" class="ch-rule-label" text-anchor="end">0</text>
+<path d="M62.0,126.3 L319.0,158.0 L576.0,177.5" class="ch-line"/>
+<circle cx="62.0" cy="126.3" r="5" class="ch-dot"><title>Ministral 3B: -15.0%</title></circle>
+<text x="62.0" y="114.3" class="ch-value" text-anchor="middle">-15.0%</text>
+<text x="56.0" y="226" class="ch-label" text-anchor="start">Ministral 3B</text>
+<circle cx="319.0" cy="158.0" r="5" class="ch-dot"><title>Ministral 8B: -21.4%</title></circle>
+<text x="319.0" y="146.0" class="ch-value" text-anchor="middle">-21.4%</text>
+<text x="319.0" y="226" class="ch-label" text-anchor="middle">Ministral 8B</text>
+<circle cx="576.0" cy="177.5" r="5" class="ch-dot"><title>Ministral 14B: -25.3%</title></circle>
+<text x="576.0" y="165.5" class="ch-value" text-anchor="middle">-25.3%</text>
+<text x="582.0" y="226" class="ch-label" text-anchor="end">Ministral 14B</text>
+<text x="14" y="115" class="ch-axis" text-anchor="middle" transform="rotate(-90 14 115)">vs B0a</text>
+</svg><div class='wrap'><table><thead><tr><th>model</th><th>scope</th><th>achieved</th><th>B0a</th><th>vs B0a</th><th>var ratio</th><th class='nocaps'>battery ρ</th></tr></thead><tbody><tr><td>Ministral 3B</td><td class='small'>39 items &times; 56 clusters</td><td class='num'>0.0686</td><td class='num'>0.0807</td><td class='num'>-15.0%</td><td class='num'>1.007</td><td class='num'>+0.870</td></tr><tr><td>Ministral 8B</td><td class='small'>39 items &times; 56 clusters</td><td class='num'>0.0634</td><td class='num'>0.0807</td><td class='num'>-21.4%</td><td class='num'>1.008</td><td class='num'>+0.898</td></tr><tr><td>Ministral 14B</td><td class='small'>39 items &times; 56 clusters</td><td class='num'>0.0602</td><td class='num'>0.0807</td><td class='num'>-25.3%</td><td class='num'>1.009</td><td class='num'>+0.879</td></tr></tbody></table></div><h2>Item by item</h2><svg viewBox="0 0 520 460" width="100%" height="auto" role="img" aria-label="Per item: the system against the national-marginal baseline" style="max-width:520px;font-family:inherit">
+<text x="0" y="14" class="ch-title">Per item: the system against the national-marginal baseline</text>
+<rect x="74" y="34" width="430" height="380" class="ch-plot"/>
+<line x1="74.0" y1="414.0" x2="504.00000000000006" y2="34.0" class="ch-rule"/>
+<text x="498" y="50" class="ch-rule-label" text-anchor="end">y = x</text>
+<circle cx="464.9" cy="190.3" r="4.5" class="ch-dot-good"><title>xmovie: baseline 0.1578, system 0.1022</title></circle>
+<circle cx="329.4" cy="251.5" r="4.5" class="ch-dot-good"><title>pray: baseline 0.1031, system 0.0742</title></circle>
+<circle cx="289.9" cy="204.7" r="4.5" class="ch-dot-bad"><title>natroad: baseline 0.0872, system 0.0956</title></circle>
+<circle cx="386.2" cy="244.5" r="4.5" class="ch-dot-good"><title>homosex: baseline 0.1261, system 0.0775</title></circle>
+<circle cx="364.5" cy="210.2" r="4.5" class="ch-dot-good"><title>news: baseline 0.1173, system 0.0931</title></circle>
+<circle cx="362.6" cy="263.1" r="4.5" class="ch-dot-good"><title>spkcom: baseline 0.1166, system 0.0689</title></circle>
+<circle cx="342.8" cy="271.5" r="4.5" class="ch-dot-good"><title>colath: baseline 0.1085, system 0.0651</title></circle>
+<circle cx="334.8" cy="187.8" r="4.5" class="ch-dot-good"><title>fear: baseline 0.1053, system 0.1033</title></circle>
+<circle cx="323.4" cy="312.9" r="4.5" class="ch-dot-good"><title>libcom: baseline 0.1007, system 0.0462</title></circle>
+<circle cx="239.4" cy="272.7" r="4.5" class="ch-dot-good"><title>natsoc: baseline 0.0668, system 0.0646</title></circle>
+<circle cx="284.1" cy="294.6" r="4.5" class="ch-dot-good"><title>libhomo: baseline 0.0848, system 0.0546</title></circle>
+<circle cx="338.3" cy="289.2" r="4.5" class="ch-dot-good"><title>colcom: baseline 0.1067, system 0.0570</title></circle>
+<circle cx="245.6" cy="288.2" r="4.5" class="ch-dot-good"><title>colhomo: baseline 0.0693, system 0.0575</title></circle>
+<circle cx="276.3" cy="284.5" r="4.5" class="ch-dot-good"><title>cappun: baseline 0.0817, system 0.0592</title></circle>
+<circle cx="256.4" cy="298.1" r="4.5" class="ch-dot-good"><title>fefam: baseline 0.0736, system 0.0530</title></circle>
+<circle cx="239.2" cy="277.5" r="4.5" class="ch-dot-good"><title>pornlaw: baseline 0.0667, system 0.0624</title></circle>
+<circle cx="229.5" cy="305.9" r="4.5" class="ch-dot-good"><title>spkhomo: baseline 0.0628, system 0.0494</title></circle>
+<circle cx="285.0" cy="340.8" r="4.5" class="ch-dot-good"><title>spkath: baseline 0.0852, system 0.0335</title></circle>
+<circle cx="287.3" cy="329.8" r="4.5" class="ch-dot-good"><title>libath: baseline 0.0861, system 0.0385</title></circle>
+<circle cx="313.7" cy="195.8" r="4.5" class="ch-dot-bad"><title>natarms: baseline 0.0968, system 0.0997</title></circle>
+<circle cx="304.6" cy="277.6" r="4.5" class="ch-dot-good"><title>libmil: baseline 0.0931, system 0.0623</title></circle>
+<circle cx="266.9" cy="273.5" r="4.5" class="ch-dot-good"><title>fair: baseline 0.0779, system 0.0642</title></circle>
+<circle cx="301.2" cy="278.8" r="4.5" class="ch-dot-good"><title>spkmil: baseline 0.0917, system 0.0618</title></circle>
+<circle cx="309.4" cy="291.5" r="4.5" class="ch-dot-good"><title>suicide1: baseline 0.0951, system 0.0560</title></circle>
+<circle cx="236.8" cy="286.4" r="4.5" class="ch-dot-good"><title>conlegis: baseline 0.0658, system 0.0583</title></circle>
+<circle cx="196.8" cy="315.1" r="4.5" class="ch-dot-good"><title>polviews: baseline 0.0496, system 0.0452</title></circle>
+<circle cx="232.3" cy="310.9" r="4.5" class="ch-dot-good"><title>consci: baseline 0.0639, system 0.0471</title></circle>
+<circle cx="229.7" cy="284.3" r="4.5" class="ch-dot-good"><title>conlabor: baseline 0.0629, system 0.0593</title></circle>
+<circle cx="269.5" cy="287.6" r="4.5" class="ch-dot-good"><title>natspac: baseline 0.0789, system 0.0577</title></circle>
+<circle cx="241.8" cy="279.0" r="4.5" class="ch-dot-good"><title>natenvir: baseline 0.0678, system 0.0617</title></circle>
+<circle cx="277.7" cy="286.7" r="4.5" class="ch-dot-good"><title>spkrac: baseline 0.0823, system 0.0582</title></circle>
+<circle cx="194.1" cy="305.9" r="4.5" class="ch-dot-bad"><title>natmass: baseline 0.0485, system 0.0494</title></circle>
+<circle cx="215.5" cy="303.2" r="4.5" class="ch-dot-good"><title>conmedic: baseline 0.0571, system 0.0506</title></circle>
+<circle cx="207.9" cy="309.1" r="4.5" class="ch-dot-good"><title>nateduc: baseline 0.0541, system 0.0479</title></circle>
+<circle cx="224.2" cy="310.7" r="4.5" class="ch-dot-good"><title>gunlaw: baseline 0.0607, system 0.0472</title></circle>
+<circle cx="179.0" cy="324.5" r="4.5" class="ch-dot-good"><title>sexeduc: baseline 0.0424, system 0.0409</title></circle>
+<circle cx="208.4" cy="321.3" r="4.5" class="ch-dot-good"><title>spanking: baseline 0.0543, system 0.0423</title></circle>
+<circle cx="184.5" cy="333.6" r="4.5" class="ch-dot-good"><title>life: baseline 0.0446, system 0.0368</title></circle>
+<circle cx="203.9" cy="311.7" r="4.5" class="ch-dot-good"><title>postlife: baseline 0.0524, system 0.0467</title></circle>
+<text x="289" y="448" class="ch-axis" text-anchor="middle">B0a W1 (copy the national marginal)</text>
+<text x="18" y="224" class="ch-axis" text-anchor="middle" transform="rotate(-90 18 224)">system W1</text>
+<text x="74" y="430" class="ch-tick" text-anchor="middle">0.00</text>
+<text x="66" y="418" class="ch-tick" text-anchor="end">0.00</text>
+<text x="289" y="430" class="ch-tick" text-anchor="middle">0.09</text>
+<text x="66" y="228" class="ch-tick" text-anchor="end">0.09</text>
+<text x="504" y="430" class="ch-tick" text-anchor="middle">0.17</text>
+<text x="66" y="38" class="ch-tick" text-anchor="end">0.17</text>
+<g transform="translate(82,48)"><circle cx="0" cy="0" r="4.5" fill="#008300"/><text x="10" y="4" class="ch-legend">system better</text><circle cx="0" cy="18" r="4.5" fill="#e34948"/><text x="10" y="22" class="ch-legend">baseline better</text></g>
+</svg><div class='wrap'><table class='wide'><thead><tr><th>item</th><th>topic</th><th>k</th><th>clusters</th><th>heterogeneity</th><th>B4 raw</th><th>B0a</th><th>system</th><th>between-cluster ρ</th><th>var ratio</th><th></th></tr></thead><tbody><tr><td><code>xmovie</code></td><td>other</td><td class='num'>2</td><td class='num'>54</td><td class='num'>0.1578</td><td class='num'>0.1025</td><td class='num'>0.1578</td><td class='num'><b>0.1022</b></td><td class='num'>+0.849</td><td class='num'>1.23</td><td class='small'></td></tr><tr><td><code>homosex</code></td><td>sexual_morality</td><td class='num'>4</td><td class='num'>53</td><td class='num'>0.1261</td><td class='num'>0.3456</td><td class='num'>0.1261</td><td class='num'><b>0.0775</b></td><td class='num'>+0.895</td><td class='num'>1.04</td><td class='small'></td></tr><tr><td><code>news</code></td><td>other</td><td class='num'>5</td><td class='num'>54</td><td class='num'>0.1173</td><td class='num'>0.2075</td><td class='num'>0.1173</td><td class='num'><b>0.0931</b></td><td class='num'>+0.740</td><td class='num'>1.06</td><td class='small'></td></tr><tr><td><code>spkcom</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>51</td><td class='num'>0.1166</td><td class='num'>0.3873</td><td class='num'>0.1166</td><td class='num'><b>0.0689</b></td><td class='num'>+0.924</td><td class='num'>1.13</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>colath</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>53</td><td class='num'>0.1085</td><td class='num'>0.2663</td><td class='num'>0.1085</td><td class='num'><b>0.0651</b></td><td class='num'>+0.834</td><td class='num'>1.04</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>colcom</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>50</td><td class='num'>0.1067</td><td class='num'>0.2295</td><td class='num'>0.1067</td><td class='num'><b>0.0570</b></td><td class='num'>+0.917</td><td class='num'>1.06</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>fear</code></td><td>crime_and_guns</td><td class='num'>2</td><td class='num'>54</td><td class='num'>0.1053</td><td class='num'>0.1324</td><td class='num'>0.1053</td><td class='num'><b>0.1033</b></td><td class='num'>+0.325</td><td class='num'>1.01</td><td class='small'></td></tr><tr><td><code>pray</code></td><td>religion</td><td class='num'>6</td><td class='num'>56</td><td class='num'>0.1031</td><td class='num'>0.1164</td><td class='num'>0.1031</td><td class='num'><b>0.0742</b></td><td class='num'>+0.816</td><td class='num'>1.07</td><td class='small'></td></tr><tr><td><code>libcom</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>51</td><td class='num'>0.1007</td><td class='num'>0.2546</td><td class='num'>0.1007</td><td class='num'><b>0.0462</b></td><td class='num'>+0.911</td><td class='num'>1.08</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>natarms</code></td><td>spending_priorities</td><td class='num'>3</td><td class='num'>51</td><td class='num'>0.0968</td><td class='num'>0.1155</td><td class='num'>0.0968</td><td class='num'><b>0.0997</b></td><td class='num'>-0.057</td><td class='num'>1.05</td><td class='small'>leak-resistant</td></tr><tr><td><code>suicide1</code></td><td>life_and_death</td><td class='num'>2</td><td class='num'>53</td><td class='num'>0.0951</td><td class='num'>0.0675</td><td class='num'>0.0951</td><td class='num'><b>0.0560</b></td><td class='num'>+0.819</td><td class='num'>1.03</td><td class='small'>leak-resistant</td></tr><tr><td><code>libmil</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>49</td><td class='num'>0.0931</td><td class='num'>0.2838</td><td class='num'>0.0931</td><td class='num'><b>0.0623</b></td><td class='num'>+0.841</td><td class='num'>1.06</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>spkmil</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>49</td><td class='num'>0.0917</td><td class='num'>0.4178</td><td class='num'>0.0917</td><td class='num'><b>0.0618</b></td><td class='num'>+0.914</td><td class='num'>1.07</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>natroad</code></td><td>spending_priorities</td><td class='num'>3</td><td class='num'>56</td><td class='num'>0.0872</td><td class='num'>0.1085</td><td class='num'>0.0872</td><td class='num'><b>0.0956</b></td><td class='num'>-0.624</td><td class='num'>1.07</td><td class='small'>leak-resistant</td></tr><tr><td><code>libath</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>50</td><td class='num'>0.0861</td><td class='num'>0.3184</td><td class='num'>0.0861</td><td class='num'><b>0.0385</b></td><td class='num'>+0.906</td><td class='num'>1.03</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>spkath</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>50</td><td class='num'>0.0852</td><td class='num'>0.3791</td><td class='num'>0.0852</td><td class='num'><b>0.0335</b></td><td class='num'>+0.941</td><td class='num'>1.03</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>libhomo</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>49</td><td class='num'>0.0848</td><td class='num'>0.3469</td><td class='num'>0.0848</td><td class='num'><b>0.0546</b></td><td class='num'>+0.873</td><td class='num'>1.02</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>spkrac</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>50</td><td class='num'>0.0823</td><td class='num'>0.3817</td><td class='num'>0.0823</td><td class='num'><b>0.0582</b></td><td class='num'>+0.822</td><td class='num'>1.03</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>cappun</code></td><td>life_and_death</td><td class='num'>2</td><td class='num'>56</td><td class='num'>0.0817</td><td class='num'>0.0609</td><td class='num'>0.0817</td><td class='num'><b>0.0592</b></td><td class='num'>+0.597</td><td class='num'>1.01</td><td class='small'></td></tr><tr><td><code>natspac</code></td><td>spending_priorities</td><td class='num'>3</td><td class='num'>51</td><td class='num'>0.0789</td><td class='num'>0.0855</td><td class='num'>0.0789</td><td class='num'><b>0.0577</b></td><td class='num'>+0.771</td><td class='num'>1.04</td><td class='small'>leak-resistant</td></tr><tr><td><code>fair</code></td><td>wellbeing</td><td class='num'>3</td><td class='num'>52</td><td class='num'>0.0779</td><td class='num'>0.0751</td><td class='num'>0.0779</td><td class='num'><b>0.0642</b></td><td class='num'>+0.896</td><td class='num'>1.08</td><td class='small'>leak-resistant</td></tr><tr><td><code>fefam</code></td><td>family_childrearing</td><td class='num'>4</td><td class='num'>54</td><td class='num'>0.0736</td><td class='num'>0.1117</td><td class='num'>0.0736</td><td class='num'><b>0.0530</b></td><td class='num'>+0.895</td><td class='num'>0.99</td><td class='small'></td></tr><tr><td><code>colhomo</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>53</td><td class='num'>0.0693</td><td class='num'>0.4621</td><td class='num'>0.0693</td><td class='num'><b>0.0575</b></td><td class='num'>+0.849</td><td class='num'>0.87</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>natenvir</code></td><td>spending_priorities</td><td class='num'>3</td><td class='num'>51</td><td class='num'>0.0678</td><td class='num'>0.0664</td><td class='num'>0.0678</td><td class='num'><b>0.0617</b></td><td class='num'>+0.514</td><td class='num'>1.04</td><td class='small'>leak-resistant</td></tr><tr><td><code>natsoc</code></td><td>spending_priorities</td><td class='num'>3</td><td class='num'>56</td><td class='num'>0.0668</td><td class='num'>0.0956</td><td class='num'>0.0668</td><td class='num'><b>0.0646</b></td><td class='num'>+0.337</td><td class='num'>1.04</td><td class='small'>leak-resistant</td></tr><tr><td><code>pornlaw</code></td><td>sexual_morality</td><td class='num'>3</td><td class='num'>56</td><td class='num'>0.0667</td><td class='num'>0.1277</td><td class='num'>0.0667</td><td class='num'><b>0.0624</b></td><td class='num'>+0.478</td><td class='num'>1.05</td><td class='small'>leak-resistant</td></tr><tr><td><code>conlegis</code></td><td>institutional_confidence</td><td class='num'>3</td><td class='num'>55</td><td class='num'>0.0658</td><td class='num'>0.0595</td><td class='num'>0.0658</td><td class='num'><b>0.0583</b></td><td class='num'>+0.441</td><td class='num'>1.04</td><td class='small'>leak-resistant</td></tr><tr><td><code>consci</code></td><td>institutional_confidence</td><td class='num'>3</td><td class='num'>56</td><td class='num'>0.0639</td><td class='num'>0.1776</td><td class='num'>0.0639</td><td class='num'><b>0.0471</b></td><td class='num'>+0.859</td><td class='num'>1.04</td><td class='small'>leak-resistant</td></tr><tr><td><code>conlabor</code></td><td>institutional_confidence</td><td class='num'>3</td><td class='num'>55</td><td class='num'>0.0629</td><td class='num'>0.1005</td><td class='num'>0.0629</td><td class='num'><b>0.0593</b></td><td class='num'>+0.411</td><td class='num'>1.03</td><td class='small'>leak-resistant</td></tr><tr><td><code>spkhomo</code></td><td>civil_liberties</td><td class='num'>2</td><td class='num'>49</td><td class='num'>0.0628</td><td class='num'>0.4697</td><td class='num'>0.0628</td><td class='num'><b>0.0494</b></td><td class='num'>+0.920</td><td class='num'>0.83</td><td class='small'>leak-resistant · famous</td></tr><tr><td><code>gunlaw</code></td><td>crime_and_guns</td><td class='num'>2</td><td class='num'>53</td><td class='num'>0.0607</td><td class='num'>0.1270</td><td class='num'>0.0607</td><td class='num'><b>0.0472</b></td><td class='num'>+0.718</td><td class='num'>1.05</td><td class='small'></td></tr><tr><td><code>conmedic</code></td><td>institutional_confidence</td><td class='num'>3</td><td class='num'>56</td><td class='num'>0.0571</td><td class='num'>0.0625</td><td class='num'>0.0571</td><td class='num'><b>0.0506</b></td><td class='num'>+0.481</td><td class='num'>1.04</td><td class='small'>leak-resistant</td></tr><tr><td><code>spanking</code></td><td>family_childrearing</td><td class='num'>4</td><td class='num'>54</td><td class='num'>0.0543</td><td class='num'>0.0674</td><td class='num'>0.0543</td><td class='num'><b>0.0423</b></td><td class='num'>+0.738</td><td class='num'>0.99</td><td class='small'>leak-resistant</td></tr><tr><td><code>nateduc</code></td><td>spending_priorities</td><td class='num'>3</td><td class='num'>51</td><td class='num'>0.0541</td><td class='num'>0.0917</td><td class='num'>0.0541</td><td class='num'><b>0.0479</b></td><td class='num'>+0.480</td><td class='num'>1.06</td><td class='small'>leak-resistant</td></tr><tr><td><code>postlife</code></td><td>religion</td><td class='num'>2</td><td class='num'>55</td><td class='num'>0.0524</td><td class='num'>0.1358</td><td class='num'>0.0524</td><td class='num'><b>0.0467</b></td><td class='num'>+0.248</td><td class='num'>1.00</td><td class='small'>leak-resistant</td></tr><tr><td><code>polviews</code></td><td>politics</td><td class='num'>7</td><td class='num'>56</td><td class='num'>0.0496</td><td class='num'>0.1435</td><td class='num'>0.0496</td><td class='num'><b>0.0452</b></td><td class='num'>+0.771</td><td class='num'>0.97</td><td class='small'></td></tr><tr><td><code>natmass</code></td><td>spending_priorities</td><td class='num'>3</td><td class='num'>56</td><td class='num'>0.0485</td><td class='num'>0.0849</td><td class='num'>0.0485</td><td class='num'><b>0.0494</b></td><td class='num'>-0.013</td><td class='num'>1.02</td><td class='small'>leak-resistant</td></tr><tr><td><code>life</code></td><td>wellbeing</td><td class='num'>3</td><td class='num'>53</td><td class='num'>0.0446</td><td class='num'>0.2061</td><td class='num'>0.0446</td><td class='num'><b>0.0368</b></td><td class='num'>+0.700</td><td class='num'>1.03</td><td class='small'>leak-resistant</td></tr><tr><td><code>sexeduc</code></td><td>sexual_morality</td><td class='num'>2</td><td class='num'>54</td><td class='num'>0.0424</td><td class='num'>0.2396</td><td class='num'>0.0424</td><td class='num'><b>0.0409</b></td><td class='num'>+0.665</td><td class='num'>0.86</td><td class='small'>leak-resistant</td></tr></tbody></table></div><h2>Layer 3 — the calibration layer is arithmetically sound</h2>
+<p>Feed the <i>true</i> per-cluster histograms in where the model's go. The layer
+must return them. It does, to
+<b>3.3e-16</b> W1 at worst over
+2065 cells, the fitted deviation scale comes back at exactly
+<b>1.0000</b>, and
+<code>s&nbsp;=&nbsp;0</code> equals B0a to
+0.0e+00. Off-by-one option ordering,
+misaligned scale codes and sign errors in the tempering all fail this test
+loudly instead of masquerading as a bad model.</p><h2>Layer 5 — is the win memorised?</h2>
+<p>The probe names GSS, names the waves and names the subgroup, then asks for the
+published cross-tab — the opposite of the elicitation prompt, which names no
+dataset. An item is flagged only when the probe recalls a <i>subgroup</i> within
+0.05 <b>and</b> beats simply copying the topline onto it, because every GSS
+topline is published and reciting one says nothing about knowing the breakdown.</p>
+<p>Flagged: <b>2</b> of 39 items
+— <code>postlife</code>, <code>spanking</code>.
+Excluding them moves the headline from
+0.0602 to 0.0611
+(-25.7% vs B0a, against
+-25.3% with them in).</p><h2>What this does not answer</h2>
+<p>Product and policy scenarios have no ground truth and never will. The
+held-out-item score is the honest proxy and the honesty box is where that is said
+to the reader. This report makes none of the following claims: that the system
+simulates society, predicts policy outcomes, replaces surveys — it is built on
+them and dies without them — or scales to millions of agents. The claim is
+fidelity per dollar at a few dozen clusters, and it is exactly what the tables
+above show.</p></main></body></html>

@@ -1,0 +1,73 @@
+# =====================================================================
+# B17 main run -- GSS 2024, United States
+#
+# One run is fully described by this file. Every script takes --config and
+# writes to Codes/runs/<run_name>/.
+# =====================================================================
+
+run_name: gss2024_main
+
+data:
+  preprocessed_dir: preprocessing/runs/gss2024_main
+
+  # ---------------------------------------------------------------
+  # THE K DECISION.
+  #
+  # The architecture spec asks for K ~ 150 clusters. Preprocessing found that
+  # K and the n_eff >= 30 scoring gate are close to incompatible on 3,309
+  # GSS respondents:
+  #
+  #     K    min_cell   (cluster x item) cells scoreable
+  #     12      200        96%
+  #     26       90        51%     <-- coarse tree
+  #     57       40         5%
+  #    122       17       0.8%     <-- fine tree
+  #
+  # At K=122, 0 of 51 top-quartile-heterogeneity target items have >= 5
+  # scoreable clusters. At K=26, 32 of 51 do.
+  #
+  # Resolution used here: score the falsifiable claim on the COARSE tree
+  # (K=26), where the ground truth is real, and use the fine tree (K=122)
+  # only for the cost-accuracy curve, where no per-cluster truth is needed.
+  # This is stated as a limitation rather than hidden -- the honest ceiling
+  # on a 3.3k-respondent survey is a coarse partition.
+  #
+  # To double n and push toward a finer scoreable K, pool GSS 2022 with 2024
+  # (both are already in Dataset/). See manual.md, "Optional: pooling waves".
+  # ---------------------------------------------------------------
+  granularity: coarse         # coarse (K=26) | fine (K=122)
+
+llm:
+  model: claude-haiku-4-5     # primary elicitation tier
+  ablation_model: claude-sonnet-5   # frontier arm, run on a small item subset
+  temperature: 0.7
+  shared_cache: true          # one SQLite cache across runs; never pay twice
+  max_usd: 75.0               # hard ceiling, enforced before each call
+
+elicitation:
+  n_paraphrases: 3            # hand-written framings, checked in
+  n_repeats: 3                # samples per framing -> 9 draws per cell
+  max_anchors_per_card: 12    # context cap (spec M3)
+  n_anchor_items: 36          # anchors elicited to train the calibrator
+  n_target_items: 40          # held-out items scored (spec 1.4 wants >= 40)
+  target_selection: heterogeneity   # heterogeneity | random
+  duplicate_threshold: 0.60   # TF-IDF cosine above which items are near-duplicates
+
+calibration:
+  n_folds: 3                  # cross-fit folds over anchor items
+  tau: 100.0                  # hierarchical shrinkage weight, n_eff/(n_eff+tau)
+  fold_seed: 20260818
+  min_pairs_per_cluster: 5
+
+aggregation:
+  n_boot: 500
+  alpha: 0.10                 # 90% intervals
+  margins_file: null          # set to a raking margins YAML to enable census raking
+  rake_max_iter: 50
+
+evaluation:
+  split_regime: standard      # standard | adversarial (whole topics held out)
+  truth_min_neff: 30          # cells below this are too noisy to score against
+  min_clusters_per_item: 5    # an item needs this many scoreable clusters
+  baselines: [b0a, b0b, b1, b3, b4]   # add b2 for persona sampling (costs money)
+  b2_n_per_cluster: 20        # respondents sampled per cluster for B2

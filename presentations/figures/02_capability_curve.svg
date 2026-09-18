@@ -1,0 +1,32 @@
+<svg viewBox="0 0 620 240" width="100%" height="auto" role="img" aria-label="Capability curve — improvement on B0a, all scored targets" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff;max-width:620px;font-family:inherit"><style>
+:root { --bg:#ffffff; --ink:#14130f; --ink2:#4e4c45; --ink3:#7c796f; --line:#e5e2d9; --accent:#2a78d6; --good:#008300; --bad:#e34948; }
+text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+.ch-title { font-size: 13px; font-weight: 600; fill: #4e4c45; }
+.ch-label { font-size: 12.5px; fill: #4e4c45; }
+.ch-value { font-size: 12px; font-weight: 500; fill: #14130f; font-family: monospace; }
+.ch-tick { font-size: 11px; fill: #7c796f; font-family: monospace; }
+.ch-axis { font-size: 12px; fill: #7c796f; }
+.ch-legend { font-size: 12px; fill: #4e4c45; }
+.ch-rule { stroke: #e34948; stroke-dasharray: 3 3; stroke-width: 1.5; }
+.ch-rule-label { font-size: 11px; fill: #e34948; font-weight: 500; }
+.ch-bar { fill: #7c796f; opacity: 0.45; }
+.ch-bar-hi { fill: #2a78d6; opacity: 1; }
+.ch-plot { fill: #ffffff; stroke: #e5e2d9; }
+.ch-dot-good { fill: #008300; }
+.ch-dot-bad { fill: #e34948; }
+</style>
+<text x="0" y="14" class="ch-title">Capability curve — improvement on B0a, all scored targets</text>
+<line x1="62" y1="52.5" x2="576" y2="52.5" class="ch-rule"/>
+<text x="54" y="56.5" class="ch-rule-label" text-anchor="end">0</text>
+<path d="M62.0,126.3 L319.0,158.0 L576.0,177.5" class="ch-line"/>
+<circle cx="62.0" cy="126.3" r="5" class="ch-dot"><title>Ministral 3B: -15.0%</title></circle>
+<text x="62.0" y="114.3" class="ch-value" text-anchor="middle">-15.0%</text>
+<text x="56.0" y="226" class="ch-label" text-anchor="start">Ministral 3B</text>
+<circle cx="319.0" cy="158.0" r="5" class="ch-dot"><title>Ministral 8B: -21.4%</title></circle>
+<text x="319.0" y="146.0" class="ch-value" text-anchor="middle">-21.4%</text>
+<text x="319.0" y="226" class="ch-label" text-anchor="middle">Ministral 8B</text>
+<circle cx="576.0" cy="177.5" r="5" class="ch-dot"><title>Ministral 14B: -25.3%</title></circle>
+<text x="576.0" y="165.5" class="ch-value" text-anchor="middle">-25.3%</text>
+<text x="582.0" y="226" class="ch-label" text-anchor="end">Ministral 14B</text>
+<text x="14" y="115" class="ch-axis" text-anchor="middle" transform="rotate(-90 14 115)">vs B0a</text>
+</svg>

@@ -1,0 +1,24 @@
+# Dev model for B17 (checklist 0.6), with a context window big enough for a stat card.
+#
+# qwen2.5:7b-instruct ships with no num_ctx of its own, so Ollama applies its
+# default of 2048. A stat card with 12 anchors plus the target question runs to
+# ~1,300 tokens and grows; llama.cpp truncates the OLDEST tokens silently, and
+# the oldest tokens are the top of the card — the cluster definition. Every
+# cluster would then look identical to the model, which is indistinguishable in
+# the output from F2, the failure the spec calls the most likely way this
+# project fails while looking like it works.
+#
+# The base model supports 32768. 8192 is chosen over the maximum because the KV
+# cache is resident RAM on a 16 GB machine that is also running the pipeline,
+# and 8192 is 6x the largest prompt the design produces.
+#
+#   ollama create qwen2.5-ctx8k:7b-instruct-8192 -f Modelfile
+#
+# The tag is explicit on purpose. A locally created model with a bare name
+# resolves to :latest, which moves if the model is ever rebuilt differently —
+# and cache.py keys responses on the model string, so two sets of weights would
+# share one cache key and a resumed run would mix them into one ensemble. The
+# tag names the base and the window, so rebuilding with a different window
+# produces a different key rather than a silent collision.
+FROM qwen2.5:7b-instruct
+PARAMETER num_ctx 8192

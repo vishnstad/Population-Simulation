@@ -1,0 +1,70 @@
+<svg viewBox="0 0 520 460" width="100%" height="auto" role="img" aria-label="Per item: the system against the national-marginal baseline" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff;max-width:520px;font-family:inherit"><style>
+:root { --bg:#ffffff; --ink:#14130f; --ink2:#4e4c45; --ink3:#7c796f; --line:#e5e2d9; --accent:#2a78d6; --good:#008300; --bad:#e34948; }
+text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+.ch-title { font-size: 13px; font-weight: 600; fill: #4e4c45; }
+.ch-label { font-size: 12.5px; fill: #4e4c45; }
+.ch-value { font-size: 12px; font-weight: 500; fill: #14130f; font-family: monospace; }
+.ch-tick { font-size: 11px; fill: #7c796f; font-family: monospace; }
+.ch-axis { font-size: 12px; fill: #7c796f; }
+.ch-legend { font-size: 12px; fill: #4e4c45; }
+.ch-rule { stroke: #e34948; stroke-dasharray: 3 3; stroke-width: 1.5; }
+.ch-rule-label { font-size: 11px; fill: #e34948; font-weight: 500; }
+.ch-bar { fill: #7c796f; opacity: 0.45; }
+.ch-bar-hi { fill: #2a78d6; opacity: 1; }
+.ch-plot { fill: #ffffff; stroke: #e5e2d9; }
+.ch-dot-good { fill: #008300; }
+.ch-dot-bad { fill: #e34948; }
+</style>
+<text x="0" y="14" class="ch-title">Per item: the system against the national-marginal baseline</text>
+<rect x="74" y="34" width="430" height="380" class="ch-plot"/>
+<line x1="74.0" y1="414.0" x2="504.00000000000006" y2="34.0" class="ch-rule"/>
+<text x="498" y="50" class="ch-rule-label" text-anchor="end">y = x</text>
+<circle cx="464.9" cy="190.3" r="4.5" class="ch-dot-good"><title>xmovie: baseline 0.1578, system 0.1022</title></circle>
+<circle cx="329.4" cy="251.5" r="4.5" class="ch-dot-good"><title>pray: baseline 0.1031, system 0.0742</title></circle>
+<circle cx="289.9" cy="204.7" r="4.5" class="ch-dot-bad"><title>natroad: baseline 0.0872, system 0.0956</title></circle>
+<circle cx="386.2" cy="244.5" r="4.5" class="ch-dot-good"><title>homosex: baseline 0.1261, system 0.0775</title></circle>
+<circle cx="364.5" cy="210.2" r="4.5" class="ch-dot-good"><title>news: baseline 0.1173, system 0.0931</title></circle>
+<circle cx="362.6" cy="263.1" r="4.5" class="ch-dot-good"><title>spkcom: baseline 0.1166, system 0.0689</title></circle>
+<circle cx="342.8" cy="271.5" r="4.5" class="ch-dot-good"><title>colath: baseline 0.1085, system 0.0651</title></circle>
+<circle cx="334.8" cy="187.8" r="4.5" class="ch-dot-good"><title>fear: baseline 0.1053, system 0.1033</title></circle>
+<circle cx="323.4" cy="312.9" r="4.5" class="ch-dot-good"><title>libcom: baseline 0.1007, system 0.0462</title></circle>
+<circle cx="239.4" cy="272.7" r="4.5" class="ch-dot-good"><title>natsoc: baseline 0.0668, system 0.0646</title></circle>
+<circle cx="284.1" cy="294.6" r="4.5" class="ch-dot-good"><title>libhomo: baseline 0.0848, system 0.0546</title></circle>
+<circle cx="338.3" cy="289.2" r="4.5" class="ch-dot-good"><title>colcom: baseline 0.1067, system 0.0570</title></circle>
+<circle cx="245.6" cy="288.2" r="4.5" class="ch-dot-good"><title>colhomo: baseline 0.0693, system 0.0575</title></circle>
+<circle cx="276.3" cy="284.5" r="4.5" class="ch-dot-good"><title>cappun: baseline 0.0817, system 0.0592</title></circle>
+<circle cx="256.4" cy="298.1" r="4.5" class="ch-dot-good"><title>fefam: baseline 0.0736, system 0.0530</title></circle>
+<circle cx="239.2" cy="277.5" r="4.5" class="ch-dot-good"><title>pornlaw: baseline 0.0667, system 0.0624</title></circle>
+<circle cx="229.5" cy="305.9" r="4.5" class="ch-dot-good"><title>spkhomo: baseline 0.0628, system 0.0494</title></circle>
+<circle cx="285.0" cy="340.8" r="4.5" class="ch-dot-good"><title>spkath: baseline 0.0852, system 0.0335</title></circle>
+<circle cx="287.3" cy="329.8" r="4.5" class="ch-dot-good"><title>libath: baseline 0.0861, system 0.0385</title></circle>
+<circle cx="313.7" cy="195.8" r="4.5" class="ch-dot-bad"><title>natarms: baseline 0.0968, system 0.0997</title></circle>
+<circle cx="304.6" cy="277.6" r="4.5" class="ch-dot-good"><title>libmil: baseline 0.0931, system 0.0623</title></circle>
+<circle cx="266.9" cy="273.5" r="4.5" class="ch-dot-good"><title>fair: baseline 0.0779, system 0.0642</title></circle>
+<circle cx="301.2" cy="278.8" r="4.5" class="ch-dot-good"><title>spkmil: baseline 0.0917, system 0.0618</title></circle>
+<circle cx="309.4" cy="291.5" r="4.5" class="ch-dot-good"><title>suicide1: baseline 0.0951, system 0.0560</title></circle>
+<circle cx="236.8" cy="286.4" r="4.5" class="ch-dot-good"><title>conlegis: baseline 0.0658, system 0.0583</title></circle>
+<circle cx="196.8" cy="315.1" r="4.5" class="ch-dot-good"><title>polviews: baseline 0.0496, system 0.0452</title></circle>
+<circle cx="232.3" cy="310.9" r="4.5" class="ch-dot-good"><title>consci: baseline 0.0639, system 0.0471</title></circle>
+<circle cx="229.7" cy="284.3" r="4.5" class="ch-dot-good"><title>conlabor: baseline 0.0629, system 0.0593</title></circle>
+<circle cx="269.5" cy="287.6" r="4.5" class="ch-dot-good"><title>natspac: baseline 0.0789, system 0.0577</title></circle>
+<circle cx="241.8" cy="279.0" r="4.5" class="ch-dot-good"><title>natenvir: baseline 0.0678, system 0.0617</title></circle>
+<circle cx="277.7" cy="286.7" r="4.5" class="ch-dot-good"><title>spkrac: baseline 0.0823, system 0.0582</title></circle>
+<circle cx="194.1" cy="305.9" r="4.5" class="ch-dot-bad"><title>natmass: baseline 0.0485, system 0.0494</title></circle>
+<circle cx="215.5" cy="303.2" r="4.5" class="ch-dot-good"><title>conmedic: baseline 0.0571, system 0.0506</title></circle>
+<circle cx="207.9" cy="309.1" r="4.5" class="ch-dot-good"><title>nateduc: baseline 0.0541, system 0.0479</title></circle>
+<circle cx="224.2" cy="310.7" r="4.5" class="ch-dot-good"><title>gunlaw: baseline 0.0607, system 0.0472</title></circle>
+<circle cx="179.0" cy="324.5" r="4.5" class="ch-dot-good"><title>sexeduc: baseline 0.0424, system 0.0409</title></circle>
+<circle cx="208.4" cy="321.3" r="4.5" class="ch-dot-good"><title>spanking: baseline 0.0543, system 0.0423</title></circle>
+<circle cx="184.5" cy="333.6" r="4.5" class="ch-dot-good"><title>life: baseline 0.0446, system 0.0368</title></circle>
+<circle cx="203.9" cy="311.7" r="4.5" class="ch-dot-good"><title>postlife: baseline 0.0524, system 0.0467</title></circle>
+<text x="289" y="448" class="ch-axis" text-anchor="middle">B0a W1 (copy the national marginal)</text>
+<text x="18" y="224" class="ch-axis" text-anchor="middle" transform="rotate(-90 18 224)">system W1</text>
+<text x="74" y="430" class="ch-tick" text-anchor="middle">0.00</text>
+<text x="66" y="418" class="ch-tick" text-anchor="end">0.00</text>
+<text x="289" y="430" class="ch-tick" text-anchor="middle">0.09</text>
+<text x="66" y="228" class="ch-tick" text-anchor="end">0.09</text>
+<text x="504" y="430" class="ch-tick" text-anchor="middle">0.17</text>
+<text x="66" y="38" class="ch-tick" text-anchor="end">0.17</text>
+<g transform="translate(82,48)"><circle cx="0" cy="0" r="4.5" fill="#008300"/><text x="10" y="4" class="ch-legend">system better</text><circle cx="0" cy="18" r="4.5" fill="#e34948"/><text x="10" y="22" class="ch-legend">baseline better</text></g>
+</svg>

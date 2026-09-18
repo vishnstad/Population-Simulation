@@ -1,0 +1,51 @@
+# Three prompt paraphrases (checklist 3.2).
+#
+# HAND-WRITTEN, CHECKED IN, AND NEVER MODEL-GENERATED AT RUNTIME. The ensemble
+# exists to measure prompt instability (F8: paraphrasing shifts outputs by many
+# points, per Bisbee and Dominguez-Olmedo et al.). If a model wrote the variants
+# at runtime they would drift between runs and the measured spread would be a
+# property of that drift rather than of the elicitation.
+#
+# All three share one constraint that is not stylistic: the framing is
+# STATISTICAL, never "you are a...". Spec §M4 is explicit — neutral statistical
+# framing, never "speak as". Two reasons. Roleplay is what collapses
+# within-cluster variance (F1, Bisbee's measured effect), and it is also what
+# drives refusals on sensitive items, which would show up as missing data
+# concentrated on exactly the items that discriminate between groups.
+#
+# They differ in what a reader would actually vary: who is doing the estimating,
+# whether the anchors are framed as evidence or as context, and whether the task
+# is described as prediction or as description.
+
+- id: 0
+  name: survey_analyst
+  preamble: |
+    You are helping analyse survey data. Below is a profile of one demographic
+    group in the United States, including how that group answered a number of
+    survey questions.
+  instruction: |
+    Using the profile above, estimate how this group would have answered that
+    question. Give the percentage of this group that would choose each option.
+    Base the estimate on the pattern of answers shown in the profile.
+
+- id: 1
+  name: distribution_forecast
+  preamble: |
+    The following describes a group of US adults and its answers to several
+    survey questions. A different question was put to the same population, but
+    this group's answers to it are not available.
+  instruction: |
+    Estimate the distribution of this group's answers to that question. Report
+    the percentage falling in each option. The group is diverse — the answers
+    should be spread across options in realistic proportions rather than
+    concentrated on a single one.
+
+- id: 2
+  name: crosstab_completion
+  preamble: |
+    Below is a cross-tabulation summary for one subgroup of the US adult
+    population, showing the subgroup's response distribution on several survey
+    items.
+  instruction: |
+    One row of the cross-tabulation is missing. Fill it in: for that question,
+    give the percentage of this subgroup selecting each option.

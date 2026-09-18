@@ -1,0 +1,61 @@
+{
+ "checks": [
+  {
+   "check": "analytic sample size",
+   "expected": 3309,
+   "got": 3309,
+   "pass": true
+  },
+  {
+   "check": "per-code unweighted counts vs codebook",
+   "cells_compared": 2202,
+   "items_not_in_codebook": 0,
+   "mismatches": 0,
+   "pass": true
+  },
+  {
+   "check": "demographic recode totals",
+   "mismatches": 0,
+   "pass": true
+  },
+  {
+   "check": "population histograms sum to 1",
+   "n": 507,
+   "pass": true
+  },
+  {
+   "check": "weights sum to the analytic n",
+   "expected": 3309,
+   "got": 3309.0,
+   "pass": true
+  },
+  {
+   "check": "every respondent in exactly one leaf",
+   "pass": true
+  },
+  {
+   "check": "leaf ids unique",
+   "pass": true
+  },
+  {
+   "check": "pop shares sum to 1",
+   "pass": true
+  },
+  {
+   "check": "leaf n_raw sums to analytic n",
+   "pass": true
+  },
+  {
+   "check": "no duplicate items in the split",
+   "pass": true
+  },
+  {
+   "check": "every item has both roles assigned",
+   "pass": true
+  }
+ ],
+ "summary": {
+  "checks": 11,
+  "failed": 0
+ }
+}

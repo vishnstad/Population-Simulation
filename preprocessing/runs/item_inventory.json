@@ -1,0 +1,6726 @@
+[
+ {
+  "item": "evwork",
+  "label": "Ever work as long as one year",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wrkslf",
+  "label": "R self-emp or works for somebody",
+  "n_codes": 2,
+  "options": [
+   "self-employed",
+   "someone else"
+  ]
+ },
+ {
+  "item": "martype",
+  "label": "Marital type",
+  "n_codes": 3,
+  "options": [
+   "marriage between a man and a woman",
+   "marriage between two people of the same gender",
+   "not sure"
+  ]
+ },
+ {
+  "item": "divorce",
+  "label": "Ever been divorced or separated",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "widowed",
+  "label": "Ever been widowed",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "spwrkslf",
+  "label": "Spouse self-emp. or works for somebody",
+  "n_codes": 2,
+  "options": [
+   "self-employed",
+   "someone else"
+  ]
+ },
+ {
+  "item": "mawrkslf",
+  "label": "Mother (or youngest same-sex parent) self-emp. or worked for somebody",
+  "n_codes": 2,
+  "options": [
+   "self-employed",
+   "someone else"
+  ]
+ },
+ {
+  "item": "madeg",
+  "label": "Mother's (or youngest same-sex parent's) highest degree",
+  "n_codes": 5,
+  "options": [
+   "less than high school",
+   "high school",
+   "associate/junior college",
+   "bachelor's",
+   "graduate"
+  ]
+ },
+ {
+  "item": "spdeg",
+  "label": "Spouse's highest degree",
+  "n_codes": 5,
+  "options": [
+   "less than high school",
+   "high school",
+   "associate/junior college",
+   "bachelor's",
+   "graduate"
+  ]
+ },
+ {
+  "item": "dipged",
+  "label": "Diploma, ged, or other",
+  "n_codes": 3,
+  "options": [
+   "high school diploma",
+   "ged",
+   "other"
+  ]
+ },
+ {
+  "item": "res16",
+  "label": "Type of place lived in when 16 yrs old",
+  "n_codes": 6,
+  "options": [
+   "in open country but not on a farm",
+   "farm",
+   "in a small city or town (under 50,000)",
+   "in a medium-size city (50,000-250,000)",
+   "in a suburb near a large city",
+   "in a large city (over 250,000)"
+  ]
+ },
+ {
+  "item": "reg16",
+  "label": "Region of residence, age 16",
+  "n_codes": 5,
+  "options": [
+   "foreign",
+   "northeast",
+   "midwest",
+   "south",
+   "west"
+  ]
+ },
+ {
+  "item": "mobile16",
+  "label": "Geographic mobility since age 16",
+  "n_codes": 3,
+  "options": [
+   "same state, same city",
+   "same state, different city",
+   "different state"
+  ]
+ },
+ {
+  "item": "mawrkgrw",
+  "label": "Did mother (or youngest same-sex parent) ever work for pay for as long as a year",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "incom16",
+  "label": "R's family income when 16 yrs old",
+  "n_codes": 5,
+  "options": [
+   "far below average",
+   "below average",
+   "average",
+   "above average",
+   "far above average"
+  ]
+ },
+ {
+  "item": "born",
+  "label": "Was R born in this country",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "granborn",
+  "label": "How many grandparents born outside U.S.",
+  "n_codes": 5,
+  "options": [
+   "none",
+   "one",
+   "two",
+   "three",
+   "four"
+  ]
+ },
+ {
+  "item": "babies",
+  "label": "Household members less than 6 yrs old",
+  "n_codes": 3,
+  "options": [
+   "0",
+   "1",
+   "2 or more"
+  ]
+ },
+ {
+  "item": "preteen",
+  "label": "Household members 6 thru 12 yrs old",
+  "n_codes": 3,
+  "options": [
+   "0",
+   "1",
+   "2 or more"
+  ]
+ },
+ {
+  "item": "teens",
+  "label": "Household members 13 thru 17 yrs old",
+  "n_codes": 3,
+  "options": [
+   "0",
+   "1",
+   "2 or more"
+  ]
+ },
+ {
+  "item": "unrelat",
+  "label": "Number in household not related",
+  "n_codes": 3,
+  "options": [
+   "0",
+   "1",
+   "2 or more"
+  ]
+ },
+ {
+  "item": "vote16",
+  "label": "REMEMBER IF VOTED IN 2016 ELECTION",
+  "n_codes": 3,
+  "options": [
+   "voted",
+   "did not vote",
+   "ineligible"
+  ]
+ },
+ {
+  "item": "pres16",
+  "label": "VOTE CLINTON OR TRUMP",
+  "n_codes": 4,
+  "options": [
+   "clinton",
+   "trump",
+   "other candidate",
+   "didn't vote for president"
+  ]
+ },
+ {
+  "item": "if16who",
+  "label": "WHO YOU WOULD HAVE VOTED FOR",
+  "n_codes": 4,
+  "options": [
+   "clinton",
+   "trump",
+   "other",
+   "don't know/can't remember"
+  ]
+ },
+ {
+  "item": "polviews",
+  "label": "Think of self as liberal or conservative",
+  "n_codes": 7,
+  "options": [
+   "extremely liberal",
+   "liberal",
+   "slightly liberal",
+   "moderate, middle of the road",
+   "slightly conservative",
+   "conservative",
+   "extremely conservative"
+  ]
+ },
+ {
+  "item": "natspac",
+  "label": "Space exploration program",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natenvir",
+  "label": "Improving & protecting environment",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natheal",
+  "label": "Improving & protecting nations health",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natcity",
+  "label": "Solving problems of big cities",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natcrime",
+  "label": "Halting rising crime rate",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natdrug",
+  "label": "Dealing with drug addiction",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "nateduc",
+  "label": "Improving nations education system",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natrace",
+  "label": "Improving the conditions of Black people",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natarms",
+  "label": "Military, armaments, and defense",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "nataid",
+  "label": "Foreign aid",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natfare",
+  "label": "Welfare",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natroad",
+  "label": "Highways and bridges",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natsoc",
+  "label": "Social security",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natchld",
+  "label": "Assistance for childcare",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natsci",
+  "label": "Supporting scientific research",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natenrgy",
+  "label": "Developing alternative energy sources",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natspacy",
+  "label": "Space exploration:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natenviy",
+  "label": "The environment:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "nathealy",
+  "label": "Health:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natcityy",
+  "label": "Assistance to big cities:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natcrimy",
+  "label": "Law enforcement:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natdrugy",
+  "label": "Drug rehabilitation:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "nateducy",
+  "label": "Education:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natracey",
+  "label": "Assistance to Black people: version y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natarmsy",
+  "label": "National defense:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "nataidy",
+  "label": "Assistance to other countries:Ver Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "natfarey",
+  "label": "Assistance to the poor:Version Y",
+  "n_codes": 3,
+  "options": [
+   "too little",
+   "about right",
+   "too much"
+  ]
+ },
+ {
+  "item": "eqwlth",
+  "label": "Should govt reduce income differences",
+  "n_codes": 2,
+  "options": [
+   "the government should reduce income differences",
+   "the government should not concern itself with reducing income differences"
+  ]
+ },
+ {
+  "item": "tax",
+  "label": "R's federal income tax",
+  "n_codes": 3,
+  "options": [
+   "too high",
+   "about right",
+   "too low"
+  ]
+ },
+ {
+  "item": "spkath",
+  "label": "Allow anti-religionist to speak",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to speak",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "colath",
+  "label": "Allow anti-religionist to teach",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to teach",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "libath",
+  "label": "Allow anti-religious book in library",
+  "n_codes": 2,
+  "options": [
+   "remove",
+   "not remove"
+  ]
+ },
+ {
+  "item": "spkrac",
+  "label": "Allow racist to speak",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to speak",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "colrac",
+  "label": "Allow racist to teach",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to teach",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "librac",
+  "label": "Allow racists book in library",
+  "n_codes": 2,
+  "options": [
+   "remove",
+   "not remove"
+  ]
+ },
+ {
+  "item": "spkcom",
+  "label": "Allow communist to speak",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to speak",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "colcom",
+  "label": "Should communist teacher be fired",
+  "n_codes": 2,
+  "options": [
+   "yes, fired",
+   "not fired"
+  ]
+ },
+ {
+  "item": "libcom",
+  "label": "Allow communists book in library",
+  "n_codes": 2,
+  "options": [
+   "remove",
+   "not remove"
+  ]
+ },
+ {
+  "item": "spkmslm",
+  "label": "Allow muslim clergymen preaching hatred of the us",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to speak",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "colmslm",
+  "label": "Allow anti-American muslim clergymen teaching in college",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to teach",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "libmslm",
+  "label": "Allow anti-American muslim clergymen's books in library",
+  "n_codes": 2,
+  "options": [
+   "remove",
+   "not remove"
+  ]
+ },
+ {
+  "item": "cappun",
+  "label": "Favor or oppose death penalty for murder",
+  "n_codes": 2,
+  "options": [
+   "favor",
+   "oppose"
+  ]
+ },
+ {
+  "item": "gunlaw",
+  "label": "Favor or oppose gun permits",
+  "n_codes": 2,
+  "options": [
+   "favor",
+   "oppose"
+  ]
+ },
+ {
+  "item": "courts",
+  "label": "Courts dealing with criminals",
+  "n_codes": 3,
+  "options": [
+   "too harshly",
+   "not harshly enough",
+   "about right"
+  ]
+ },
+ {
+  "item": "grass",
+  "label": "Should marijuana be made legal",
+  "n_codes": 2,
+  "options": [
+   "should be legal",
+   "should not be legal"
+  ]
+ },
+ {
+  "item": "fund",
+  "label": "How fundamentalist Is R currently",
+  "n_codes": 3,
+  "options": [
+   "fundamentalist",
+   "moderate",
+   "liberal"
+  ]
+ },
+ {
+  "item": "reliten",
+  "label": "Strength of affiliation",
+  "n_codes": 4,
+  "options": [
+   "strong",
+   "not very strong",
+   "somewhat strong (vol.)",
+   "no religion"
+  ]
+ },
+ {
+  "item": "postlife",
+  "label": "Belief in life after death",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "pray",
+  "label": "How often Does R pray",
+  "n_codes": 6,
+  "options": [
+   "several times a day",
+   "once a day",
+   "several times a week",
+   "once a week",
+   "less than once a week",
+   "never"
+  ]
+ },
+ {
+  "item": "denom16",
+  "label": "Denomination in which R was raised",
+  "n_codes": 7,
+  "options": [
+   "baptist",
+   "methodist",
+   "lutheran",
+   "presbyterian",
+   "episcopal",
+   "other denomination",
+   "no denomination or non-denominational church"
+  ]
+ },
+ {
+  "item": "fund16",
+  "label": "How fundamentalist was R at age 16",
+  "n_codes": 3,
+  "options": [
+   "fundamentalist",
+   "moderate",
+   "liberal"
+  ]
+ },
+ {
+  "item": "spden",
+  "label": "Specific denomination, spouse",
+  "n_codes": 7,
+  "options": [
+   "baptist",
+   "methodist",
+   "lutheran",
+   "presbyterian",
+   "episcopal",
+   "other denomination",
+   "no denomination or non-denominational church"
+  ]
+ },
+ {
+  "item": "spfund",
+  "label": "How fundamentalist is spouse currently",
+  "n_codes": 3,
+  "options": [
+   "fundamentalist",
+   "moderate",
+   "liberal"
+  ]
+ },
+ {
+  "item": "prayer",
+  "label": "Bible prayer in public schools",
+  "n_codes": 2,
+  "options": [
+   "approve",
+   "disapprove"
+  ]
+ },
+ {
+  "item": "bible",
+  "label": "Feelings about the bible",
+  "n_codes": 4,
+  "options": [
+   "word of god",
+   "inspired word",
+   "ancient book",
+   "other (vol)"
+  ]
+ },
+ {
+  "item": "racopen",
+  "label": "Vote on open housing law",
+  "n_codes": 3,
+  "options": [
+   "first law",
+   "second law",
+   "neither"
+  ]
+ },
+ {
+  "item": "raclive",
+  "label": "Any opp. race in neighborhood",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "affrmact",
+  "label": "Favor preference in hiring Black people",
+  "n_codes": 4,
+  "options": [
+   "strongly favors",
+   "not strongly favors",
+   "not strongly opposes",
+   "strongly opposes"
+  ]
+ },
+ {
+  "item": "wrkwayup",
+  "label": "Black people overcome prejudice without favors",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree somewhat",
+   "neither agree nor disagree",
+   "disagree somewhat",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "happy",
+  "label": "General happiness",
+  "n_codes": 3,
+  "options": [
+   "very happy",
+   "pretty happy",
+   "not too happy"
+  ]
+ },
+ {
+  "item": "hapmar",
+  "label": "Happiness of marriage",
+  "n_codes": 3,
+  "options": [
+   "very happy",
+   "pretty happy",
+   "not too happy"
+  ]
+ },
+ {
+  "item": "health",
+  "label": "Condition of health",
+  "n_codes": 4,
+  "options": [
+   "excellent",
+   "good",
+   "fair",
+   "poor"
+  ]
+ },
+ {
+  "item": "life",
+  "label": "Is life exciting or dull",
+  "n_codes": 3,
+  "options": [
+   "exciting",
+   "routine",
+   "dull"
+  ]
+ },
+ {
+  "item": "helpful",
+  "label": "People helpful or looking out for selves",
+  "n_codes": 3,
+  "options": [
+   "try to be helpful",
+   "looking out for themselves",
+   "depends"
+  ]
+ },
+ {
+  "item": "fair",
+  "label": "People fair or try to take advantage",
+  "n_codes": 3,
+  "options": [
+   "would take advantage of you",
+   "would try to be fair",
+   "depends"
+  ]
+ },
+ {
+  "item": "trust",
+  "label": "Can people be trusted",
+  "n_codes": 3,
+  "options": [
+   "most people can be trusted",
+   "can't be too careful",
+   "depends"
+  ]
+ },
+ {
+  "item": "confinan",
+  "label": "Confid in banks & financial institutions",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "conbus",
+  "label": "Confidence in major companies",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "conclerg",
+  "label": "Confidence in organized religion",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "coneduc",
+  "label": "Confidence in education",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "confed",
+  "label": "Confid. in exec branch of fed govt",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "conlabor",
+  "label": "Confidence in organized labor",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "conpress",
+  "label": "Confidence in press",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "conmedic",
+  "label": "Confidence in medicine",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "contv",
+  "label": "Confidence in television",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "conjudge",
+  "label": "Confid. in united states supreme court",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "consci",
+  "label": "Confidence in scientific community",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "conlegis",
+  "label": "Confidence in congress",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "conarmy",
+  "label": "Confidence in military",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "obey",
+  "label": "To obey",
+  "n_codes": 5,
+  "options": [
+   "most important",
+   "2nd important",
+   "3rd important",
+   "4th important",
+   "least important"
+  ]
+ },
+ {
+  "item": "popular",
+  "label": "To be well liked or popular",
+  "n_codes": 5,
+  "options": [
+   "most important",
+   "2nd important",
+   "3rd important",
+   "4th important",
+   "least important"
+  ]
+ },
+ {
+  "item": "thnkself",
+  "label": "To think for ones self",
+  "n_codes": 5,
+  "options": [
+   "most important",
+   "2nd important",
+   "3rd important",
+   "4th important",
+   "least important"
+  ]
+ },
+ {
+  "item": "workhard",
+  "label": "To work hard",
+  "n_codes": 5,
+  "options": [
+   "most important",
+   "2nd important",
+   "3rd important",
+   "4th important",
+   "least important"
+  ]
+ },
+ {
+  "item": "helpoth",
+  "label": "To help others",
+  "n_codes": 5,
+  "options": [
+   "most important",
+   "2nd important",
+   "3rd important",
+   "4th important",
+   "least important"
+  ]
+ },
+ {
+  "item": "socrel",
+  "label": "Spend evening with relatives",
+  "n_codes": 7,
+  "options": [
+   "almost daily",
+   "once or twice a week",
+   "several times a month",
+   "about once a month",
+   "several times a year",
+   "about once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "socommun",
+  "label": "Spend evening with neighbor",
+  "n_codes": 7,
+  "options": [
+   "almost daily",
+   "once or twice a week",
+   "several times a month",
+   "about once a month",
+   "several times a year",
+   "about once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "socfrend",
+  "label": "Spend evening with friends",
+  "n_codes": 7,
+  "options": [
+   "almost daily",
+   "once or twice a week",
+   "several times a month",
+   "about once a month",
+   "several times a year",
+   "about once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "socbar",
+  "label": "Spend evening at bar",
+  "n_codes": 7,
+  "options": [
+   "almost daily",
+   "once or twice a week",
+   "several times a month",
+   "about once a month",
+   "several times a year",
+   "about once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "joblose",
+  "label": "Is R likely to lose job",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "fairly likely",
+   "not too likely",
+   "not likely"
+  ]
+ },
+ {
+  "item": "jobfind",
+  "label": "Could R find equally good job",
+  "n_codes": 3,
+  "options": [
+   "very easy",
+   "somewhat easy",
+   "not easy"
+  ]
+ },
+ {
+  "item": "satjob",
+  "label": "Work satisfaction",
+  "n_codes": 4,
+  "options": [
+   "very satisfied",
+   "moderately satisfied",
+   "a little dissatisfied",
+   "very dissatisfied"
+  ]
+ },
+ {
+  "item": "richwork",
+  "label": "If rich, continue or stop working",
+  "n_codes": 2,
+  "options": [
+   "continue to work",
+   "stop working"
+  ]
+ },
+ {
+  "item": "class",
+  "label": "Subjective class identification",
+  "n_codes": 4,
+  "options": [
+   "lower class",
+   "working class",
+   "middle class",
+   "upper class"
+  ]
+ },
+ {
+  "item": "satfin",
+  "label": "Satisfaction with financial situation",
+  "n_codes": 3,
+  "options": [
+   "pretty well satisfied",
+   "more or less satisfied",
+   "not satisfied at all"
+  ]
+ },
+ {
+  "item": "finalter",
+  "label": "Change in financial situation",
+  "n_codes": 3,
+  "options": [
+   "better",
+   "worse",
+   "stayed same"
+  ]
+ },
+ {
+  "item": "finrela",
+  "label": "Opinion of family income",
+  "n_codes": 5,
+  "options": [
+   "far below average",
+   "below average",
+   "average",
+   "above average",
+   "far above average"
+  ]
+ },
+ {
+  "item": "wksub",
+  "label": "Does R or spouse have supervisor",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wksubs",
+  "label": "Does supervisor have supervisor",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wksub1",
+  "label": "Does R or spouse or partneR have a supervisor",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wksubs1",
+  "label": "Does supervisor have supervisor",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wksup",
+  "label": "Does R or spouse supervise anyone",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wksups",
+  "label": "Does subordinate supervise anyone",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wksup1",
+  "label": "Does R or spouse or partner supervise anyone",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wksups1",
+  "label": "Does subordinant supervise anyone",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "unemp",
+  "label": "Ever unemployed in last ten yrs",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "union",
+  "label": "Does R or spouse belong to union",
+  "n_codes": 4,
+  "options": [
+   "yes, respondent belongs",
+   "yes, spouse belongs",
+   "yes, both belong",
+   "no, neither belong"
+  ]
+ },
+ {
+  "item": "union1",
+  "label": "Does R or spouse or partner belong to union",
+  "n_codes": 4,
+  "options": [
+   "yes, respondent belongs",
+   "yes, spouse or partner belongs",
+   "yes, both belong",
+   "no, neither belong"
+  ]
+ },
+ {
+  "item": "getahead",
+  "label": "Opinion of how people get ahead",
+  "n_codes": 3,
+  "options": [
+   "hard work most important",
+   "hard work, luck equally important",
+   "luck most important"
+  ]
+ },
+ {
+  "item": "kidssol",
+  "label": "R's kids living standard compared to R",
+  "n_codes": 6,
+  "options": [
+   "much better",
+   "somewhat better",
+   "about the same",
+   "somewhat worse",
+   "much worse",
+   "no children"
+  ]
+ },
+ {
+  "item": "fepol",
+  "label": "Women not suited for politics",
+  "n_codes": 2,
+  "options": [
+   "agree",
+   "disagree"
+  ]
+ },
+ {
+  "item": "abdefect",
+  "label": "Strong chance of serious defect",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "abnomore",
+  "label": "Married--wants no more children",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "abhlth",
+  "label": "Woman's health seriously endangered",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "abpoor",
+  "label": "Low income--cant afford more children",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "abrape",
+  "label": "Pregnant as result of rape",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "absingle",
+  "label": "Not married",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "abany",
+  "label": "Abortion if woman wants for any reason",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "pillok",
+  "label": "Birth control to teenagers 14-16",
+  "n_codes": 4,
+  "options": [
+   "strongly agree",
+   "agree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "sexeduc",
+  "label": "Sex education in public schools",
+  "n_codes": 2,
+  "options": [
+   "favor",
+   "oppose"
+  ]
+ },
+ {
+  "item": "divlaw",
+  "label": "Divorce laws",
+  "n_codes": 3,
+  "options": [
+   "easier",
+   "more difficult",
+   "stay as is"
+  ]
+ },
+ {
+  "item": "premarsx",
+  "label": "Sex before marriage",
+  "n_codes": 4,
+  "options": [
+   "always wrong",
+   "almost always wrong",
+   "wrong only sometimes",
+   "not wrong at all"
+  ]
+ },
+ {
+  "item": "teensex",
+  "label": "Sex before marriage:teens 14-16",
+  "n_codes": 4,
+  "options": [
+   "always wrong",
+   "almost always wrong",
+   "wrong only sometimes",
+   "not wrong at all"
+  ]
+ },
+ {
+  "item": "xmarsex",
+  "label": "Sex with person other than spouse",
+  "n_codes": 4,
+  "options": [
+   "always wrong",
+   "almost always wrong",
+   "wrong only sometimes",
+   "not wrong at all"
+  ]
+ },
+ {
+  "item": "homosex",
+  "label": "Homosexual sex relations",
+  "n_codes": 4,
+  "options": [
+   "always wrong",
+   "almost always wrong",
+   "wrong only sometimes",
+   "not wrong at all"
+  ]
+ },
+ {
+  "item": "pornlaw",
+  "label": "Feelings about pornography laws",
+  "n_codes": 3,
+  "options": [
+   "there should be laws against the distribution of pornography whatever the age",
+   "there should be laws against the distribution of pornography to persons under 18",
+   "there should be no laws forbidding the distribution of pornography"
+  ]
+ },
+ {
+  "item": "xmovie",
+  "label": "Seen x-rated movie in last year",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "letdie1",
+  "label": "Allow incurable patients to die",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "suicide1",
+  "label": "Suicide if incurable disease",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "suicide2",
+  "label": "Suicide if bankrupt",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "suicide4",
+  "label": "Suicide if tired of living",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "polhitok",
+  "label": "Ever approve of police striking citizen",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "polabuse",
+  "label": "Citizen said vulgar or obscene things",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "polmurdr",
+  "label": "Citizen questioned as murder suspect",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "polescap",
+  "label": "Citizen attempting to escape custody",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "polattak",
+  "label": "Citizen attacking policeman with fists",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "fear",
+  "label": "Afraid to walk at night in neighborhood",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "owngun",
+  "label": "Have gun in home",
+  "n_codes": 3,
+  "options": [
+   "yes",
+   "no",
+   "refused"
+  ]
+ },
+ {
+  "item": "pistol",
+  "label": "Pistol or revolver in home",
+  "n_codes": 3,
+  "options": [
+   "yes",
+   "no",
+   "refused"
+  ]
+ },
+ {
+  "item": "shotgun",
+  "label": "Shotgun in home",
+  "n_codes": 3,
+  "options": [
+   "yes",
+   "no",
+   "refused"
+  ]
+ },
+ {
+  "item": "rifle",
+  "label": "Rifle in home",
+  "n_codes": 3,
+  "options": [
+   "yes",
+   "no",
+   "refused"
+  ]
+ },
+ {
+  "item": "rowngun",
+  "label": "Does gun belong to R",
+  "n_codes": 3,
+  "options": [
+   "yes",
+   "no",
+   "refused"
+  ]
+ },
+ {
+  "item": "hunt",
+  "label": "Does R or spouse hunt",
+  "n_codes": 4,
+  "options": [
+   "yes, respondent does",
+   "yes, spouse does",
+   "yes, both do",
+   "no, neither r nor spouse hunts"
+  ]
+ },
+ {
+  "item": "hunt1",
+  "label": "Does R or spouse or partner hunt",
+  "n_codes": 4,
+  "options": [
+   "yes, respondent does",
+   "yes, spouse or partner does",
+   "yes, both do",
+   "no, neither r nor spouse or partner does"
+  ]
+ },
+ {
+  "item": "news",
+  "label": "How often Does R read newspaper",
+  "n_codes": 5,
+  "options": [
+   "every day",
+   "a few times a week",
+   "once a week",
+   "less than once a week",
+   "never"
+  ]
+ },
+ {
+  "item": "phone",
+  "label": "Does R have telephone",
+  "n_codes": 5,
+  "options": [
+   "no phone number",
+   "refused phone number",
+   "home phone",
+   "phone elsewhere",
+   "cell phone"
+  ]
+ },
+ {
+  "item": "coop",
+  "label": "R's attitude toward interview",
+  "n_codes": 4,
+  "options": [
+   "friendly and interested",
+   "cooperative but not particularly interested",
+   "impatient and restless",
+   "hostile"
+  ]
+ },
+ {
+  "item": "comprend",
+  "label": "R's understanding of questions",
+  "n_codes": 3,
+  "options": [
+   "good",
+   "fair",
+   "poor"
+  ]
+ },
+ {
+  "item": "fechld",
+  "label": "Mother working doesn't hurt children",
+  "n_codes": 4,
+  "options": [
+   "strongly agree",
+   "agree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "fepresch",
+  "label": "Preschool kids suffer if mother works",
+  "n_codes": 4,
+  "options": [
+   "strongly agree",
+   "agree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "fefam",
+  "label": "Better for man to work, woman tend home",
+  "n_codes": 4,
+  "options": [
+   "strongly agree",
+   "agree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "racdif1",
+  "label": "Differences due to discrimination",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "racdif2",
+  "label": "Differences due to in-born learning ability",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "racdif3",
+  "label": "Differences due to lack of education",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "racdif4",
+  "label": "Differences due to lack of will",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "helppoor",
+  "label": "Should govt improve standard of living?",
+  "n_codes": 3,
+  "options": [
+   "government should help",
+   "agree with both",
+   "people should care for themselves"
+  ]
+ },
+ {
+  "item": "helpnot",
+  "label": "Should govt do more or less?",
+  "n_codes": 3,
+  "options": [
+   "government should do more",
+   "agree with both",
+   "government does too much"
+  ]
+ },
+ {
+  "item": "helpsick",
+  "label": "Should govt help pay for medical care?",
+  "n_codes": 3,
+  "options": [
+   "government should help",
+   "agree with both",
+   "people should care for themselves"
+  ]
+ },
+ {
+  "item": "helpblk",
+  "label": "Should govt aid Black people?",
+  "n_codes": 3,
+  "options": [
+   "government should help",
+   "agree with both",
+   "no special treatment"
+  ]
+ },
+ {
+  "item": "numgiven",
+  "label": "Number of persons mentioned",
+  "n_codes": 7,
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6 or more"
+  ]
+ },
+ {
+  "item": "race1",
+  "label": "Race of person number 1",
+  "n_codes": 5,
+  "options": [
+   "asian",
+   "black",
+   "hispanic",
+   "white",
+   "other"
+  ]
+ },
+ {
+  "item": "race2",
+  "label": "Race of person number 2",
+  "n_codes": 5,
+  "options": [
+   "asian",
+   "black",
+   "hispanic",
+   "white",
+   "other"
+  ]
+ },
+ {
+  "item": "race3",
+  "label": "Race of person number 3",
+  "n_codes": 5,
+  "options": [
+   "asian",
+   "black",
+   "hispanic",
+   "white",
+   "other"
+  ]
+ },
+ {
+  "item": "spouse1",
+  "label": "Person #1 is R's spouse",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "spouse2",
+  "label": "Person #2 is R's spouse",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "spouse3",
+  "label": "Person #3 is R's spouse",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "child1",
+  "label": "Person #1 is R's child",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "child2",
+  "label": "Person #2 is R's child",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "child3",
+  "label": "Person #3 is R's child",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "othfam1",
+  "label": "Person #1 is R's family member",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "othfam2",
+  "label": "Person #2 is R's family member",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "othfam3",
+  "label": "Person #3 is R's family member",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "cowork1",
+  "label": "Person #1 is R's coworker",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "cowork2",
+  "label": "Person #2 is R's coworker",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "cowork3",
+  "label": "Person #3 is R's coworker",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "memgrp1",
+  "label": "Person #1 is member of R's group",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "memgrp2",
+  "label": "Person #2 is member of R's group",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "memgrp3",
+  "label": "Person #3 is member of R's group",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "neighbr1",
+  "label": "Person #1 is R's neighbor",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "neighbr2",
+  "label": "Person #2 is R's neighbor",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "neighbr3",
+  "label": "Person #3 is R's neighbor",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "friend1",
+  "label": "Person #1 is R's friend",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "friend2",
+  "label": "Person #2 is R's friend",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "friend3",
+  "label": "Person #3 is R's friend",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "advisor1",
+  "label": "Person #1 is R's advisor",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "advisor2",
+  "label": "Person #2 is R's advisor",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "advisor3",
+  "label": "Person #3 is R's advisor",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "other1",
+  "label": "Person #1 is other type of acquaintance",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "other2",
+  "label": "Person #2 is other type of acquaintance",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "other3",
+  "label": "Person #3 is other type of acquaintance",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "talkto1",
+  "label": "How often Does R talk to person #1?",
+  "n_codes": 4,
+  "options": [
+   "almost every day",
+   "at least once a week",
+   "at least once a month",
+   "less than once a month"
+  ]
+ },
+ {
+  "item": "talkto2",
+  "label": "How often Does R talk to person #2?",
+  "n_codes": 4,
+  "options": [
+   "almost every day",
+   "at least once a week",
+   "at least once a month",
+   "less than once a month"
+  ]
+ },
+ {
+  "item": "talkto3",
+  "label": "How often Does R talk to person #3?",
+  "n_codes": 4,
+  "options": [
+   "almost every day",
+   "at least once a week",
+   "at least once a month",
+   "less than once a month"
+  ]
+ },
+ {
+  "item": "god",
+  "label": "R's confidence in the existence of god",
+  "n_codes": 6,
+  "options": [
+   "don't believe",
+   "don't know, no way to find out",
+   "higher power",
+   "believe sometimes",
+   "believe with doubts",
+   "no doubts"
+  ]
+ },
+ {
+  "item": "reborn",
+  "label": "Has R ever had a 'born again' experience",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "liveblks",
+  "label": "Neighborhood half black",
+  "n_codes": 5,
+  "options": [
+   "strongly favor",
+   "favor",
+   "neither favor nor oppose",
+   "oppose",
+   "strongly oppose"
+  ]
+ },
+ {
+  "item": "marblk",
+  "label": "close relative marry Black person",
+  "n_codes": 5,
+  "options": [
+   "strongly favor",
+   "favor",
+   "neither favor nor oppose",
+   "oppose",
+   "strongly oppose"
+  ]
+ },
+ {
+  "item": "marasian",
+  "label": "Close relative marry Asian",
+  "n_codes": 5,
+  "options": [
+   "strongly favor",
+   "favor",
+   "neither favor nor oppose",
+   "oppose",
+   "strongly oppose"
+  ]
+ },
+ {
+  "item": "marhisp",
+  "label": "Close relative marry Hispanic",
+  "n_codes": 5,
+  "options": [
+   "strongly favor",
+   "favor",
+   "neither favor nor oppose",
+   "oppose",
+   "strongly oppose"
+  ]
+ },
+ {
+  "item": "marwht",
+  "label": "R favor close relative marrying white person",
+  "n_codes": 5,
+  "options": [
+   "strongly favor",
+   "favor",
+   "neither favor nor oppose",
+   "oppose",
+   "strongly oppose"
+  ]
+ },
+ {
+  "item": "discaff",
+  "label": "Whites hurt by aff. action",
+  "n_codes": 3,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely"
+  ]
+ },
+ {
+  "item": "spwksup",
+  "label": "DOES SPOUSE SUPERVISE ANYONE",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "united",
+  "label": "Americans united or divided on values",
+  "n_codes": 2,
+  "options": [
+   "americans are united",
+   "americans are divided"
+  ]
+ },
+ {
+  "item": "impfinan",
+  "label": "Imp to R of financial security",
+  "n_codes": 5,
+  "options": [
+   "one of most important",
+   "very important",
+   "somewhat important",
+   "not too important",
+   "not at all important"
+  ]
+ },
+ {
+  "item": "impmar",
+  "label": "Imp to R of being married",
+  "n_codes": 5,
+  "options": [
+   "one of most important",
+   "very important",
+   "somewhat important",
+   "not too important",
+   "not at all important"
+  ]
+ },
+ {
+  "item": "impkids",
+  "label": "Imp to R of having children",
+  "n_codes": 5,
+  "options": [
+   "one of most important",
+   "very important",
+   "somewhat important",
+   "not too important",
+   "not at all important"
+  ]
+ },
+ {
+  "item": "impgod",
+  "label": "Imp to R of having faith in god",
+  "n_codes": 5,
+  "options": [
+   "one of most important",
+   "very important",
+   "somewhat important",
+   "not too important",
+   "not at all important"
+  ]
+ },
+ {
+  "item": "impthngs",
+  "label": "Imp to R of having nice things",
+  "n_codes": 5,
+  "options": [
+   "one of most important",
+   "very important",
+   "somewhat important",
+   "not too important",
+   "not at all important"
+  ]
+ },
+ {
+  "item": "impcultr",
+  "label": "Imp to R of being cultured",
+  "n_codes": 5,
+  "options": [
+   "one of most important",
+   "very important",
+   "somewhat important",
+   "not too important",
+   "not at all important"
+  ]
+ },
+ {
+  "item": "impjob",
+  "label": "Imp to R of having a fulfilling job",
+  "n_codes": 5,
+  "options": [
+   "one of most important",
+   "very important",
+   "somewhat important",
+   "not too important",
+   "not at all important"
+  ]
+ },
+ {
+  "item": "impself",
+  "label": "Imp to R of being self-sufficient",
+  "n_codes": 5,
+  "options": [
+   "one of most important",
+   "very important",
+   "somewhat important",
+   "not too important",
+   "not at all important"
+  ]
+ },
+ {
+  "item": "fejobaff",
+  "label": "For or against preferential hiring of women",
+  "n_codes": 4,
+  "options": [
+   "strongly favor",
+   "not strongly favor",
+   "not strongly oppose",
+   "strongly oppose"
+  ]
+ },
+ {
+  "item": "refpromo",
+  "label": "Refuse a job promotion?",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "refmorwk",
+  "label": "Take on additional paid work?",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "workless",
+  "label": "Cut back on your work?",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "noathome",
+  "label": "Miss a family occasion or holiday?",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "nonurse",
+  "label": "Unable to care for a sick child-relative?",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "discaffm",
+  "label": "A man won't get a job or promotion",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "very unlikely"
+  ]
+ },
+ {
+  "item": "discaffw",
+  "label": "A woman won't get a job or promotion",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "very unlikely"
+  ]
+ },
+ {
+  "item": "fehire",
+  "label": "Should hire and promote women",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "seriousp",
+  "label": "How serious X s situation is",
+  "n_codes": 4,
+  "options": [
+   "very serious",
+   "somewhat serious",
+   "not very serious",
+   "not at all serious"
+  ]
+ },
+ {
+  "item": "charactr",
+  "label": "How likely X s situation caused by bad character",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "imbalnce",
+  "label": "How likely X s situation caused by imbalance in brain",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "wayraise",
+  "label": "How likely X s situation caused by the way raised",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "stresses",
+  "label": "How likely X s situation caused by stress",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "genetics",
+  "label": "How likely X s situation caused by genetic problem",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "godswill",
+  "label": "How likely X s situation caused by god s will",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "upsdowns",
+  "label": "How likely X is experiencing normal ups-and-downs of life",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "breakdwn",
+  "label": "How likely X is experiencing nervous breakdown",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "mentlill",
+  "label": "How likely X is experiencing mental illness",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "physill",
+  "label": "How likely X is experiencing physical illness",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "viglabel",
+  "label": "How likely X is experiencing vignettes",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "dectreat",
+  "label": "How able is X to decide receive treatment",
+  "n_codes": 4,
+  "options": [
+   "very able",
+   "somewhat able",
+   "not very able",
+   "not able at all"
+  ]
+ },
+ {
+  "item": "decmoney",
+  "label": "How able is X to decide managing own money",
+  "n_codes": 4,
+  "options": [
+   "very able",
+   "somewhat able",
+   "not very able",
+   "not able at all"
+  ]
+ },
+ {
+  "item": "imprvown",
+  "label": "How likely X s situation will improve on its own",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "somewhat unlikely",
+   "not likely at all"
+  ]
+ },
+ {
+  "item": "imprvtrt",
+  "label": "How likely X s situation will improve with treatment",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "somewhat unlikely",
+   "not likely at all"
+  ]
+ },
+ {
+  "item": "vignei",
+  "label": "How willing R would have X as a neighbor",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "vigsoc",
+  "label": "How willing R would spend time socializing with X",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "vigfrnd",
+  "label": "How willing R would make friends with X",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "vigwork",
+  "label": "How willing R would work closely with X on a job",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "viggrp",
+  "label": "How willing R would have a group home for x",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "vigmar",
+  "label": "How willing R would have X marry in R's family",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "hurtoth",
+  "label": "How likely X violent toward other people",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "hurtself",
+  "label": "How likely X violent toward oneself",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "tlkfam",
+  "label": "X should talk to family and friends",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "tlkclrgy",
+  "label": "X should talk to religious leader",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "meddoc",
+  "label": "X should go to general medical doctor for help",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "mentldoc",
+  "label": "X should go to psychiatrist for help",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "mentloth",
+  "label": "X should go to other mental health professional for help",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "sphealer",
+  "label": "X should go to spiritual healer for help",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "selfhelp",
+  "label": "X should join a self-group with similar problem",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "otcmed",
+  "label": "X should take non-prescription medication",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "rxmed",
+  "label": "X should take prescription medication",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "mentlhos",
+  "label": "X should check into a mental hospital",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "mustdoc",
+  "label": "X should be forced to be examined at a clinic by law",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "mustmed",
+  "label": "X should be forced to take prescribed medication by law",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "musthosp",
+  "label": "X should be admitted to be hospitalized for treatment by law",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "dangrslf",
+  "label": "X should be admitted to be hospitalized for treatment if dangerous to x",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "dangroth",
+  "label": "X should be admitted to be hospitalized for treatment if dangerous to others",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "knwmhosp",
+  "label": "Know anyone who was in a hospital",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "knwpatnt",
+  "label": "Known anyone seeing a psychologist etc?",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "fammhneg",
+  "label": "R's family's negative attitudes about MH problems",
+  "n_codes": 4,
+  "options": [
+   "very much",
+   "somewhat",
+   "not very much",
+   "not at all"
+  ]
+ },
+ {
+  "item": "othmhneg",
+  "label": "R's other acquaintences negative attitudes about MH problems",
+  "n_codes": 4,
+  "options": [
+   "very much",
+   "somewhat",
+   "not very much",
+   "not at all"
+  ]
+ },
+ {
+  "item": "diagnosd",
+  "label": "R ever diagnosed with MH problem",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "mhtreatd",
+  "label": "R ever treated for MH problem",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "relpersn",
+  "label": "R consider self a religious person",
+  "n_codes": 4,
+  "options": [
+   "very religious",
+   "moderately religious",
+   "slightly religious",
+   "not religious at all"
+  ]
+ },
+ {
+  "item": "sprtprsn",
+  "label": "R consider self a spiritual person",
+  "n_codes": 4,
+  "options": [
+   "very spiritual",
+   "moderately spiritual",
+   "slightly spiritual",
+   "not spiritual at all"
+  ]
+ },
+ {
+  "item": "aimofart",
+  "label": "Aim of art",
+  "n_codes": 2,
+  "options": [
+   "art works should celebrate what is most beautiful about the world and the human spirit",
+   "art works should freely express an artist\u2019s deepest thoughts and emotions, good or bad"
+  ]
+ },
+ {
+  "item": "othlang",
+  "label": "Can R speak language other than English/Spanish",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "othlang1",
+  "label": "What other languages Does R speak",
+  "n_codes": 7,
+  "options": [
+   "english",
+   "spanish",
+   "french",
+   "chinese",
+   "italian",
+   "german",
+   "other"
+  ]
+ },
+ {
+  "item": "spklang",
+  "label": "How well Does R speak other language",
+  "n_codes": 4,
+  "options": [
+   "very well",
+   "well",
+   "not well",
+   "poorly/hardly at all"
+  ]
+ },
+ {
+  "item": "letinhsp",
+  "label": "Immigration from Latin America should be increased",
+  "n_codes": 5,
+  "options": [
+   "increased a lot",
+   "increased a little",
+   "left the same as it is now",
+   "decreased a little",
+   "decreased a lot"
+  ]
+ },
+ {
+  "item": "letinasn",
+  "label": "Immigration from Asia should be increased",
+  "n_codes": 5,
+  "options": [
+   "increased a lot",
+   "increased a little",
+   "left the same as it is now",
+   "decreased a little",
+   "decreased a lot"
+  ]
+ },
+ {
+  "item": "compuse",
+  "label": "R use computer",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "huclean",
+  "label": "R HU interior cleanliness rating",
+  "n_codes": 6,
+  "options": [
+   "very clean",
+   "clean",
+   "so-so",
+   "not very clean",
+   "dirty",
+   "interviewer never saw interior of the respondent's hu"
+  ]
+ },
+ {
+  "item": "satdemoc",
+  "label": "R satisfied with way democracy works in America",
+  "n_codes": 4,
+  "options": [
+   "very satisfied",
+   "fairly satisfied",
+   "not very satisfied",
+   "not at all satisfied"
+  ]
+ },
+ {
+  "item": "disrspct",
+  "label": "R is treated with less courtesy or respect than others",
+  "n_codes": 6,
+  "options": [
+   "almost every day",
+   "at least once a week",
+   "a few times a month",
+   "a few times a year",
+   "less than once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "poorserv",
+  "label": "R recieves poorer service in restaurants or stores",
+  "n_codes": 6,
+  "options": [
+   "almost every day",
+   "at least once a week",
+   "a few times a month",
+   "a few times a year",
+   "less than once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "notsmart",
+  "label": "People act as if they think R is not smart",
+  "n_codes": 6,
+  "options": [
+   "almost every day",
+   "at least once a week",
+   "a few times a month",
+   "a few times a year",
+   "less than once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "afraidof",
+  "label": "People act as if they are afraid of R",
+  "n_codes": 6,
+  "options": [
+   "almost every day",
+   "at least once a week",
+   "a few times a month",
+   "a few times a year",
+   "less than once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "threaten",
+  "label": "R is threatened or harassed",
+  "n_codes": 6,
+  "options": [
+   "almost every day",
+   "at least once a week",
+   "a few times a month",
+   "a few times a year",
+   "less than once a year",
+   "never"
+  ]
+ },
+ {
+  "item": "abmoral",
+  "label": "R has a moral opposition to abortion",
+  "n_codes": 3,
+  "options": [
+   "morally opposed",
+   "not morally opposed",
+   "it depends"
+  ]
+ },
+ {
+  "item": "abhelp1",
+  "label": "R would help with arrangements for abortion",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "abhelp2",
+  "label": "R would help with paying for abortion",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "abhelp3",
+  "label": "R would help with paying for abortion-related other costs",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "abhelp4",
+  "label": "R would help with emotional support for abortion",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "chldprob",
+  "label": "How serious R consider his or her problem",
+  "n_codes": 4,
+  "options": [
+   "very serious",
+   "somewhat serious",
+   "not very serious",
+   "not at all serious"
+  ]
+ },
+ {
+  "item": "badchar",
+  "label": "Situation caused by own bad character",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "chembal",
+  "label": "Situation by a chemical imbalance in the brain",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "stressfl",
+  "label": "Situation caused by stressful circumstances",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "geneprob",
+  "label": "Situation caused by a genetic or inherited problem",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "raised",
+  "label": "Situation caused by the way he or she was raised",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "violtv",
+  "label": "Situation caused by watching violent TV",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "discipln",
+  "label": "Situation caused by lacking discipline in the",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "allergic",
+  "label": "Situation caused by food or chemical allergies",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "imprvdis",
+  "label": "Situation will improve with strict discipline",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "imprveat",
+  "label": "Situation will improve with some changes in diet",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "imprvmed",
+  "label": "Situation will improve with medical treatment",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "nextdoor",
+  "label": "How willing R move next door to child's family",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "spendeve",
+  "label": "How willing R spend evening with child's family",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "chldfrnd",
+  "label": "How willing R have children make friends with ch",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "chldsch",
+  "label": "How willing R have child in same class of R's ch",
+  "n_codes": 4,
+  "options": [
+   "definitely willing",
+   "probably willing",
+   "probably unwilling",
+   "definitely unwilling"
+  ]
+ },
+ {
+  "item": "adfam",
+  "label": "Would R get advice from family if child was R's",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "adtch",
+  "label": "Would R get advice from teachers child if was R's",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "addoc",
+  "label": "Would go to a medical doctor if he was R's child",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "adcoumed",
+  "label": "Would R have child on med by counseloR's advice",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "adpsy",
+  "label": "Would R go to a psychiatrist if child was R's",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "grwingup",
+  "label": "Is child experiencing normal ups and downs",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not likely at all"
+  ]
+ },
+ {
+  "item": "mntlill",
+  "label": "Is child experiencing a mental illness",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not likely at all"
+  ]
+ },
+ {
+  "item": "violpeop",
+  "label": "Would child do something violent toward other",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not likely at all"
+  ]
+ },
+ {
+  "item": "violself",
+  "label": "Would child do something violent to own self",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not likely at all"
+  ]
+ },
+ {
+  "item": "mhunsure",
+  "label": "People like X are unpredictable",
+  "n_codes": 4,
+  "options": [
+   "strongly agree",
+   "agree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "mhtrtot2",
+  "label": "R knows someone who received treatment for mental health",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "polint",
+  "label": "Your interest in politics",
+  "n_codes": 5,
+  "options": [
+   "very interested",
+   "fairly interested",
+   "somewhat interested",
+   "not very interested",
+   "not at all interested"
+  ]
+ },
+ {
+  "item": "poleff11",
+  "label": "Don't have any say about what the government does",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "cctv",
+  "label": "Civil liberties - video surveillance",
+  "n_codes": 4,
+  "options": [
+   "definitely should have the right",
+   "probably should have the right",
+   "probably should not have the right",
+   "definitely should not have the right"
+  ]
+ },
+ {
+  "item": "posslq",
+  "label": "Does R have marital partner",
+  "n_codes": 4,
+  "options": [
+   "i am married and living in the same household as my husband or wife",
+   "i am living as married and my partner and i together live in the same household",
+   "i have a husband or wife or steady partner, but we don't live in the same household",
+   "i don't have a steady partner"
+  ]
+ },
+ {
+  "item": "posslqy",
+  "label": "Relationship status and cohabitation or not",
+  "n_codes": 4,
+  "options": [
+   "i am married and living in the same household as my husband or wife",
+   "i have a steady partner, and we live in the same household",
+   "i have a husband or wife or steady partner, but we don't live in the same household",
+   "i don't have a steady partner"
+  ]
+ },
+ {
+  "item": "marcohab",
+  "label": "Cohabitation status",
+  "n_codes": 4,
+  "options": [
+   "married",
+   "not married, cohabitating partner",
+   "not married, no cohabitating partner",
+   "not married, missing on cohabitating"
+  ]
+ },
+ {
+  "item": "goodlife",
+  "label": "Standard of living of R will improve",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "marsame",
+  "label": "Homosexual couples should have the right to marry one another",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "meovrwrk",
+  "label": "Men hurt family when focus on work too much",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "localnum",
+  "label": "Number of employees: R's work site",
+  "n_codes": 7,
+  "options": [
+   "1-9",
+   "10-49",
+   "50-99",
+   "100-499",
+   "500-999",
+   "1,000-1,999",
+   "2,000+"
+  ]
+ },
+ {
+  "item": "befair",
+  "label": "How often do you think people take advantage",
+  "n_codes": 4,
+  "options": [
+   "try to take advantage almost all of the time",
+   "try to take advantage most of the time",
+   "try to be fair most of the time",
+   "try to be fair almost all of the time"
+  ]
+ },
+ {
+  "item": "cantrust",
+  "label": "People can be trusted or cant be too careful",
+  "n_codes": 4,
+  "options": [
+   "people can almost always be trusted",
+   "people can usually be trusted",
+   "you usually can't be too careful in dealing with people",
+   "you almost always can't be too careful in dealing with people"
+  ]
+ },
+ {
+  "item": "religinf",
+  "label": "The U.S. would be a better country if religion had less influence",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "ambornin",
+  "label": "How important to have been born in America",
+  "n_codes": 4,
+  "options": [
+   "very important",
+   "fairly important",
+   "not very important",
+   "not important at all"
+  ]
+ },
+ {
+  "item": "amcit",
+  "label": "How important to have American citizenship",
+  "n_codes": 4,
+  "options": [
+   "very important",
+   "fairly important",
+   "not very important",
+   "not important at all"
+  ]
+ },
+ {
+  "item": "amchrstn",
+  "label": "How important to be a christian",
+  "n_codes": 4,
+  "options": [
+   "very important",
+   "fairly important",
+   "not very important",
+   "not important at all"
+  ]
+ },
+ {
+  "item": "amgovt",
+  "label": "How important to respect America's laws etc",
+  "n_codes": 4,
+  "options": [
+   "very important",
+   "fairly important",
+   "not very important",
+   "not important at all"
+  ]
+ },
+ {
+  "item": "amfeel",
+  "label": "How important to feel American",
+  "n_codes": 4,
+  "options": [
+   "very important",
+   "fairly important",
+   "not very important",
+   "not important at all"
+  ]
+ },
+ {
+  "item": "amcitizn",
+  "label": "Agree I would rather be a citizen of America",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "amshamed",
+  "label": "Agree there are things make me ashamed",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "belikeus",
+  "label": "Agree better if people were more like Americans",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "ambetter",
+  "label": "Agree America is a better country",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "ifwrong",
+  "label": "Agree people should support their country",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "prouddem",
+  "label": "How proud the way democracy works",
+  "n_codes": 4,
+  "options": [
+   "very proud",
+   "somewhat proud",
+   "not very proud",
+   "not proud at all"
+  ]
+ },
+ {
+  "item": "proudpol",
+  "label": "How proud its political influence in the world",
+  "n_codes": 4,
+  "options": [
+   "very proud",
+   "somewhat proud",
+   "not very proud",
+   "not proud at all"
+  ]
+ },
+ {
+  "item": "proudeco",
+  "label": "How proud America's economic achievements",
+  "n_codes": 4,
+  "options": [
+   "very proud",
+   "somewhat proud",
+   "not very proud",
+   "not proud at all"
+  ]
+ },
+ {
+  "item": "proudspt",
+  "label": "How proud its achievements in sports",
+  "n_codes": 4,
+  "options": [
+   "very proud",
+   "somewhat proud",
+   "not very proud",
+   "not proud at all"
+  ]
+ },
+ {
+  "item": "proudart",
+  "label": "How proud its achievements in the arts & lit.",
+  "n_codes": 4,
+  "options": [
+   "very proud",
+   "somewhat proud",
+   "not very proud",
+   "not proud at all"
+  ]
+ },
+ {
+  "item": "proudhis",
+  "label": "How proud its history",
+  "n_codes": 4,
+  "options": [
+   "very proud",
+   "somewhat proud",
+   "not very proud",
+   "not proud at all"
+  ]
+ },
+ {
+  "item": "imports",
+  "label": "America should limit the import",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "wrldgovt",
+  "label": "International bodies should enforce environment",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "amownway",
+  "label": "America should follow its own interests",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "forland",
+  "label": "ForeigneR's should not be allowed to buy land",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "amtv",
+  "label": "TV should give preference to American films",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "immcrime",
+  "label": "Immigrants increase crime rates",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "immameco",
+  "label": "Immigrants good for America",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "immjobs",
+  "label": "Immigrants take jobs away",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "letin1",
+  "label": "Number of immigrants to America nowadays should be",
+  "n_codes": 5,
+  "options": [
+   "increased a lot",
+   "increased a little",
+   "remain the same as it is",
+   "reduced a little",
+   "reduced a lot"
+  ]
+ },
+ {
+  "item": "citizen",
+  "label": "Are you a citizen of America?",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "amancstr",
+  "label": "How important to have American ancestry",
+  "n_codes": 4,
+  "options": [
+   "very important",
+   "fairly important",
+   "not very important",
+   "not important at all"
+  ]
+ },
+ {
+  "item": "intlincs",
+  "label": "Large intl company damage to local business",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "letin1a",
+  "label": "Number of immigrants nowadays should be",
+  "n_codes": 5,
+  "options": [
+   "increased a lot",
+   "increased a little",
+   "remain the same as it is",
+   "reduced a little",
+   "reduced a lot"
+  ]
+ },
+ {
+  "item": "immassim",
+  "label": "What statement about immigrants matches view",
+  "n_codes": 3,
+  "options": [
+   "immigrants should retain their culture of origin and not adopt american culture",
+   "immigrants should retain their culture of origin and also adopt american culture",
+   "immigrants should give up their culture of origin and adopt american culture"
+  ]
+ },
+ {
+  "item": "obeylaws",
+  "label": "How important always to obey laws",
+  "n_codes": 2,
+  "options": [
+   "not at all important",
+   "very important"
+  ]
+ },
+ {
+  "item": "watchgov",
+  "label": "How important to keep watch on action of govt",
+  "n_codes": 2,
+  "options": [
+   "not at all important",
+   "very important"
+  ]
+ },
+ {
+  "item": "helpusa",
+  "label": "How important to help worse off ppl in America",
+  "n_codes": 2,
+  "options": [
+   "not at all important",
+   "very important"
+  ]
+ },
+ {
+  "item": "solok",
+  "label": "How important: citizens have adequate standard of living",
+  "n_codes": 2,
+  "options": [
+   "not at all important",
+   "very important"
+  ]
+ },
+ {
+  "item": "rghtsmin",
+  "label": "How important: govt protect right of minorities",
+  "n_codes": 2,
+  "options": [
+   "not at all important",
+   "very important"
+  ]
+ },
+ {
+  "item": "polopts",
+  "label": "How important: ppl given chance to participate in decsns",
+  "n_codes": 2,
+  "options": [
+   "not at all important",
+   "very important"
+  ]
+ },
+ {
+  "item": "poleff18",
+  "label": "Govt do not care much what ppl like R think",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "corruptn",
+  "label": "How widespread corruption is in pub service in America",
+  "n_codes": 5,
+  "options": [
+   "hardly anyone is involved",
+   "a small number of people are involved",
+   "a moderate number of people are involved",
+   "a lot of people are involved",
+   "almost everyone is involved"
+  ]
+ },
+ {
+  "item": "polnews",
+  "label": "How often use media to get political news",
+  "n_codes": 7,
+  "options": [
+   "several times a day",
+   "once a day",
+   "5-6 days a week",
+   "3-4 days a week",
+   "1-2 days a week",
+   "less than 1 day a week",
+   "never"
+  ]
+ },
+ {
+  "item": "sexsex",
+  "label": "Sex of sex partner's in last year",
+  "n_codes": 3,
+  "options": [
+   "exclusively male",
+   "both male and female",
+   "exclusively female"
+  ]
+ },
+ {
+  "item": "sexfreq",
+  "label": "Frequency of sex during last year",
+  "n_codes": 7,
+  "options": [
+   "not at all",
+   "once or twice",
+   "once a month",
+   "2 or 3 times a month",
+   "about once a week",
+   "2 or 3 times a week",
+   "more than 3 times a week"
+  ]
+ },
+ {
+  "item": "hivtest",
+  "label": "Have you ever been tested for HIV",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "sexornt",
+  "label": "Sexual orientation",
+  "n_codes": 3,
+  "options": [
+   "gay, lesbian, or homosexual",
+   "bisexual",
+   "heterosexual or straight"
+  ]
+ },
+ {
+  "item": "vetyears",
+  "label": "Years in armed forces",
+  "n_codes": 5,
+  "options": [
+   "no active duty",
+   "yes, less than 2 years",
+   "yes, 2-4 years",
+   "yes, more than 4 years",
+   "some, don't know how long"
+  ]
+ },
+ {
+  "item": "dwelling",
+  "label": "Type of structure",
+  "n_codes": 5,
+  "options": [
+   "trailer",
+   "single family house",
+   "multifamily house",
+   "apartment",
+   "other"
+  ]
+ },
+ {
+  "item": "dwelown",
+  "label": "Does R own or rent home?",
+  "n_codes": 3,
+  "options": [
+   "own or is buying",
+   "pays rent",
+   "other"
+  ]
+ },
+ {
+  "item": "dwelown16",
+  "label": "DID Rs FAMILY OWN OR RENT HOME WHEN R WAS AGE 16",
+  "n_codes": 3,
+  "options": [
+   "owned or was buying",
+   "paid rent",
+   "other"
+  ]
+ },
+ {
+  "item": "worda",
+  "label": "Word a",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordb",
+  "label": "Word b",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordc",
+  "label": "Word c",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordd",
+  "label": "Word d",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "worde",
+  "label": "Word e",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordf",
+  "label": "Word f",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordg",
+  "label": "Word g",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordh",
+  "label": "Word h",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordi",
+  "label": "Word i",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordj",
+  "label": "Word j",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "hhrace",
+  "label": "Race of household",
+  "n_codes": 5,
+  "options": [
+   "white",
+   "black",
+   "american indian",
+   "asiatic, oriental",
+   "other, mixed, not able to observe"
+  ]
+ },
+ {
+  "item": "famgen",
+  "label": "Number of family generations in household",
+  "n_codes": 5,
+  "options": [
+   "one generation",
+   "two generations, children",
+   "two generations, parents",
+   "two generations, grandchild(ren)",
+   "three or more generations"
+  ]
+ },
+ {
+  "item": "rplace",
+  "label": "R's relationship to household head",
+  "n_codes": 5,
+  "options": [
+   "head of household",
+   "spouse",
+   "child (natural, adopted, step)",
+   "other relative",
+   "non-relative"
+  ]
+ },
+ {
+  "item": "visitors",
+  "label": "Number of visitoR's in household",
+  "n_codes": 3,
+  "options": [
+   "no visitors",
+   "1 visitor",
+   "2 visitors"
+  ]
+ },
+ {
+  "item": "whoelse1",
+  "label": "Presence of others: children under six",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "whoelse2",
+  "label": "Presence of others: older children",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "whoelse3",
+  "label": "Presence of others: spouse partner",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "whoelse4",
+  "label": "Presence of others: other relatives",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "whoelse5",
+  "label": "Presence of others: other adults",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "whoelse6",
+  "label": "Presence of others: no one",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "feeused",
+  "label": "Fee given to get case",
+  "n_codes": 3,
+  "options": [
+   "yes, money",
+   "yes, other (flowers, food, etc.)",
+   "no"
+  ]
+ },
+ {
+  "item": "consent",
+  "label": "Participation/recording consent",
+  "n_codes": 2,
+  "options": [
+   "r consents to recording interview",
+   "r consents to participate in the survey, but does not want to be recorded"
+  ]
+ },
+ {
+  "item": "adminconsent",
+  "label": "Consent to possible data linkage",
+  "n_codes": 2,
+  "options": [
+   "r consents to possible data linkage",
+   "r does not consent to possible data linkage"
+  ]
+ },
+ {
+  "item": "letdie1y",
+  "label": "Allow incurable patients to die (form 2)",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "issp",
+  "label": "Filter for ISSP cases",
+  "n_codes": 2,
+  "options": [
+   "r did issp",
+   "r did not do issp"
+  ]
+ },
+ {
+  "item": "hlthstrt",
+  "label": "Would you say the respondent? health in general is excellent, good, fair, or poo",
+  "n_codes": 4,
+  "options": [
+   "excellent",
+   "good",
+   "fair",
+   "poor"
+  ]
+ },
+ {
+  "item": "kidsinhh",
+  "label": "Does interviewer believe that there are children under the age of 15 present at",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "respond",
+  "label": "Estimate of the probability that this household will respond to the survey",
+  "n_codes": 2,
+  "options": [
+   "high",
+   "low"
+  ]
+ },
+ {
+  "item": "incuspop",
+  "label": "Estimated income status of housing unit",
+  "n_codes": 3,
+  "options": [
+   "higher than average",
+   "average",
+   "lower than average"
+  ]
+ },
+ {
+  "item": "neisafe",
+  "label": "How safe interviewer thinks neighborhood is",
+  "n_codes": 4,
+  "options": [
+   "very safe",
+   "somewhat safe",
+   "somewhat unsafe",
+   "very unsafe"
+  ]
+ },
+ {
+  "item": "rlooks",
+  "label": "R physical attractiveness rating",
+  "n_codes": 5,
+  "options": [
+   "very unattractive",
+   "unattractive",
+   "about average",
+   "attractive",
+   "very attractive"
+  ]
+ },
+ {
+  "item": "rgroomed",
+  "label": "R grooming rating",
+  "n_codes": 5,
+  "options": [
+   "very poorly groomed",
+   "poorly groomed",
+   "about average",
+   "well groomed",
+   "very well groomed"
+  ]
+ },
+ {
+  "item": "mawrkslf2",
+  "label": "At this job, was mother (or youngest same-sex parent) an employee, self-employed",
+  "n_codes": 3,
+  "options": [
+   "employee",
+   "self-employed without employees",
+   "self-employed with employees"
+  ]
+ },
+ {
+  "item": "mawrkslffam",
+  "label": "Mother (or youngest same-sex parent) owned family business or farm",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "ethworld1",
+  "label": "From what part of the world did your ancestors come?  Europe",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "ethworld2",
+  "label": "From what part of the world did your ancestors come?  Africa",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "ethworld3",
+  "label": "From what part of the world did your ancestors come?  Asia",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "ethworld4",
+  "label": "From what part of the world did your ancestors come?  Middle East",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "ethworld5",
+  "label": "From what part of the world did your ancestors come?  South America",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "ethworld6",
+  "label": "From what part of the world did your ancestors come?  Central America",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "ethworld7",
+  "label": "From what part of the world did your ancestors come?  North America",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "ethworld8",
+  "label": "From what part of the world did your ancestors come?  Caribbean",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "ethworld9",
+  "label": "From what part of the world did your ancestors come?  Oceania",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "wrkgovt1",
+  "label": "Govt employee",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "wrkgovt2",
+  "label": "Private employee",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "spkathy",
+  "label": "Allow anti-religionist to speak Y",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to speak",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "libathy",
+  "label": "Allow anti-religionist to teach Y",
+  "n_codes": 2,
+  "options": [
+   "remove",
+   "not remove"
+  ]
+ },
+ {
+  "item": "spkracy",
+  "label": "Allow racist to speak y",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to speak",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "libracy",
+  "label": "Allow racists book in library Y",
+  "n_codes": 2,
+  "options": [
+   "remove",
+   "not remove"
+  ]
+ },
+ {
+  "item": "spkcomy",
+  "label": "Allow communist to speak Y",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to speak",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "colcomy",
+  "label": "Should communist teacher be fired Y",
+  "n_codes": 2,
+  "options": [
+   "yes, fired",
+   "not fired"
+  ]
+ },
+ {
+  "item": "libcomy",
+  "label": "Allow communists book in library Y",
+  "n_codes": 2,
+  "options": [
+   "remove",
+   "not remove"
+  ]
+ },
+ {
+  "item": "spkmslmy",
+  "label": "Allow muslim clergymen preaching hatred of the us Y",
+  "n_codes": 2,
+  "options": [
+   "yes, allowed to speak",
+   "not allowed"
+  ]
+ },
+ {
+  "item": "libmslmy",
+  "label": "Allow anti-American muslim clergymen's books in library Y",
+  "n_codes": 2,
+  "options": [
+   "remove",
+   "not remove"
+  ]
+ },
+ {
+  "item": "polhitoky",
+  "label": "Ever approve of police striking citizen Y",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "polabusey",
+  "label": "Citizen said vulgar or obscene things Y",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "polattaky",
+  "label": "Citizen attacking policeman with fists Y",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "raceacs1",
+  "label": "White",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs2",
+  "label": "Black",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs3",
+  "label": "American Indian or Alaska Native",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs4",
+  "label": "Asian Indian",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs5",
+  "label": "Chinese",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs6",
+  "label": "Filipino",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs7",
+  "label": "Japanese",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs8",
+  "label": "Korean",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs9",
+  "label": "Vietnamese",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs10",
+  "label": "Other Asian",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs14",
+  "label": "Native Hawaiian or Other Pacific Islander",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs15",
+  "label": "Some other race",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "raceacs16",
+  "label": "Hispanic",
+  "n_codes": 2,
+  "options": [
+   "no",
+   "yes"
+  ]
+ },
+ {
+  "item": "maborn",
+  "label": "Was R's mother (or youngest same-sex parent) born in this country?",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "sexbirth1",
+  "label": "R's sex assigned at birth (2021)",
+  "n_codes": 2,
+  "options": [
+   "male",
+   "female"
+  ]
+ },
+ {
+  "item": "norelgsp",
+  "label": "Is R atheist or agnostic",
+  "n_codes": 4,
+  "options": [
+   "atheist",
+   "agnostic",
+   "something else",
+   "nothing in particular"
+  ]
+ },
+ {
+  "item": "hivafraid",
+  "label": "Afraid to be around a person with HIV",
+  "n_codes": 4,
+  "options": [
+   "strongly disagree",
+   "somewhat disagree",
+   "somewhat agree",
+   "strongly agree"
+  ]
+ },
+ {
+  "item": "hivimmrl",
+  "label": "People with HIV have participated in immoral activities",
+  "n_codes": 4,
+  "options": [
+   "strongly disagree",
+   "somewhat disagree",
+   "somewhat agree",
+   "strongly agree"
+  ]
+ },
+ {
+  "item": "hivdscrm",
+  "label": "There is a lot of discrimination against people with HIV",
+  "n_codes": 4,
+  "options": [
+   "strongly disagree",
+   "somewhat disagree",
+   "somewhat agree",
+   "strongly agree"
+  ]
+ },
+ {
+  "item": "ptnrornt",
+  "label": "Recent partner's sexual orientation",
+  "n_codes": 4,
+  "options": [
+   "gay, lesbian, or homosexual",
+   "bisexual",
+   "heterosexual or straight",
+   "i have never had a sexual partner"
+  ]
+ },
+ {
+  "item": "ptnrsxbrth",
+  "label": "Recent partner's sex at birth",
+  "n_codes": 2,
+  "options": [
+   "male",
+   "female"
+  ]
+ },
+ {
+  "item": "relitenv",
+  "label": "Strength of affiliation (with volunteered response on web)",
+  "n_codes": 4,
+  "options": [
+   "strong",
+   "not very strong",
+   "somewhat strong (phone mode only: volunteered)",
+   "no religion"
+  ]
+ },
+ {
+  "item": "biblev",
+  "label": "Feelings about the bible (with volunteered response on web)",
+  "n_codes": 4,
+  "options": [
+   "word of god",
+   "inspired word",
+   "ancient book",
+   "other (phone mode only: volunteered)"
+  ]
+ },
+ {
+  "item": "postlifev",
+  "label": "Belief in life after death (with volunteered response on web)",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "racopennv",
+  "label": "Vote on open housing law (no volunteered response on web)",
+  "n_codes": 2,
+  "options": [
+   "first law",
+   "second law"
+  ]
+ },
+ {
+  "item": "getaheadnv",
+  "label": "Opinion of how people get ahead (no volunteered response on web)",
+  "n_codes": 2,
+  "options": [
+   "hard work most important",
+   "luck most important"
+  ]
+ },
+ {
+  "item": "relitennv",
+  "label": "Strength of affiliation (no volunteered response on web)",
+  "n_codes": 3,
+  "options": [
+   "strong",
+   "not very strong",
+   "no religion"
+  ]
+ },
+ {
+  "item": "biblenv",
+  "label": "Feelings about the bible (no volunteered response on web)",
+  "n_codes": 3,
+  "options": [
+   "word of god",
+   "inspired word",
+   "ancient book"
+  ]
+ },
+ {
+  "item": "postlifenv",
+  "label": "Belief in life after death (no volunteered response on web)",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "childsinhh",
+  "label": "TOTAL CHILDREN IN HH (HOUSEHOLD COMPOSITION VERSION)",
+  "n_codes": 7,
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6 or more"
+  ]
+ },
+ {
+  "item": "whatsp2",
+  "label": "CLASSIFY PLACE WHERE SPOUSE WORKS",
+  "n_codes": 4,
+  "options": [
+   "manufacturing",
+   "wholesale trade",
+   "retail trade",
+   "other (agriculture, construction, service, government, etc.)"
+  ]
+ },
+ {
+  "item": "whatpa2",
+  "label": "How would you classify the place where father (or oldest same-sex parent) worked",
+  "n_codes": 4,
+  "options": [
+   "manufacturing",
+   "wholesale trade",
+   "retail trade",
+   "other (agriculture, construction, service, government, etc.)"
+  ]
+ },
+ {
+  "item": "whatma2",
+  "label": "How would you classify the place where mother (or youngest same-sex parent) work",
+  "n_codes": 4,
+  "options": [
+   "manufacturing",
+   "wholesale trade",
+   "retail trade",
+   "other (agriculture, construction, service, government, etc.)"
+  ]
+ },
+ {
+  "item": "whatslf2",
+  "label": "How would you classify the place where you {#whatslf2fill}? Was this mainly...?",
+  "n_codes": 4,
+  "options": [
+   "manufacturing",
+   "wholesale trade",
+   "retail trade",
+   "other (agriculture, construction, service, government, etc.)"
+  ]
+ },
+ {
+  "item": "adoptus",
+  "label": "IMMIGRANTS LIVING IN US SHOULD ADOPT US CULTURE",
+  "n_codes": 3,
+  "options": [
+   "adopt u.s. culture",
+   "keep their own culture",
+   "do both"
+  ]
+ },
+ {
+  "item": "immfate",
+  "label": "FATE OF ILLEGAL IMMIGRANTS",
+  "n_codes": 3,
+  "options": [
+   "become citizens",
+   "become permanent legal residents",
+   "identified and deported"
+  ]
+ },
+ {
+  "item": "vote20",
+  "label": "REMEMBER IF VOTED IN 2020 ELECTION",
+  "n_codes": 3,
+  "options": [
+   "voted",
+   "did not vote",
+   "ineligible"
+  ]
+ },
+ {
+  "item": "pres20",
+  "label": "VOTED TRUMP OR BIDEN",
+  "n_codes": 4,
+  "options": [
+   "biden",
+   "trump",
+   "other candidate",
+   "didn't vote for president"
+  ]
+ },
+ {
+  "item": "if20who",
+  "label": "WHO YOU WOULD HAVE VOTED FOR IN 2020",
+  "n_codes": 4,
+  "options": [
+   "biden",
+   "trump",
+   "other",
+   "don't know/can't remember"
+  ]
+ },
+ {
+  "item": "wordk",
+  "label": "WORD K",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordl",
+  "label": "WORD L",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "wordn",
+  "label": "WORD N",
+  "n_codes": 2,
+  "options": [
+   "incorrect answer",
+   "correct answer"
+  ]
+ },
+ {
+  "item": "svyenjoy",
+  "label": "ENJOY TAKING SURVEYS",
+  "n_codes": 5,
+  "options": [
+   "a great deal",
+   "a good bit",
+   "some",
+   "a little",
+   "not at all"
+  ]
+ },
+ {
+  "item": "svyid1",
+  "label": "WILLINGNESS TO USE VIDEO CHAT",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "svyid2",
+  "label": "WILLINGNES FOR IN-PERSON SURVEY",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "gestate",
+  "label": "ABORTION LEGAL PAST 4.5 MONTHS",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "racdif1x",
+  "label": "DIFFERENCES DUE TO DISCRIMINATION (LONGER INTRO)",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "racdif2x",
+  "label": "DIFFERENCES DUE TO IN-BORN LEARNING ABILITY",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "racdif3x",
+  "label": "DIFFERENCES DUE TO LACK OF EDUCATION",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "racdif4x",
+  "label": "DIFFERENCES DUE TO LACK OF WILL",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "modesequence",
+  "label": "INITIAL MODE OF CONTACT FOR RESPONDENT",
+  "n_codes": 2,
+  "options": [
+   "in-person first",
+   "web-first"
+  ]
+ },
+ {
+  "item": "babies_exp",
+  "label": "KIDS 0-6 IN HH(EXPERIMENTAL VERSION)",
+  "n_codes": 3,
+  "options": [
+   "0",
+   "1",
+   "2 or more"
+  ]
+ },
+ {
+  "item": "preteen_exp",
+  "label": "KIDS 7-12 IN HH(EXPERIMENTAL VERSION)",
+  "n_codes": 3,
+  "options": [
+   "0",
+   "1",
+   "2 or more"
+  ]
+ },
+ {
+  "item": "teens_exp",
+  "label": "KIDS 13-17 IN HH(EXPERIMENTAL VERSION)",
+  "n_codes": 3,
+  "options": [
+   "0",
+   "1",
+   "2 or more"
+  ]
+ },
+ {
+  "item": "childs_exp",
+  "label": "TOTAL CHILDREN UNDER 18 IN HH (EXPERIMENTAL VERISON)",
+  "n_codes": 7,
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3",
+   "4",
+   "5",
+   "6 or more"
+  ]
+ },
+ {
+  "item": "famgen_exp",
+  "label": "NUMBER OF FAMILY GENERATIONS IN HOUSEHOLD (EXPERIMENTAL VERSION)",
+  "n_codes": 5,
+  "options": [
+   "one generation",
+   "two generations, children",
+   "two generations, parents",
+   "two generations, grandchild(ren)",
+   "three or more generations"
+  ]
+ },
+ {
+  "item": "nexteligible",
+  "label": "GSS NEXT FOLLOW-ON ELIGIBLE",
+  "n_codes": 2,
+  "options": [
+   "not eligible for follow-on",
+   "eligible for follow-on"
+  ]
+ },
+ {
+  "item": "conlabory",
+  "label": "Confidence in labor unions",
+  "n_codes": 3,
+  "options": [
+   "a great deal",
+   "only some",
+   "hardly any"
+  ]
+ },
+ {
+  "item": "racdif5",
+  "label": "differences due mainly to unbringing",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "marsamey",
+  "label": "Same-sex couples should have the right to marry one another",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "lkelyvot",
+  "label": "LIKELIHOOD TO VOTE IN 2024 ELECTION",
+  "n_codes": 5,
+  "options": [
+   "extremely likely",
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "whovote24a",
+  "label": "VOTING INTENTION IN 2024 ELECTION (POST JULY 25 2024)",
+  "n_codes": 4,
+  "options": [
+   "donald trump",
+   "kamala harris",
+   "someone else",
+   "probably not vote"
+  ]
+ },
+ {
+  "item": "econstat",
+  "label": "WHAT DO YOU THINK ABOUT THE STATE OF THE ECONOMY THESE DAYS IN THE UNITED STATES",
+  "n_codes": 5,
+  "options": [
+   "very good",
+   "good",
+   "neither bad nor good",
+   "bad",
+   "very bad"
+  ]
+ },
+ {
+  "item": "polintrst",
+  "label": "INTERESTED IN CAMPAIGNS THIS YEAR",
+  "n_codes": 3,
+  "options": [
+   "very much interested",
+   "somewhat interested",
+   "not much interested"
+  ]
+ },
+ {
+  "item": "intrnetuse",
+  "label": "Frequency of internet use over past 12 months",
+  "n_codes": 7,
+  "options": [
+   "almost all the time",
+   "several times a day",
+   "once a day",
+   "several times a week",
+   "several times a month",
+   "less often",
+   "never"
+  ]
+ },
+ {
+  "item": "inthome",
+  "label": "Frequency R has home internet access",
+  "n_codes": 6,
+  "options": [
+   "almost always",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never",
+   "no access"
+  ]
+ },
+ {
+  "item": "intprfssnl",
+  "label": "Frequency R has work/school internet access",
+  "n_codes": 6,
+  "options": [
+   "almost always",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never",
+   "no access"
+  ]
+ },
+ {
+  "item": "intpub",
+  "label": "Frequency R has internet access in public",
+  "n_codes": 6,
+  "options": [
+   "almost always",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never",
+   "no access"
+  ]
+ },
+ {
+  "item": "intbhlf",
+  "label": "Frequency R was asked to use internet for someone else",
+  "n_codes": 3,
+  "options": [
+   "not at all",
+   "once or twice",
+   "more often"
+  ]
+ },
+ {
+  "item": "unplug",
+  "label": "Amount R reduced time spent on internet in last 12 months",
+  "n_codes": 6,
+  "options": [
+   "every day or almost every day",
+   "several times a week",
+   "several times a month",
+   "several times a year",
+   "less often",
+   "never"
+  ]
+ },
+ {
+  "item": "unplgrsn",
+  "label": "Reason R reduced time spent on internet",
+  "n_codes": 7,
+  "options": [
+   "i had concerns about data security or privacy issues",
+   "i felt it negatively impacted my physical or mental wellbeing",
+   "i felt overwhelmed by the amount of information",
+   "i was asked to spend more time in person with family or friends",
+   "i wanted more time for offline activities",
+   "i couldn't afford to use the internet",
+   "other reasons"
+  ]
+ },
+ {
+  "item": "intskill",
+  "label": "R's skill at using the internet",
+  "n_codes": 5,
+  "options": [
+   "very good",
+   "good",
+   "neither good nor bad",
+   "bad",
+   "very bad"
+  ]
+ },
+ {
+  "item": "intsurf",
+  "label": "R's skill at online searches",
+  "n_codes": 5,
+  "options": [
+   "very good",
+   "good",
+   "neither good nor bad",
+   "bad",
+   "very bad"
+  ]
+ },
+ {
+  "item": "intliteracy",
+  "label": "R's knowledge of online information discretion",
+  "n_codes": 5,
+  "options": [
+   "very good",
+   "good",
+   "neither good nor bad",
+   "bad",
+   "very bad"
+  ]
+ },
+ {
+  "item": "intapps",
+  "label": "R's skill at learning new software",
+  "n_codes": 5,
+  "options": [
+   "very good",
+   "good",
+   "neither good nor bad",
+   "bad",
+   "very bad"
+  ]
+ },
+ {
+  "item": "intcomm",
+  "label": "How often R uses internet for communication",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never"
+  ]
+ },
+ {
+  "item": "intshare",
+  "label": "How often R uses internet for sharing photos/videos",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never"
+  ]
+ },
+ {
+  "item": "intsearch",
+  "label": "How often R uses internet for search",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never"
+  ]
+ },
+ {
+  "item": "intgame",
+  "label": "How often R uses internet for video games",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never"
+  ]
+ },
+ {
+  "item": "intstream",
+  "label": "How often R uses internet for music/video",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never"
+  ]
+ },
+ {
+  "item": "intfncl",
+  "label": "How often R uses internet for financial transactions",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "hardly ever",
+   "never"
+  ]
+ },
+ {
+  "item": "intmeet",
+  "label": "R more comfortable meeting people online?",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "intlnly",
+  "label": "R would feel lonely without internet?",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "inttrig",
+  "label": "How often R reads political opinions they disagree with online",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "rarely",
+   "never"
+  ]
+ },
+ {
+  "item": "intnews",
+  "label": "How often R accesses non-routine political news sources",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "rarely",
+   "never"
+  ]
+ },
+ {
+  "item": "intcnfrm",
+  "label": "How often R tries to confirm information with other sources",
+  "n_codes": 5,
+  "options": [
+   "very often",
+   "often",
+   "sometimes",
+   "rarely",
+   "never"
+  ]
+ },
+ {
+  "item": "intpolview",
+  "label": "Trend of online contact with politically similar",
+  "n_codes": 5,
+  "options": [
+   "greatly decreased",
+   "somewhat decreased",
+   "remained the same",
+   "somewhat increased",
+   "greatly increased"
+  ]
+ },
+ {
+  "item": "intoppo",
+  "label": "Trend of online contact with politically different",
+  "n_codes": 5,
+  "options": [
+   "greatly decreased",
+   "somewhat decreased",
+   "remained the same",
+   "somewhat increased",
+   "greatly increased"
+  ]
+ },
+ {
+  "item": "intviews",
+  "label": "How often R talks about politics online",
+  "n_codes": 6,
+  "options": [
+   "every day or almost every day",
+   "several times a week",
+   "several times a month",
+   "several times a year",
+   "less often",
+   "never"
+  ]
+ },
+ {
+  "item": "techesy",
+  "label": "Does technology make our lives easier?",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "harmgood1",
+  "label": "Does technology do more harm than good?",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "nextgen1",
+  "label": "Does technology provide more opportunities?",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "intscam",
+  "label": "Has R or someone they know been a victim of online scam",
+  "n_codes": 4,
+  "options": [
+   "yes, me myself",
+   "yes, someone i know personally",
+   "yes, me and someone else i know personally",
+   "no"
+  ]
+ },
+ {
+  "item": "inthrss",
+  "label": "Has R or someone they know been harassed online",
+  "n_codes": 4,
+  "options": [
+   "yes, me myself",
+   "yes, someone i know personally",
+   "yes, me and someone else i know personally",
+   "no"
+  ]
+ },
+ {
+  "item": "polnewsfrom",
+  "label": "Where R gets political news",
+  "n_codes": 6,
+  "options": [
+   "online social media (for example facebook, instagram, tiktok, x (formerly twitter), youtube, snapchat)",
+   "television (including tv apps or access via internet)",
+   "newspapers (in print or access via internet)",
+   "radio and podcasts (including internet radio or access via internet",
+   "websites (including exclusively online news sites, news aggregators, portals, or search engines)",
+   "other"
+  ]
+ },
+ {
+  "item": "smnews",
+  "label": "Reliability of news on social media",
+  "n_codes": 4,
+  "options": [
+   "very unreliable",
+   "somewhat unreliable",
+   "somewhat reliable",
+   "very reliable"
+  ]
+ },
+ {
+  "item": "tvnews1",
+  "label": "Reliability of news on TV",
+  "n_codes": 4,
+  "options": [
+   "very unreliable",
+   "somewhat unreliable",
+   "somewhat reliable",
+   "very reliable"
+  ]
+ },
+ {
+  "item": "radionews",
+  "label": "Reliability of news on podcasts, radio",
+  "n_codes": 4,
+  "options": [
+   "very unreliable",
+   "somewhat unreliable",
+   "somewhat reliable",
+   "very reliable"
+  ]
+ },
+ {
+  "item": "webnews",
+  "label": "Reliability of news on web",
+  "n_codes": 4,
+  "options": [
+   "very unreliable",
+   "somewhat unreliable",
+   "somewhat reliable",
+   "very reliable"
+  ]
+ },
+ {
+  "item": "modepet",
+  "label": "Has R signed a petition in last 12 months",
+  "n_codes": 4,
+  "options": [
+   "only offline",
+   "only online",
+   "both offline and online",
+   "neither offline nor online"
+  ]
+ },
+ {
+  "item": "modeprot",
+  "label": "Has R participated in a protest in last 12 months",
+  "n_codes": 4,
+  "options": [
+   "only offline",
+   "only online",
+   "both offline and online",
+   "neither offline nor online"
+  ]
+ },
+ {
+  "item": "modelobby",
+  "label": "Has R contacted a politician in last 12 months",
+  "n_codes": 4,
+  "options": [
+   "only offline",
+   "only online",
+   "both offline and online",
+   "neither offline nor online"
+  ]
+ },
+ {
+  "item": "modeorgprot",
+  "label": "Has R organized a protest in last 12 months",
+  "n_codes": 4,
+  "options": [
+   "only offline",
+   "only online",
+   "both offline and online",
+   "neither offline nor online"
+  ]
+ },
+ {
+  "item": "modeorg",
+  "label": "Has R belonged to an activist group in last 12 months",
+  "n_codes": 4,
+  "options": [
+   "only offline",
+   "only online",
+   "both offline and online",
+   "neither offline nor online"
+  ]
+ },
+ {
+  "item": "dataprot",
+  "label": "Responsibility for internet data protection",
+  "n_codes": 3,
+  "options": [
+   "online companies - as they need to ensure they process personal information safely",
+   "people - as they need to take care of their personal information",
+   "public authorities - as they need to ensure that personal information is protected"
+  ]
+ },
+ {
+  "item": "emonitor1",
+  "label": "Should government be able to monitor online communication",
+  "n_codes": 4,
+  "options": [
+   "definitely should have the right",
+   "probably should have the right",
+   "probably should not have the right",
+   "definitely should not have the right"
+  ]
+ },
+ {
+  "item": "infodeal",
+  "label": "Would R provide info for discounts, free products",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "infoprofit",
+  "label": "Would R provide info companies could profit from",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "gendtech",
+  "label": "Are women or men benefiting more from digital tech",
+  "n_codes": 4,
+  "options": [
+   "women are benefitting more than men",
+   "women and men are benefitting equally",
+   "men are benefitting more than women",
+   "neither men nor women are benefitting"
+  ]
+ },
+ {
+  "item": "agetech",
+  "label": "Are older or younger people benefiting more from digital tech",
+  "n_codes": 4,
+  "options": [
+   "older people are benefitting more than younger people",
+   "older people and younger people are benefitting equally",
+   "younger people are benefitting more than older people",
+   "neither older nor younger are benefitting"
+  ]
+ },
+ {
+  "item": "urbantech",
+  "label": "Are cities or countryside benefiting more from digital tech",
+  "n_codes": 4,
+  "options": [
+   "people who live in the countryside are benefitting more than people who live in cities",
+   "people who live in the countryside and people who live in cities are benefitting equally",
+   "people who live in cities are benefitting more than people who live in the countryside",
+   "neither people from the countryside nor from cities are benefitting"
+  ]
+ },
+ {
+  "item": "eductech",
+  "label": "Are educated or uneducated benefiting more from digital tech",
+  "n_codes": 4,
+  "options": [
+   "the highly educated are benefitting more than the less well educated",
+   "the highly and the less well educated are benefitting equally",
+   "the less well educated are benefitting more than the highly educated",
+   "neither highly educated nor less well educated are benefitting"
+  ]
+ },
+ {
+  "item": "classtech",
+  "label": "Are poor or rich benefiting more from digital tech",
+  "n_codes": 4,
+  "options": [
+   "rich people are benefitting more than poor people",
+   "rich and poor people are benefitting equally",
+   "poor people are benefitting more than rich people",
+   "neither rich people nor poor people are benefitting"
+  ]
+ },
+ {
+  "item": "aiworry",
+  "label": "R worried that AI will take over many jobs done by humans",
+  "n_codes": 5,
+  "options": [
+   "very worried",
+   "somewhat worried",
+   "neither worried nor unworried",
+   "not very worried",
+   "not at all worried"
+  ]
+ },
+ {
+  "item": "aidrive",
+  "label": "R's comfort with driverless car",
+  "n_codes": 2,
+  "options": [
+   "totally uncomfortable with this situation",
+   "totally comfortable with this situation"
+  ]
+ },
+ {
+  "item": "owndecns",
+  "label": "Best if every nation had its own country",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "brneffrt",
+  "label": "Possible to become American if born elsewhere",
+  "n_codes": 4,
+  "options": [
+   "i definitely agree with statement a",
+   "i agree more with statement a than with statement b",
+   "i agree more with statement b than with statement a",
+   "i definitely agree with statement b"
+  ]
+ },
+ {
+  "item": "immcrime1",
+  "label": "Immigrants increase crime rates",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "immjobs1",
+  "label": "Immigrants take jobs away",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "immideas1",
+  "label": "Immigrants bring new ideas and cultures",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "immwlfare",
+  "label": "People born in America should be given preference over immigrants when it comes",
+  "n_codes": 5,
+  "options": [
+   "agree strongly",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "disagree strongly"
+  ]
+ },
+ {
+  "item": "conscrp",
+  "label": "Importance of military service",
+  "n_codes": 2,
+  "options": [
+   "not at all important",
+   "very important"
+  ]
+ },
+ {
+  "item": "incgap1",
+  "label": "Government's responsibility to reduce economic inequality",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "servpub",
+  "label": "How much the public service serves people",
+  "n_codes": 4,
+  "options": [
+   "very committed",
+   "somewhat committed",
+   "not very committed",
+   "not at all committed"
+  ]
+ },
+ {
+  "item": "fulldem",
+  "label": "The people, not politicians, should make important decisions",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "poltalk",
+  "label": "Politicians talk too much and don't take action",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "conpow",
+  "label": "Conflict between ordinary people and those in power",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "bizmoney",
+  "label": "Business leaders make money at expense of ordinary people",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "experts",
+  "label": "Better to rely on opinions of experts than ordinary people",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "biasnews",
+  "label": "News coverage about politics in America is biased",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "usmca1",
+  "label": "R's familiarity with USMCA",
+  "n_codes": 4,
+  "options": [
+   "a lot",
+   "quite a bit",
+   "not much",
+   "nothing at all"
+  ]
+ },
+ {
+  "item": "morextrm",
+  "label": "Everyone is like X but X's case is just a bit more extreme and ongoing",
+  "n_codes": 4,
+  "options": [
+   "strongly agree",
+   "agree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "bullied",
+  "label": "Situation caused by having been bullied",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "smedia",
+  "label": "Situation caused by exposure to social media",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "imprvown1",
+  "label": "How likely child X situation will improve on its own",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "mustdoc1",
+  "label": "X's parents should be forced by law to have X examined at a clinic",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "mustmed1",
+  "label": "X's parents should be forced by law to have X take prescribed medication",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "musthosp1",
+  "label": "X's parents should be forced by law to admit X to be hospitalized for treatment",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "physill1",
+  "label": "How likely child X is experiencing physical illness",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "bullpeer",
+  "label": "Would X bully peers",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "rumopeer",
+  "label": "Would X spread rumors about peers",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "fighpeer",
+  "label": "Would X get into fights with peers",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "schshoot",
+  "label": "Would X carry out a school shooting",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "cutself",
+  "label": "Would X intentionally cut self",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "negself",
+  "label": "Would X intentionally neglect own health",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "foodalc",
+  "label": "Would X engage in excessive and uncontrolled food or alcohol consumption",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "risklife",
+  "label": "Would X at risk for taking their own life",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "takelife",
+  "label": "Would X actually take own life",
+  "n_codes": 4,
+  "options": [
+   "very likely",
+   "somewhat likely",
+   "not very likely",
+   "not at all likely"
+  ]
+ },
+ {
+  "item": "dsndntpay",
+  "label": "Reparations for descendants of slaves",
+  "n_codes": 3,
+  "options": [
+   "yes",
+   "no",
+   "unsure"
+  ]
+ },
+ {
+  "item": "acpttg",
+  "label": "Accepting people",
+  "n_codes": 3,
+  "options": [
+   "too far",
+   "about far enough",
+   "not far enough"
+  ]
+ },
+ {
+  "item": "chngdocs",
+  "label": "Changing official documents",
+  "n_codes": 3,
+  "options": [
+   "yes, the law should allow",
+   "no, the law should not allow",
+   "not sure"
+  ]
+ },
+ {
+  "item": "feovrwrk",
+  "label": "Family life suffers when women work",
+  "n_codes": 5,
+  "options": [
+   "strongly agree",
+   "agree",
+   "neither agree nor disagree",
+   "disagree",
+   "strongly disagree"
+  ]
+ },
+ {
+  "item": "sexornt1",
+  "label": "Sexual orientation (reask, self-administered)",
+  "n_codes": 3,
+  "options": [
+   "gay, lesbian, or homosexual",
+   "bisexual",
+   "heterosexual or straight"
+  ]
+ },
+ {
+  "item": "sexpaid",
+  "label": "Ever had sex with a person you paid or who paid you for sex",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "nocondom",
+  "label": "Had vaginal or anal sex without a condom in past 12 months",
+  "n_codes": 2,
+  "options": [
+   "i had vaginal or anal sex without a condom in the past 12 months",
+   "i did not have vaginal or anal sex without a condom in the past 12 months"
+  ]
+ },
+ {
+  "item": "nodocidu",
+  "label": "Ever injected any drugs other than those prescribed for you",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "femself1",
+  "label": "How feminine R sees self (0 to 6 scale)",
+  "n_codes": 2,
+  "options": [
+   "not at all",
+   "very"
+  ]
+ },
+ {
+  "item": "mascself1",
+  "label": "How masculine R sees self (0 to 6 scale)",
+  "n_codes": 2,
+  "options": [
+   "not at all",
+   "very"
+  ]
+ },
+ {
+  "item": "femsee1",
+  "label": "How feminine others see R (0 to 6 scale)",
+  "n_codes": 2,
+  "options": [
+   "not at all",
+   "very"
+  ]
+ },
+ {
+  "item": "mascsee1",
+  "label": "How masculine others see R (0 to 6 scale)",
+  "n_codes": 2,
+  "options": [
+   "not at all",
+   "very"
+  ]
+ },
+ {
+  "item": "devtype",
+  "label": "Are you taking this survey on a...",
+  "n_codes": 4,
+  "options": [
+   "laptop, netbook, or personal computer",
+   "smartphone or mobile phone",
+   "tablet",
+   "something else"
+  ]
+ },
+ {
+  "item": "family16sex",
+  "label": "Sex of two parents living with when 16 yrs old",
+  "n_codes": 2,
+  "options": [
+   "mother and father",
+   "two same-sex parents"
+  ]
+ },
+ {
+  "item": "racdif5x",
+  "label": "differences due mainly to upbringing (longer intro)",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "reltrad",
+  "label": "Religious tradition",
+  "n_codes": 7,
+  "options": [
+   "evangelical protestant",
+   "mainline protestant",
+   "black protestant",
+   "catholic",
+   "jewish",
+   "other faith",
+   "nonaffiliated"
+  ]
+ },
+ {
+  "item": "reltrad16",
+  "label": "Religious tradition age 16",
+  "n_codes": 7,
+  "options": [
+   "evangelical protestant",
+   "mainline protestant",
+   "black protestant",
+   "catholic",
+   "jewish",
+   "other faith",
+   "nonaffiliated"
+  ]
+ },
+ {
+  "item": "sexnow2",
+  "label": "R's sex now (3 category)",
+  "n_codes": 3,
+  "options": [
+   "male",
+   "female",
+   "redacted/none of these"
+  ]
+ },
+ {
+  "item": "whovote24",
+  "label": "VOTING INTENTION IN 2024 ELECTION (PRE JULY 25 2024)",
+  "n_codes": 4,
+  "options": [
+   "donald trump",
+   "joe biden",
+   "someone else",
+   "probably not vote"
+  ]
+ },
+ {
+  "item": "whovotets",
+  "label": "VOTING INTENTION - TIME SERIES",
+  "n_codes": 4,
+  "options": [
+   "republican candidate",
+   "democratic candidate",
+   "someone else",
+   "probably not vote"
+  ]
+ },
+ {
+  "item": "voteprob",
+  "label": "VOTING PROBLEM IN US ELECTIONS",
+  "n_codes": 6,
+  "options": [
+   "very strongly ineligible voters being allowed to vote",
+   "moderately strongly ineligible voters being allowed to vote",
+   "a little ineligible voters being allowed to vote",
+   "a little eligible voters not being allowed to vote",
+   "moderately strongly eligible voters not being allowed to vote",
+   "very strongly eligible voters not being allowed to vote"
+  ]
+ },
+ {
+  "item": "aneseligible",
+  "label": "ANES FOLLOW-ON ELIGIBLE",
+  "n_codes": 2,
+  "options": [
+   "not eligible for follow-on",
+   "eligible for follow-on"
+  ]
+ },
+ {
+  "item": "ptnrsxnow1",
+  "label": "Recent partner's sex now (3 category)",
+  "n_codes": 3,
+  "options": [
+   "male",
+   "female",
+   "redacted/none of these"
+  ]
+ },
+ {
+  "item": "petsseq",
+  "label": "Position of pet questions in questionnaire",
+  "n_codes": 3,
+  "options": [
+   "beginning",
+   "middle",
+   "end"
+  ]
+ },
+ {
+  "item": "credrep",
+  "label": "R credit report",
+  "n_codes": 5,
+  "options": [
+   "poor",
+   "fair",
+   "good",
+   "very good",
+   "excellent"
+  ]
+ },
+ {
+  "item": "credchoice",
+  "label": "R's credit score has to do with choices or things out of your control",
+  "n_codes": 5,
+  "options": [
+   "entirely choices you've made",
+   "mostly choices you've made",
+   "both choices you've made and things out of your control",
+   "mostly things out of your control",
+   "entirely things out of your control"
+  ]
+ },
+ {
+  "item": "credam",
+  "label": "Americans' credit score has to do with choices or things out of their control",
+  "n_codes": 5,
+  "options": [
+   "entirely choices they make",
+   "mostly choices they make",
+   "both choices they make and things out of their control",
+   "mostly things out of their control",
+   "entirely things out of their control"
+  ]
+ },
+ {
+  "item": "credland",
+  "label": "Use credit report - landlords",
+  "n_codes": 5,
+  "options": [
+   "very fair",
+   "somewhat fair",
+   "neither fair nor unfair",
+   "somewhat unfair",
+   "very unfair"
+  ]
+ },
+ {
+  "item": "credemp",
+  "label": "Use credit report - employers",
+  "n_codes": 5,
+  "options": [
+   "very fair",
+   "somewhat fair",
+   "neither fair nor unfair",
+   "somewhat unfair",
+   "very unfair"
+  ]
+ },
+ {
+  "item": "credcar",
+  "label": "Use credit report - car insurers",
+  "n_codes": 5,
+  "options": [
+   "very fair",
+   "somewhat fair",
+   "neither fair nor unfair",
+   "somewhat unfair",
+   "very unfair"
+  ]
+ },
+ {
+  "item": "knwsexor",
+  "label": "R knows anyone who is gay, lesbian, or bisexual",
+  "n_codes": 2,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "item": "happy_next",
+  "label": "General happiness - follow-on version",
+  "n_codes": 3,
+  "options": [
+   "very happy",
+   "pretty happy",
+   "not too happy"
+  ]
+ },
+ {
+  "item": "topprob2_hlth",
+  "label": "Next important issue (health care) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "topprob2_educ",
+  "label": "Next important issue (education) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "topprob2_crim",
+  "label": "Next important issue (crime) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "topprob2_envr",
+  "label": "Next important issue (environment) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "topprob2_immg",
+  "label": "Next important issue (immigration) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "topprob2_econ",
+  "label": "Next important issue (economy) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "topprob2_terr",
+  "label": "Next important issue (terrorism) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "topprob2_povt",
+  "label": "Next important issue (poverty) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "topprob2_none",
+  "label": "Next important issue (none of these) - follow-on version",
+  "n_codes": 2,
+  "options": [
+   "mentioned",
+   "not mentioned"
+  ]
+ },
+ {
+  "item": "famgen_next",
+  "label": "Number of family generations in household - follow-on version",
+  "n_codes": 5,
+  "options": [
+   "one generation",
+   "two generations, children",
+   "two generations, parents",
+   "two generations, grandchild(ren)",
+   "three or more generations"
+  ]
+ },
+ {
+  "item": "vote_ts",
+  "label": "Did R vote in most recent election",
+  "n_codes": 3,
+  "options": [
+   "voted",
+   "did not vote",
+   "not eligible"
+  ]
+ },
+ {
+  "item": "pres_ts",
+  "label": "Vote for Democratic or Republican candidate in most recent election",
+  "n_codes": 4,
+  "options": [
+   "democratic candidate",
+   "republican candidate",
+   "third-party candidate",
+   "refused/don't know/didn't vote"
+  ]
+ }
+]

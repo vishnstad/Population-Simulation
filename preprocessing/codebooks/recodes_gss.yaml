@@ -1,0 +1,261 @@
+# ============================================================================
+# GSS -> harmonized `demo` struct: EXPLICIT REVIEWED RECODE TABLES
+#
+# Spec contract (B17 §3.3 M1): "deterministic recode maps per dataset checked
+# into codebooks/; refuse to auto-map — every recode is an explicit reviewed
+# table."
+#
+# Every mapping below carries a `label_contains` guard. At load time the
+# adapter reads the Stata/SPSS value labels shipped inside the data file and
+# asserts that each source code's own label contains the guard substring
+# (case-insensitive). If NORC renumbers a variable between releases, the load
+# fails loudly instead of silently producing a wrong cross-tab (failure mode
+# "silent recode errors", §3.3 M1).
+#
+# Reviewed against: GSS 2024 Cross-section Codebook (Release 3, March 2026).
+# ============================================================================
+
+meta:
+  dataset: gss
+  reviewed_by: B17 pipeline
+  source_codebook: "GSS 2024 Codebook R3"
+
+# Weight variable, in priority order. First one present in the file wins.
+# GSS 2021+ single-year cross-sections ship post-stratified weights (WTSSPS);
+# earlier waves use WTSSALL/WTSS. WTSSNRPS additionally adjusts for
+# nonresponse and is preferred when present.
+weight_candidates: [WTSSNRPS, WTSSPS, WTSSALL, WTSS, WTSSNR]
+
+# Survey design variables (retained for variance estimation, not used in demo)
+design:
+  psu_candidates: [VPSU, VPSU_2, SAMPCODE]
+  strata_candidates: [VSTRAT, VSTRAT_2, SAMPLE]
+
+id_var: ID
+year_var: YEAR
+
+# ---------------------------------------------------------------------------
+# Values treated as missing across ALL variables.
+# GSS uses Stata extended missings (.i IAP, .d DK, .n NA, .s SKIPPED) in
+# recent releases; pyreadstat surfaces those as NaN. Legacy numeric sentinels
+# are listed here for older waves and for SPSS exports.
+# ---------------------------------------------------------------------------
+global_missing_codes: [-100, -99, -98, -97, -1, 8, 9, 98, 99]
+# NOTE: 8/9/98/99 are only stripped for variables whose valid range is
+# declared narrower than that — enforced per-variable in `attitude_items`
+# via max_valid_code, never blanket-applied. See adapter.
+
+# ---------------------------------------------------------------------------
+# Demographic recodes
+# ---------------------------------------------------------------------------
+demo:
+
+  age_band:
+    source: AGE
+    type: numeric_bin
+    # GSS tops AGE at 89 ("89 OR OLDER"). Bins match the harmonized schema
+    # in §3.3 M1 exactly.
+    bins:   [18, 25, 35, 45, 55, 65, 200]
+    labels: ["18-24", "25-34", "35-44", "45-54", "55-64", "65+"]
+    valid_min: 18
+    valid_max: 89
+
+  sex:
+    source: SEX
+    type: code_map
+    map:
+      1: {value: male,   label_contains: "male"}
+      2: {value: female, label_contains: "female"}
+
+  education:
+    source: DEGREE
+    type: code_map
+    # Harmonized schema: none/primary/secondary/higher_secondary/tertiary.
+    # GSS DEGREE has no separate primary/none split, so both collapse into
+    # "primary" and the `none` level is simply unpopulated for the US.
+    # Associate degree is placed at higher_secondary, NOT tertiary: it is
+    # sub-baccalaureate and grouping it with BA inflates the tertiary cell.
+    map:
+      0: {value: primary,          label_contains: "less than high school"}
+      1: {value: secondary,        label_contains: "high school"}
+      2: {value: higher_secondary, label_contains: "junior college"}
+      3: {value: tertiary,         label_contains: "bachelor"}
+      4: {value: tertiary,         label_contains: "graduate"}
+
+  income_band:
+    source: CONINC
+    type: weighted_quintile
+    # Family income in constant dollars. Quintiles are computed WITHIN the
+    # wave using survey weights (§3.3 M1: "income_band (str, within-country
+    # quintile)"). Respondents missing CONINC get null, not an imputed band.
+    labels: [q1, q2, q3, q4, q5]
+
+  # ---- DEVIATION FROM SPEC §3.3 M1 (documented, not silent) ----------------
+  # The spec's harmonized schema asks for `urban` from SRCBELT. The GSS 2024
+  # single-year public file does NOT ship SRCBELT (it is a cumulative-file
+  # derived variable). We reconstruct it from XNORCSIZ using NORC's own
+  # published derivation, which makes `srcbelt` and `urban` exactly
+  # reproducible from the released file.
+  #
+  #   XNORCSIZ 1      -> SRCBELT 1  large central city
+  #   XNORCSIZ 2      -> SRCBELT 2  medium central city
+  #   XNORCSIZ 3,5    -> SRCBELT 3  suburb of large city
+  #   XNORCSIZ 4,6    -> SRCBELT 4  suburb of medium city
+  #   XNORCSIZ 7,8    -> SRCBELT 5  other urban
+  #   XNORCSIZ 9,10   -> SRCBELT 6  other rural
+  #
+  # urban := SRCBELT in {1..5}
+  # --------------------------------------------------------------------------
+  srcbelt:
+    source: XNORCSIZ
+    type: code_map
+    map:
+      1:  {value: lg_central_city, label_contains: "large central city"}
+      2:  {value: md_central_city, label_contains: "medium size central city"}
+      3:  {value: lg_suburb,       label_contains: "suburb of a large"}
+      4:  {value: md_suburb,       label_contains: "suburb of a medium"}
+      5:  {value: lg_suburb,       label_contains: "unincorporated area of a large"}
+      6:  {value: md_suburb,       label_contains: "unincorporated area of a medium"}
+      7:  {value: other_urban,     label_contains: "small city"}
+      8:  {value: other_urban,     label_contains: "town or village"}
+      9:  {value: other_rural,     label_contains: "incorporated area less than"}
+      10: {value: other_rural,     label_contains: "open country"}
+
+  urban:
+    source: XNORCSIZ
+    type: code_map_bool
+    map:
+      1:  {value: true,  label_contains: "large central city"}
+      2:  {value: true,  label_contains: "medium size central city"}
+      3:  {value: true,  label_contains: "suburb of a large"}
+      4:  {value: true,  label_contains: "suburb of a medium"}
+      5:  {value: true,  label_contains: "unincorporated area of a large"}
+      6:  {value: true,  label_contains: "unincorporated area of a medium"}
+      7:  {value: true,  label_contains: "small city"}
+      8:  {value: true,  label_contains: "town or village"}
+      9:  {value: false, label_contains: "incorporated area less than"}
+      10: {value: false, label_contains: "open country"}
+
+  # ---- DEVIATION FROM SPEC §3.3 M1 (documented) ----------------------------
+  # Spec asks for `region` = US Census *division* (9 levels). The GSS 2024
+  # single-year public file ships REGION with 4 levels only (the 9-division
+  # variable lives in the cumulative file). We use the 4 levels and record the
+  # loss of L1 granularity: 4 regions x 2 urban = 8 level-1 nodes instead of 18.
+  # To recover divisions, re-run the adapter against GSS_stata.zip (cumulative).
+  # --------------------------------------------------------------------------
+  region:
+    source: REGION
+    type: code_map
+    map:
+      1: {value: northeast, label_contains: "northeast"}
+      2: {value: midwest,   label_contains: "midwest"}
+      3: {value: south,     label_contains: "south"}
+      4: {value: west,      label_contains: "west"}
+
+  religion:
+    source: RELIG
+    type: code_map
+    map:
+      1:  {value: protestant,   label_contains: "protestant"}
+      2:  {value: catholic,     label_contains: "catholic"}
+      3:  {value: jewish,       label_contains: "jewish"}
+      4:  {value: none,         label_contains: "none"}
+      5:  {value: other,        label_contains: "other"}
+      6:  {value: buddhist,     label_contains: "buddhism"}
+      7:  {value: hindu,        label_contains: "hinduism"}
+      8:  {value: other_east,   label_contains: "other eastern"}
+      9:  {value: muslim,       label_contains: "muslim"}
+      10: {value: orthodox,     label_contains: "orthodox"}
+      11: {value: christian,    label_contains: "christian"}
+      12: {value: native_amer,  label_contains: "native american"}
+      13: {value: inter_nondenom, label_contains: "inter"}
+
+  race:
+    source: RACE
+    type: code_map
+    map:
+      1: {value: white, label_contains: "white"}
+      2: {value: black, label_contains: "black"}
+      3: {value: other, label_contains: "other"}
+
+  employment:
+    source: WRKSTAT
+    type: code_map
+    map:
+      1: {value: full_time,   label_contains: "full time"}
+      2: {value: part_time,   label_contains: "part time"}
+      3: {value: temp_absent, label_contains: "not at work"}
+      4: {value: unemployed,  label_contains: "unemployed"}
+      5: {value: retired,     label_contains: "retired"}
+      6: {value: in_school,   label_contains: "school"}
+      7: {value: keeping_house, label_contains: "keeping house"}
+      8: {value: other,       label_contains: "other"}
+
+  marital:
+    source: MARITAL
+    type: code_map
+    map:
+      1: {value: married,       label_contains: "married"}
+      2: {value: widowed,       label_contains: "widowed"}
+      3: {value: divorced,      label_contains: "divorced"}
+      4: {value: separated,     label_contains: "separated"}
+      5: {value: never_married, label_contains: "never married"}
+
+# ---------------------------------------------------------------------------
+# Variables that are NEVER eligible to become attitudinal items.
+# (admin, design, weights, geography, open-ended, and the demographic source
+# variables themselves — including them would make F3 cross-tab redundancy
+# trivially exploitable.)
+# ---------------------------------------------------------------------------
+item_exclusions:
+  exact:
+    - YEAR
+    - ID
+    - AGE
+    - SEX
+    - EDUC
+    - DEGREE
+    - CONINC
+    - REALINC
+    - REALRINC
+    - INCOME
+    - INCOME16
+    - RINCOME
+    - RINCOM16
+    - RACE
+    - RACECEN1
+    - RACECEN2
+    - RACECEN3
+    - HISPANIC
+    - REGION
+    - SRCBELT
+    - XNORCSIZ
+    - RELIG
+    - DENOM
+    - OTHER
+    - MARITAL
+    - WRKSTAT
+    - BALLOT
+    - FORM
+    - VERSION
+    - SAMPLE
+    - SAMPCODE
+    - PHASE
+    - MODE
+  prefixes:
+    - WTSS       # all weight variables
+    - VSTRAT
+    - VPSU
+    - SPAN       # Spanish-interview flags
+    - ISCO
+    - ISEI
+    - SEI
+    - OCC
+    - INDUS
+    - PA         # paradata
+    - DATE
+    - INTAGE
+    - INTSEX
+    - INTETHN
+    - INTRACE
+    - INTYRS

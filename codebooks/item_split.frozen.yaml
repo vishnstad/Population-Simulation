@@ -1,0 +1,321 @@
+targets:
+- cappun
+- colath
+- colcom
+- colhomo
+- conlabor
+- conlegis
+- conmedic
+- consci
+- dwelown
+- fair
+- fear
+- fefam
+- gunlaw
+- homosex
+- libath
+- libcom
+- libhomo
+- libmil
+- life
+- natarms
+- nateduc
+- natenvir
+- natmass
+- natroad
+- natsoc
+- natspac
+- news
+- polviews
+- pornlaw
+- postlife
+- pray
+- sexeduc
+- spanking
+- spkath
+- spkcom
+- spkhomo
+- spkmil
+- spkrac
+- suicide1
+- xmovie
+anchors:
+- bible
+- conarmy
+- conclerg
+- coneduc
+- confed
+- confinan
+- conjudge
+- conpress
+- contv
+- divorce
+- finalter
+- god
+- happy
+- health
+- letdie1
+- libmslm
+- nataid
+- natchld
+- natcrime
+- natenrgy
+- natpark
+- natrace
+- polhitok
+- prayer
+- premarsx
+- reborn
+- reliten
+- relpersn
+- spkmslm
+- sprtprsn
+- teensex
+- trust
+- wrkwayup
+- xmarsex
+anchor_only_low_snr:
+- abhlth
+- conbus
+- hapmar
+- helpoth
+- natcity
+- natdrug
+- polabuse
+ineligible:
+  affrmact: instrument wording not verified — an anchor's text is rendered into the stat card, so this
+    blocks both roles, not just the target role
+  colmil: 'role: excluded — measured below the SNR gate'
+  colrac: 'role: excluded — measured below the SNR gate'
+  fejobaff: instrument wording not verified — an anchor's text is rendered into the stat card, so this
+    blocks both roles, not just the target role
+  finrela: 'role: sanity — income restated; may never reach a headline table'
+  intlblks: instrument wording not verified — an anchor's text is rendered into the stat card, so this
+    blocks both roles, not just the target role
+  intlwhts: instrument wording not verified — an anchor's text is rendered into the stat card, so this
+    blocks both roles, not just the target role
+  librac: 'role: excluded — measured below the SNR gate'
+  satfin: 'role: sanity — income restated; may never reach a headline table'
+  wlthwhts: instrument wording not verified — an anchor's text is rendered into the stat card, so this
+    blocks both roles, not just the target role
+  workblks: instrument wording not verified — an anchor's text is rendered into the stat card, so this
+    blocks both roles, not just the target role
+  workwhts: instrument wording not verified — an anchor's text is rendered into the stat card, so this
+    blocks both roles, not just the target role
+leakage_resistant:
+- colath
+- colcom
+- colhomo
+- conlabor
+- conlegis
+- conmedic
+- consci
+- fair
+- libath
+- libcom
+- libhomo
+- libmil
+- life
+- natarms
+- nateduc
+- natenvir
+- natmass
+- natroad
+- natsoc
+- natspac
+- pornlaw
+- postlife
+- sexeduc
+- spanking
+- spkath
+- spkcom
+- spkhomo
+- spkmil
+- spkrac
+- suicide1
+famous:
+- colath
+- colcom
+- colhomo
+- libath
+- libcom
+- libhomo
+- libmil
+- spkath
+- spkcom
+- spkhomo
+- spkmil
+- spkrac
+topics:
+  abhlth: other
+  bible: other
+  cappun: life_and_death
+  colath: civil_liberties
+  colcom: civil_liberties
+  colhomo: civil_liberties
+  conarmy: institutional_confidence
+  conbus: institutional_confidence
+  conclerg: institutional_confidence
+  coneduc: institutional_confidence
+  confed: institutional_confidence
+  confinan: institutional_confidence
+  conjudge: institutional_confidence
+  conlabor: institutional_confidence
+  conlegis: institutional_confidence
+  conmedic: institutional_confidence
+  conpress: institutional_confidence
+  consci: institutional_confidence
+  contv: institutional_confidence
+  divorce: other
+  dwelown: other
+  fair: wellbeing
+  fear: crime_and_guns
+  fefam: family_childrearing
+  finalter: other
+  god: other
+  gunlaw: crime_and_guns
+  hapmar: other
+  happy: wellbeing
+  health: wellbeing
+  helpoth: other
+  homosex: sexual_morality
+  letdie1: life_and_death
+  libath: civil_liberties
+  libcom: civil_liberties
+  libhomo: civil_liberties
+  libmil: civil_liberties
+  libmslm: civil_liberties
+  life: wellbeing
+  nataid: spending_priorities
+  natarms: spending_priorities
+  natchld: spending_priorities
+  natcity: spending_priorities
+  natcrime: spending_priorities
+  natdrug: spending_priorities
+  nateduc: spending_priorities
+  natenrgy: spending_priorities
+  natenvir: spending_priorities
+  natmass: spending_priorities
+  natpark: spending_priorities
+  natrace: spending_priorities
+  natroad: spending_priorities
+  natsoc: spending_priorities
+  natspac: spending_priorities
+  news: other
+  polabuse: other
+  polhitok: other
+  polviews: politics
+  pornlaw: sexual_morality
+  postlife: religion
+  pray: religion
+  prayer: other
+  premarsx: sexual_morality
+  reborn: religion
+  reliten: other
+  relpersn: other
+  sexeduc: sexual_morality
+  spanking: family_childrearing
+  spkath: civil_liberties
+  spkcom: civil_liberties
+  spkhomo: civil_liberties
+  spkmil: civil_liberties
+  spkmslm: civil_liberties
+  spkrac: civil_liberties
+  sprtprsn: other
+  suicide1: life_and_death
+  teensex: other
+  trust: wellbeing
+  wrkwayup: other
+  xmarsex: sexual_morality
+  xmovie: other
+snr:
+  abhlth: 1.482
+  bible: 3.2794
+  cappun: 3.2012
+  colath: 3.7089
+  colcom: 3.2322
+  colhomo: 3.2084
+  conarmy: 1.8221
+  conbus: 1.4896
+  conclerg: 1.7332
+  coneduc: 1.7759
+  confed: 2.0948
+  confinan: 1.8981
+  conjudge: 1.5966
+  conlabor: 2.4838
+  conlegis: 2.6362
+  conmedic: 2.2523
+  conpress: 1.6984
+  consci: 2.5956
+  contv: 1.5404
+  divorce: 3.6358
+  dwelown: 4.9142
+  fair: 2.8464
+  fear: 3.6727
+  fefam: 3.1395
+  finalter: 3.2898
+  god: 3.4956
+  gunlaw: 2.1627
+  hapmar: 1.2204
+  happy: 1.7511
+  health: 3.1354
+  helpoth: 1.3195
+  homosex: 4.0962
+  letdie1: 2.0853
+  libath: 2.9926
+  libcom: 3.5098
+  libhomo: 3.2366
+  libmil: 2.9432
+  libmslm: 3.2687
+  life: 2.0545
+  nataid: 2.6498
+  natarms: 2.9629
+  natchld: 1.997
+  natcity: 1.2743
+  natcrime: 1.9908
+  natdrug: 1.3649
+  nateduc: 2.2273
+  natenrgy: 2.0549
+  natenvir: 2.3203
+  natmass: 2.268
+  natpark: 1.9041
+  natrace: 1.8753
+  natroad: 4.3379
+  natsoc: 3.2999
+  natspac: 2.3988
+  news: 4.0673
+  polabuse: 1.4982
+  polhitok: 3.5296
+  polviews: 2.6088
+  pornlaw: 3.132
+  postlife: 2.039
+  pray: 4.5319
+  prayer: 3.9183
+  premarsx: 2.5798
+  reborn: 2.9222
+  reliten: 3.0322
+  relpersn: 3.422
+  sexeduc: 2.1488
+  spanking: 2.1063
+  spkath: 3.0147
+  spkcom: 3.7197
+  spkhomo: 3.0159
+  spkmil: 2.8385
+  spkmslm: 3.4479
+  spkrac: 2.2872
+  sprtprsn: 3.3168
+  suicide1: 2.7925
+  teensex: 3.2821
+  trust: 3.0386
+  wrkwayup: 3.0119
+  xmarsex: 2.0787
+  xmovie: 5.8942
+created_utc: '2026-09-15T20:45:28.618858+00:00'
+notes:
+  n_eligible: 137
+  n_passing_snr_gate: 130
+  n_ineligible: 12
+  min_snr: 1.5
+  target_topics: 11
+  anchor_topics: 8
+  spec_said: 60% anchors / 40% targets, which leaves 29 targets — short of the >= 40 the §1.4 claim needs

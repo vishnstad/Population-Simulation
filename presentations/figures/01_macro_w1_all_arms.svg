@@ -1,0 +1,54 @@
+<svg viewBox="0 0 720 384" width="100%" height="auto" role="img" aria-label="Macro W1 over the scored targets — lower is better" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff;max-width:720px;font-family:inherit"><style>
+:root { --bg:#ffffff; --ink:#14130f; --ink2:#4e4c45; --ink3:#7c796f; --line:#e5e2d9; --accent:#2a78d6; --good:#008300; --bad:#e34948; }
+text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+.ch-title { font-size: 13px; font-weight: 600; fill: #4e4c45; }
+.ch-label { font-size: 12.5px; fill: #4e4c45; }
+.ch-value { font-size: 12px; font-weight: 500; fill: #14130f; font-family: monospace; }
+.ch-tick { font-size: 11px; fill: #7c796f; font-family: monospace; }
+.ch-axis { font-size: 12px; fill: #7c796f; }
+.ch-legend { font-size: 12px; fill: #4e4c45; }
+.ch-rule { stroke: #e34948; stroke-dasharray: 3 3; stroke-width: 1.5; }
+.ch-rule-label { font-size: 11px; fill: #e34948; font-weight: 500; }
+.ch-bar { fill: #7c796f; opacity: 0.45; }
+.ch-bar-hi { fill: #2a78d6; opacity: 1; }
+.ch-plot { fill: #ffffff; stroke: #e5e2d9; }
+.ch-dot-good { fill: #008300; }
+.ch-dot-bad { fill: #e34948; }
+</style>
+<text x="0" y="14" class="ch-title">Macro W1 over the scored targets — lower is better</text>
+<line x1="235.0" y1="26" x2="235.0" y2="358" class="ch-rule"/>
+<text x="235.0" y="374" class="ch-rule-label" text-anchor="middle">noise floor 0.0273</text>
+<text x="182" y="47" class="ch-label" text-anchor="end">B3</text>
+<rect x="190" y="34" width="46.5" height="17" rx="4" class="ch-bar"><title>B3: 0.0282 — skyline: gradient boosting trained on the real target labels</title></rect>
+<text x="243.5" y="47" class="ch-value">0.0282</text>
+<text x="182" y="77" class="ch-label" text-anchor="end">system</text>
+<rect x="190" y="64" width="99.3" height="17" rx="4" class="ch-bar ch-bar-hi"><title>system: 0.0602 — the method</title></rect>
+<text x="296.3" y="77" class="ch-value">0.0602</text>
+<text x="182" y="107" class="ch-label" text-anchor="end">system adversarial</text>
+<rect x="190" y="94" width="99.9" height="17" rx="4" class="ch-bar"><title>system adversarial: 0.0606</title></rect>
+<text x="296.9" y="107" class="ch-value">0.0606</text>
+<text x="182" y="137" class="ch-label" text-anchor="end">system s1</text>
+<rect x="190" y="124" width="100.5" height="17" rx="4" class="ch-bar"><title>system s1: 0.0609 — ablation: deviation scale fixed at 1, nothing fitted</title></rect>
+<text x="297.5" y="137" class="ch-value">0.0609</text>
+<text x="182" y="167" class="ch-label" text-anchor="end">system percluster</text>
+<rect x="190" y="154" width="101.0" height="17" rx="4" class="ch-bar"><title>system percluster: 0.0612 — ablation: per-cluster scale, shrunk to the global one</title></rect>
+<text x="298.0" y="167" class="ch-value">0.0612</text>
+<text x="182" y="197" class="ch-label" text-anchor="end">system nosubspace</text>
+<rect x="190" y="184" width="103.2" height="17" rx="4" class="ch-bar"><title>system nosubspace: 0.0626 — ablation: no subgroup-subspace projection</title></rect>
+<text x="300.2" y="197" class="ch-value">0.0626</text>
+<text x="182" y="227" class="ch-label" text-anchor="end">B0a national</text>
+<rect x="190" y="214" width="133.0" height="17" rx="4" class="ch-bar"><title>B0a national: 0.0806 — baseline: the full-population marginal (vs the in-scope mixture)</title></rect>
+<text x="330.0" y="227" class="ch-value">0.0806</text>
+<text x="182" y="257" class="ch-label" text-anchor="end">B0a</text>
+<rect x="190" y="244" width="133.1" height="17" rx="4" class="ch-bar"><title>B0a: 0.0807 — baseline: the true national marginal copied to every cluster</title></rect>
+<text x="330.1" y="257" class="ch-value">0.0807</text>
+<text x="182" y="287" class="ch-label" text-anchor="end">B0b</text>
+<rect x="190" y="274" width="294.8" height="17" rx="4" class="ch-bar"><title>B0b: 0.1787 — baseline: a population-level LLM call copied to every cluster</title></rect>
+<text x="491.8" y="287" class="ch-value">0.1787</text>
+<text x="182" y="317" class="ch-label" text-anchor="end">B4</text>
+<rect x="190" y="304" width="317.7" height="17" rx="4" class="ch-bar"><title>B4: 0.1926 — ablation: raw elicitation, uncalibrated</title></rect>
+<text x="514.7" y="317" class="ch-value">0.1926</text>
+<text x="182" y="347" class="ch-label" text-anchor="end">B1</text>
+<rect x="190" y="334" width="386.4" height="17" rx="4" class="ch-bar"><title>B1: 0.2343 — baseline: copy the most textually similar anchor item</title></rect>
+<text x="583.4" y="347" class="ch-value">0.2343</text>
+</svg>

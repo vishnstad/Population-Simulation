@@ -1,0 +1,30 @@
+# A US policy scenario for the panel demo (checklist 6.6).
+#
+# Chosen to sit just far enough from `natroad` that the router lets it through:
+# `natroad` asks whether federal spending on highways and bridges is too much or
+# too little; this asks whether a household would pay a specific amount for it.
+# A survey answer to the first does not settle the second, which is exactly the
+# gap the LLM path exists to cover — and exactly the case where the honesty box
+# has to say what the system's error was on the questions nearest to it.
+#
+# Router cosine 0.242 against `natroad`: below the 0.25 routing threshold, so it
+# is simulated, and above the honesty box's 0.18 floor, so the box can quote
+# `natroad`'s measured error rather than refusing. That is the demo's whole
+# point and it is why the wording is what it is — one clause further from the
+# instrument text and the box would have had to say "no validated question is
+# close enough", which is the honest answer to a different question.
+scenario_id: us_bridge_levy
+country: US
+topic: spending_priorities
+decision_question: >
+  Would you support a $4 monthly vehicle registration surcharge spent only on
+  repairing structurally deficient highway bridges in your state?
+context: >
+  A state transportation department is weighing a dedicated bridge-repair levy
+  collected through annual vehicle registration. The levy would be ring-fenced:
+  it could not be spent on new construction or on transit.
+scale_type: ordinal
+labels: ["strongly support", "somewhat support", "somewhat oppose", "strongly oppose"]
+segments_of_interest:
+  - {age_band: "65+"}
+  - {degree: 0}

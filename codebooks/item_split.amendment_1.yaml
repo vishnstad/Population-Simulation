@@ -1,0 +1,54 @@
+# Amendment 1 to item_split.frozen.yaml — 16 Sep 2026
+#
+# The frozen split is NOT edited. 2.4 says it must never be regenerated, and it
+# is not: this file is layered over it at load time so the frozen artifact stays
+# byte-identical and the amendment is auditable on its own.
+#
+# THE RULE, stated in PREREGISTRATION.md §7 before this file existed:
+#
+#   Every topic with at least one target reserves at least three anchors, where
+#   the item pool contains enough items to do so. Anchors are added from the
+#   unassigned pool only. No target ever becomes an anchor.
+#
+# The rule references only topic membership and assignment status — never any
+# measurement of a target. That matters: the mechanism this repairs is that a
+# same-topic anchor's LEVEL becomes the model's prior for the target's level
+# (r = -0.853 on the 7B, -0.799 on the 14B, the two arms correlating at +0.915).
+# Selecting an anchor by closeness to the target's level would fix the symptom
+# using the held-out quantity, which is the leakage this project exists to avoid.
+# Showing SEVERAL same-battery exemplars needs nothing about the target.
+#
+# WHY: `nataid` (foreign aid) was the only spending anchor on every spending
+# card, at 57.7% "too much" against a battery median near 10%. The 7B tracked it
+# at r = +0.845 on `natroad` and +0.896 on `natsoc` while correlating NEGATIVELY
+# with the truth. One exemplar cannot show a battery's spread.
+
+amendment: 1
+date: "2026-09-16"
+rule: >
+  Every topic with >=1 target reserves >=3 anchors where the pool allows.
+  Additions come from unassigned pool items only; no target is reassigned.
+base: codebooks/item_split.frozen.yaml
+
+add_anchors:
+  # spending_priorities: 6 anchors -> 11, for 7 targets. All five were
+  # unassigned in the frozen split; none is a target.
+  - natdrug
+  - natcity
+  - natfare
+  - natheal
+  - natsci
+
+# Topics the rule CANNOT serve, recorded so a red gate is not a surprise.
+# 12 of the 40 targets are unchanged by this amendment.
+cannot_serve:
+  civil_liberties: >
+    2 anchors (spkmslm, libmslm) for 12 targets. The only unassigned item is
+    colmslm — a third *mslm, same referent and same outlying level (the mslm
+    items sit at ~50% "remove" where the rest of lib* runs 18-27%), so it adds
+    no spread and is deliberately NOT promoted.
+  religion: "1 anchor (reborn) for 2 targets; no unassigned items."
+  sexual_morality: "2 anchors for 3 targets; no unassigned items."
+  crime_and_guns: "0 anchors for 2 targets; no unassigned items."
+  family_childrearing: "0 anchors for 2 targets; no unassigned items."
+  politics: "0 anchors for 1 target; no unassigned items."

@@ -1,0 +1,71 @@
+# Hand-labeled duplicate pairs for the M7 router threshold (checklist 6.2).
+#
+# Each entry is a question as someone might actually type it into the product,
+# the codebook item it is or is not a duplicate of, and the label. Written by
+# hand against the verbatim instrument wording in `gss_items.yaml`; none of them
+# is a model paraphrase, because a model-generated paraphrase set measures how
+# close a model's paraphrases are, not how close a person's are.
+#
+# `duplicate: true`  — the same question in different words. The router MUST
+#                      route it to the cross-tab, or F3 is live: the system
+#                      would spend an LLM call re-predicting an answer the
+#                      microdata already holds exactly.
+# `duplicate: false` — a question about the same subject that a survey answer
+#                      does NOT settle. Routing it to `observed` is the worse
+#                      error of the two: the product would answer a question
+#                      nobody asked, confidently and with a provenance label
+#                      saying the answer came from data.
+#
+# The hardest cases here are deliberate: the tolerance battery repeats one stem
+# across five target groups and three permissions, so wording similarity cannot
+# tell `colath` from `colmslm`. That is a reported limitation, not a bug to tune
+# away — see §6.2 in the results.
+pairs:
+  # ---------------------------------------------------- spending battery
+  - {text: "Is the government spending too much or too little on highways and bridges?", item: natroad, duplicate: true}
+  - {text: "Do Americans think we spend enough on roads and bridge repair?", item: natroad, duplicate: true}
+  - {text: "Should the federal government spend more on Social Security?", item: natsoc, duplicate: true}
+  - {text: "Are we spending the right amount on protecting the environment?", item: natenvir, duplicate: true}
+  - {text: "Is defense spending too high?", item: natarms, duplicate: true}
+  - {text: "Do people want more money spent on the education system?", item: nateduc, duplicate: true}
+  - {text: "Would voters support a 12-cent federal fuel levy earmarked for bridge repair?", item: natroad, duplicate: false}
+  - {text: "Do people think Social Security will still exist when they retire?", item: natsoc, duplicate: false}
+  - {text: "Would households pay 8 dollars a month more on their power bill for renewables?", item: natenvir, duplicate: false}
+  # ------------------------------------------------- tolerance battery
+  - {text: "Should an admitted Communist be allowed to give a speech in your community?", item: spkcom, duplicate: true}
+  - {text: "Should someone who is against all churches and religion be allowed to teach at a college?", item: colath, duplicate: true}
+  - {text: "If a man who is homosexual wrote a book favouring homosexuality, should it be taken out of the public library?", item: libhomo, duplicate: true}
+  - {text: "Should an atheist be allowed to make a speech in your town?", item: spkath, duplicate: true}
+  - {text: "Should a Communist be allowed to teach in a college or university?", item: colcom, duplicate: true}
+  - {text: "Should an admitted Communist be allowed to teach at a college?", item: spkcom, duplicate: false}
+  - {text: "Should a university cancel a speaker after student protests?", item: spkcom, duplicate: false}
+  - {text: "Do people think atheists are less trustworthy than religious people?", item: spkath, duplicate: false}
+  # ------------------------------------------------------ religion, life
+  - {text: "How often do people pray?", item: pray, duplicate: true}
+  - {text: "Do you believe in an afterlife?", item: postlife, duplicate: true}
+  - {text: "Does prayer actually change outcomes?", item: pray, duplicate: false}
+  - {text: "How often do people attend religious services?", item: pray, duplicate: false}
+  # ------------------------------------------------------- crime, morals
+  - {text: "Do you support the death penalty for murderers?", item: cappun, duplicate: true}
+  - {text: "Is there anywhere within a mile of your home where you'd be afraid to walk alone after dark?", item: fear, duplicate: true}
+  - {text: "How wrong is it for two adults of the same sex to have a sexual relationship?", item: homosex, duplicate: true}
+  - {text: "Is it sometimes necessary to discipline a child with a hard spanking?", item: spanking, duplicate: true}
+  - {text: "Should sex education be taught in public schools?", item: sexeduc, duplicate: true}
+  - {text: "Has the murder rate in your city gone up in the last five years?", item: fear, duplicate: false}
+  - {text: "Should same-sex couples be allowed to adopt?", item: homosex, duplicate: false}
+  - {text: "Should smacking a child be a criminal offence?", item: spanking, duplicate: false}
+  # -------------------------------------------------- media, confidence
+  - {text: "Have you watched an X-rated film in the past twelve months?", item: xmovie, duplicate: true}
+  - {text: "How often do you read a newspaper?", item: news, duplicate: true}
+  - {text: "How much confidence do you have in the people running the scientific community?", item: consci, duplicate: true}
+  - {text: "How much confidence do you have in Congress?", item: conlegis, duplicate: true}
+  - {text: "Do you get your news mainly from social media?", item: news, duplicate: false}
+  - {text: "Do you trust scientists to tell the truth about climate change?", item: consci, duplicate: false}
+  # ------------------------------------------- self-placement, wellbeing
+  - {text: "Where would you place yourself on a scale from extremely liberal to extremely conservative?", item: polviews, duplicate: true}
+  - {text: "Would most people try to take advantage of you, or try to be fair?", item: fair, duplicate: true}
+  - {text: "How satisfied are you with your present financial situation?", item: satfin, duplicate: true}
+  - {text: "Does a person with an incurable disease have the right to end their own life?", item: suicide1, duplicate: true}
+  - {text: "Which party did you vote for in the last election?", item: polviews, duplicate: false}
+  - {text: "How much do you have saved for retirement?", item: satfin, duplicate: false}
+  - {text: "Should assisted dying be legal in your state?", item: suicide1, duplicate: false}

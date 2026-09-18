@@ -1,0 +1,54 @@
+# Python & Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Sensitive & Secrets
+.env
+*.pem
+*.key
+
+# Large Caches & Datasets
+.llm_cache/
+.llm_state/
+runs/*/
+!runs/report/
+!runs/.gitkeep
+runs/_elicit_store/
+runs/_bed_cache/
+data/
+Dataset/
+data_raw/
+*.dta
+*.zip
+*.parquet.tmp
+
+# LaTeX build files
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.synctex.gz
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

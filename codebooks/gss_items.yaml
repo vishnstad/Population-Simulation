@@ -1,0 +1,7091 @@
+dataset: gss
+items:
+  abany:
+    item_id: abany
+    dataset: gss
+    text: If the woman wants it for any reason?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1230
+      2012: 1248
+      2014: 1653
+      2016: 1810
+      2018: 1524
+      2021: 1328
+      2022: 1136
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  abdefect:
+    item_id: abdefect
+    dataset: gss
+    text: (Please tell me whether or not you think it should be possible for a pregnant woman to obtain
+      a legal abortion if. . .) If there is a strong chance of serious defect in the baby?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1225
+      2012: 1232
+      2014: 1633
+      2016: 1800
+      2018: 1503
+      2021: 1435
+      2022: 1121
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  abhlth:
+    item_id: abhlth
+    dataset: gss
+    text: If the woman's own health is seriously endangered by the pregnancy?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1224
+      2012: 1229
+      2014: 1647
+      2016: 1812
+      2018: 1517
+      2021: 1431
+      2022: 1142
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  abnomore:
+    item_id: abnomore
+    dataset: gss
+    text: If she is married and does not want any more children?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1223
+      2012: 1246
+      2014: 1642
+      2016: 1823
+      2018: 1514
+      2021: 1424
+      2022: 1122
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  abpoor:
+    item_id: abpoor
+    dataset: gss
+    text: If the family has a very low income and cannot afford any more children?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1231
+      2012: 1240
+      2014: 1647
+      2016: 1828
+      2018: 1520
+      2021: 1425
+      2022: 1126
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  abrape:
+    item_id: abrape
+    dataset: gss
+    text: If she becomes pregnant as a result of rape?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1235
+      2012: 1230
+      2014: 1629
+      2016: 1810
+      2018: 1502
+      2021: 1430
+      2022: 1139
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  absingle:
+    item_id: absingle
+    dataset: gss
+    text: If she is not married and does not want to marry the man?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1228
+      2012: 1246
+      2014: 1651
+      2016: 1833
+      2018: 1516
+      2021: 1425
+      2022: 1133
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  affrmact:
+    item_id: affrmact
+    dataset: gss
+    text: Some people say that because of past discrimination, Blacks should be given preference in hiring
+      and promotion. Others say that such preference in hiring and promotion of Blacks is wrong because
+      it discriminates against Whites. What about your opinion? Ar
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly favors
+    - not strongly favors
+    - not strongly opposes
+    - strongly opposes
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1350
+      2012: 1221
+      2014: 1592
+      2016: 1777
+      2018: 1447
+      2021: 2628
+      2022: 2229
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: truncated
+    wording_note: codebook Label is 255 chars and ends 's. What about your opinion? Ar' — the question
+      is cut off mid-sentence in the PDF itself (SAS labels cap at 256 bytes)
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  bible:
+    item_id: bible
+    dataset: gss
+    text: Which one of these statements comes closest to describing your feelings about the Bible?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - word of god
+    - inspired word
+    - ancient book
+    - other (vol)
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2006
+      2012: 1933
+      2014: 2489
+      2016: 2830
+      2018: 2314
+      2021: 0
+      2022: 1782
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  cappun:
+    item_id: cappun
+    dataset: gss
+    text: Do you favor or oppose the death penalty for persons convicted of murder?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - favor
+    - oppose
+    codes:
+    - 1
+    - 2
+    topic: life_and_death
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1921
+      2012: 1824
+      2014: 2379
+      2016: 2695
+      2018: 2193
+      2021: 3957
+      2022: 3340
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  colath:
+    item_id: colath
+    dataset: gss
+    text: (There are always some people whose ideas are considered bad or dangerous by other people. For
+      instance, somebody who is against all churches and religion…) Should such a person be allowed to
+      teach in a college or university, or not?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - yes, allowed to teach
+    - not allowed
+    codes:
+    - 4
+    - 5
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1240
+      2012: 1267
+      2014: 1675
+      2016: 1840
+      2018: 1526
+      2021: 2647
+      2022: 2289
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 4
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  colcom:
+    item_id: colcom
+    dataset: gss
+    text: (Now,we would like to ask you some questions about a man who admits he is a Communist…) Suppose
+      he is teaching in a college. Should he be fired, or not?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - yes, fired
+    - not fired
+    codes:
+    - 4
+    - 5
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1213
+      2012: 1213
+      2014: 1625
+      2016: 1787
+      2018: 1465
+      2021: 1293
+      2022: 1098
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 5
+    reverse_coded: true
+    twin_variable: colcomy
+    twin_answered_n_by_wave:
+      2021: 1329
+      2022: 1113
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  colhomo:
+    item_id: colhomo
+    dataset: gss
+    text: (And what about a man who admits that he is homosexual…) Should such a person be allowed to
+      teach in a college or university, or not?
+    text_source: GSS 2021 ballot questionnaire, GSS2020_CrossSection_Ballot1_A4S.pdf — verbatim instrument
+      text, web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - yes, allowed to teach
+    - not allowed
+    codes:
+    - 4
+    - 5
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1255
+      2012: 1273
+      2014: 1686
+      2016: 1857
+      2018: 1542
+      2021: 2656
+      2022: 0
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 4
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  colmil:
+    item_id: colmil
+    dataset: gss
+    text: Allow militarist to teach
+    text_source: gss7224_r3a.dta variable label - TRUNCATED, not instrument wording. Item not fielded
+      in GSS 2022, so no 2022 codebook entry exists. Transcribe from an earlier wave's codebook before
+      elicitation.
+    scale_type: binary
+    labels:
+    - yes, allowed to teach
+    - not allowed
+    codes:
+    - 4
+    - 5
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1245
+      2012: 1269
+      2014: 1664
+      2016: 1829
+      2018: 1525
+      2021: 2637
+      2022: 0
+    labels_source: dta value labels
+    role: excluded
+    role_reason: measured SNR 1.48, below the 1.5 gate (checklist §1.4)
+    wording_status: fallback_label
+    wording_note: text is the .dta variable label, not instrument wording — the item was not fielded in
+      GSS 2022 so no codebook entry exists
+    tolerant_code: 4
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  colmslm:
+    item_id: colmslm
+    dataset: gss
+    text: Should such a person be allowed to teach in a college or university, or not?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - yes, allowed to teach
+    - not allowed
+    codes:
+    - 4
+    - 5
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1254
+      2012: 1270
+      2014: 1686
+      2016: 1852
+      2018: 1531
+      2021: 2646
+      2022: 2279
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 4
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  colrac:
+    item_id: colrac
+    dataset: gss
+    text: (Or consider a person who believes that Blacks are genetically inferior…) Should such a person
+      be allowed to teach in a college or university, or not?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - yes, allowed to teach
+    - not allowed
+    codes:
+    - 4
+    - 5
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1246
+      2012: 1272
+      2014: 1683
+      2016: 1840
+      2018: 1523
+      2021: 2633
+      2022: 2293
+    labels_source: dta value labels
+    role: excluded
+    role_reason: measured SNR 0.64, below the 1.5 gate (checklist §1.4)
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 4
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  conarmy:
+    item_id: conarmy
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Military
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1356
+      2012: 1317
+      2014: 1670
+      2016: 1937
+      2018: 1542
+      2021: 2656
+      2022: 2350
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  conbus:
+    item_id: conbus
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Major companies
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1339
+      2012: 1303
+      2014: 1655
+      2016: 1926
+      2018: 1528
+      2021: 2656
+      2022: 2318
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  conclerg:
+    item_id: conclerg
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Organized religion
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1319
+      2012: 1285
+      2014: 1636
+      2016: 1914
+      2018: 1513
+      2021: 2650
+      2022: 2306
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  coneduc:
+    item_id: coneduc
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Education
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1363
+      2012: 1327
+      2014: 1677
+      2016: 1948
+      2018: 1545
+      2021: 2658
+      2022: 2350
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: false
+    notes: ''
+  confed:
+    item_id: confed
+    dataset: gss
+    text: (As far as the people running this institution are concerned, would you say you have a great
+      deal of confidence, only some confidence, or hardly any confidence at all in them?)... Executive
+      branch of the federal government
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1346
+      2012: 1307
+      2014: 1653
+      2016: 1916
+      2018: 1533
+      2021: 2658
+      2022: 2330
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  confinan:
+    item_id: confinan
+    dataset: gss
+    text: (As far as the people running this institution are concerned, would you say you have a great
+      deal of confidence, only some confidence, or hardly any confidence at all in them?)... Banks and
+      financial institutions
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1364
+      2012: 1325
+      2014: 1677
+      2016: 1946
+      2018: 1550
+      2021: 2660
+      2022: 2353
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  conjudge:
+    item_id: conjudge
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) U.S. Supreme Court
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1335
+      2012: 1295
+      2014: 1641
+      2016: 1915
+      2018: 1519
+      2021: 2662
+      2022: 2327
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  conlabor:
+    item_id: conlabor
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Organized labor
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1300
+      2012: 1256
+      2014: 1613
+      2016: 1874
+      2018: 1488
+      2021: 2648
+      2022: 2276
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  conlegis:
+    item_id: conlegis
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Congress
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1347
+      2012: 1295
+      2014: 1644
+      2016: 1925
+      2018: 1523
+      2021: 2661
+      2022: 2331
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: true
+    notes: ''
+  conmedic:
+    item_id: conmedic
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Medicine
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1363
+      2012: 1327
+      2014: 1676
+      2016: 1942
+      2018: 1554
+      2021: 2662
+      2022: 2355
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: true
+    notes: ''
+  conpress:
+    item_id: conpress
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Press
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1355
+      2012: 1310
+      2014: 1663
+      2016: 1937
+      2018: 1548
+      2021: 2654
+      2022: 2342
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  consci:
+    item_id: consci
+    dataset: gss
+    text: (I am going to name some institutions in this country. As far as the people running these institutions
+      are concerned, would you say you have a great deal of confidence, only some confidence, or hardly
+      any confidence at all in them?) Scientific Community
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1306
+      2012: 1264
+      2014: 1623
+      2016: 1884
+      2018: 1506
+      2021: 2654
+      2022: 2314
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  contv:
+    item_id: contv
+    dataset: gss
+    text: (As far as the people running this institution are concerned, would you say you have a great
+      deal of confidence, only some confidence, or hardly any confidence at all in them?)... TV
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - a great deal
+    - only some
+    - hardly any
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: institutional_confidence
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1363
+      2012: 1309
+      2014: 1664
+      2016: 1938
+      2018: 1545
+      2021: 2660
+      2022: 2336
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  courts:
+    item_id: courts
+    dataset: gss
+    text: In general, do you think the courts in this area deal too harshly or not harshly enough with
+      criminals?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too harshly
+    - not harshly enough
+    - about right
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1877
+      2012: 1777
+      2014: 2311
+      2016: 2551
+      2018: 2056
+      2021: 0
+      2022: 1550
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  discaff:
+    item_id: discaff
+    dataset: gss
+    text: What do you think the chances are these days that a white person won't get a job or promotion
+      while an equally or less qualified black person gets one instead? Is this very likely, somewhat
+      likely, or not very likely to happen these days?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - very likely
+    - somewhat likely
+    - not very likely
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1233
+      2012: 1242
+      2014: 1657
+      2016: 1817
+      2018: 1504
+      2021: 3948
+      2022: 3400
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [4]'
+  divlaw:
+    item_id: divlaw
+    dataset: gss
+    text: Should divorce in this country be easier or more difficult to obtain than it is now?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - easier
+    - more difficult
+    - stay as is
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1342
+      2012: 1208
+      2014: 1576
+      2016: 1790
+      2018: 1445
+      2021: 0
+      2022: 1120
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  divorce:
+    item_id: divorce
+    dataset: gss
+    text: 'IF CURRENTLY MARRIED OR WIDOWED: Have you ever been divorced or legally separated?'
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1071
+      2012: 1062
+      2014: 1365
+      2016: 1458
+      2018: 1194
+      2021: 2300
+      2022: 1712
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  dwelown:
+    item_id: dwelown
+    dataset: gss
+    text: (Do you/Does your family) own your (home/apartment), pay rent, or what?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - own or is buying
+    - pays rent
+    - other
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1424
+      2012: 1297
+      2014: 1670
+      2016: 1881
+      2018: 1552
+      2021: 2645
+      2022: 2362
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  eqwlth:
+    item_id: eqwlth
+    dataset: gss
+    text: Some people think that the government in Washington ought to reduce the income differences between
+      the rich and the poor, perhaps by raising the taxes of wealthy families or by giving income assistance
+      to the poor. Others think that the government should not concern itself with reducing this income
+      difference between the rich and the poor... Here is a scale from 1 to 7. Think of a score of 1 as
+      meaning that the government ought to reduce the income differences between rich and poor, and a
+      score of 7 meaning that the government should not concern itself with reducing income differences.
+      What score between 1 and 7 comes closest to the way you feel?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - the government should reduce income differences
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - the government should not concern itself with reducing income differences
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1359
+      2012: 1324
+      2014: 1671
+      2016: 1936
+      2018: 1539
+      2021: 2661
+      2022: 2351
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  fair:
+    item_id: fair
+    dataset: gss
+    text: Do you think most people would try to take advantage of you if they got a chance, or would they
+      try to be fair?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - would take advantage of you
+    - would try to be fair
+    - depends
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: wellbeing
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1365
+      2012: 1326
+      2014: 1681
+      2016: 1939
+      2018: 1550
+      2021: 0
+      2022: 1194
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  fear:
+    item_id: fear
+    dataset: gss
+    text: Is there any area right around here--that is, within a mile--where you would be afraid to walk
+      alone at night?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: crime_and_guns
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1276
+      2012: 1300
+      2014: 1704
+      2016: 1875
+      2018: 1567
+      2021: 4022
+      2022: 2318
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  fefam:
+    item_id: fefam
+    dataset: gss
+    text: (Please read the following statements and indicate whether you strongly agree, agree, neither
+      agree nor disagree, disagree, or strongly disagree with each statement.)... It is much better for
+      everyone involved if the man is the achiever outside the home and the woman takes care of the home
+      and family.
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - strongly agree
+    - agree
+    - disagree
+    - strongly disagree
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: family_childrearing
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1418
+      2012: 1285
+      2014: 1655
+      2016: 1872
+      2018: 1545
+      2021: 2708
+      2022: 2348
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  fehire:
+    item_id: fehire
+    dataset: gss
+    text: Now I'm going to read several statements. As I read each one, please tell me whether you strongly
+      agree, agree, neither agree nor disagree, Because of past discrimination, employers should make
+      special efforts to hire and promote qualified women.
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly agree
+    - agree
+    - neither agree nor disagree
+    - disagree
+    - strongly disagree
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 696
+      2012: 637
+      2014: 843
+      2016: 951
+      2018: 760
+      2021: 2708
+      2022: 2357
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  fejobaff:
+    item_id: fejobaff
+    dataset: gss
+    text: Some people say that because of past discrimination, women should be given preference in hiring
+      and promotion. Others say that such preference in hiring and promotion of women is wrong because
+      it discriminates against men. What about your opinion -are you
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly favor
+    - not strongly favor
+    - not strongly oppose
+    - strongly oppose
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 693
+      2012: 628
+      2014: 790
+      2016: 896
+      2018: 750
+      2021: 1323
+      2022: 1160
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: truncated
+    wording_note: codebook Label is 255 chars and ends 'at about your opinion -are you' — the question
+      is cut off mid-sentence in the PDF itself (SAS labels cap at 256 bytes)
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  fepol:
+    item_id: fepol
+    dataset: gss
+    text: 'Tell me if you agree or disagree with this statement: Most men are better suited emotionally
+      for politics than are most women.'
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - agree
+    - disagree
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1351
+      2012: 1235
+      2014: 1589
+      2016: 1807
+      2018: 1499
+      2021: 0
+      2022: 1144
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  fepresch:
+    item_id: fepresch
+    dataset: gss
+    text: (Please read the following statements and indicate whether you strongly agree, agree, disagree,
+      or strongly disagree with each statement…) A preschool child is likely to suffer if his or her mother
+      works.
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly agree
+    - agree
+    - disagree
+    - strongly disagree
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1413
+      2012: 1284
+      2014: 1661
+      2016: 1875
+      2018: 1536
+      2021: 2707
+      2022: 2348
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  finalter:
+    item_id: finalter
+    dataset: gss
+    text: During the last few years, has your financial situation been getting better, worse, or has it
+      stayed the same?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - better
+    - worse
+    - stayed same
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2033
+      2012: 1967
+      2014: 2533
+      2016: 2855
+      2018: 2339
+      2021: 4021
+      2022: 3529
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  finrela:
+    item_id: finrela
+    dataset: gss
+    text: Compared with American families in general, would you say your family income is far below average,
+      below average, average, above average, or far above average? If you are uncertain, just give us
+      your best guess.
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - far below average
+    - below average
+    - average
+    - above average
+    - far above average
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: personal_finance
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2019
+      2012: 1952
+      2014: 2511
+      2016: 2839
+      2018: 2321
+      2021: 4020
+      2022: 3500
+    labels_source: dta value labels
+    role: sanity
+    role_reason: income restated, not an opinion item; clusters are defined partly by education, so a
+      strong result here is the §F3 objection, not evidence (checklist 1.4b)
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  getahead:
+    item_id: getahead
+    dataset: gss
+    text: Some people say that people get ahead by their own hard work; others say that lucky breaks or
+      help from other people are more important. Which do you think is most important?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - hard work most important
+    - hard work, luck equally important
+    - luck most important
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1269
+      2012: 1302
+      2014: 1700
+      2016: 1876
+      2018: 1559
+      2021: 0
+      2022: 1184
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [4]'
+  god:
+    item_id: god
+    dataset: gss
+    text: Which of the statements comes closest to expressing what you believe about God.
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - don't believe
+    - don't know, no way to find out
+    - higher power
+    - believe sometimes
+    - believe with doubts
+    - no doubts
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2023
+      2012: 1956
+      2014: 2521
+      2016: 2839
+      2018: 2317
+      2021: 2615
+      2022: 2336
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  goodlife:
+    item_id: goodlife
+    dataset: gss
+    text: Please indicate whether you strongly agree, agree, neither agree nor disagree, disagree, or
+      strongly disagree with the following statement:... The way things are in America, people like me
+      and my family have a good chance of improving our standard of living.
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - strongly agree
+    - agree
+    - neither agree nor disagree
+    - disagree
+    - strongly disagree
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1368
+      2012: 1332
+      2014: 1683
+      2016: 1950
+      2018: 1553
+      2021: 2664
+      2022: 2353
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  grass:
+    item_id: grass
+    dataset: gss
+    text: Do you think the use of marijuana should be made legal or not?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - should be legal
+    - should not be legal
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1259
+      2012: 1234
+      2014: 1574
+      2016: 1843
+      2018: 1447
+      2021: 0
+      2022: 1117
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  gunlaw:
+    item_id: gunlaw
+    dataset: gss
+    text: Would you favor or oppose a law which would require a person to obtain a police permit before
+      he or she could buy a gun?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - favor
+    - oppose
+    codes:
+    - 1
+    - 2
+    topic: crime_and_guns
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1271
+      2012: 1283
+      2014: 1693
+      2016: 1858
+      2018: 1541
+      2021: 3992
+      2022: 2302
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  hapmar:
+    item_id: hapmar
+    dataset: gss
+    text: (IF CURRENTLY MARRIED, ASK HAPMAR) Taking things all together, how would you describe your marriage?
+      Would you say that your marriage is very happy, pretty happy, or not too happy?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - very happy
+    - pretty happy
+    - not too happy
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 886
+      2012: 897
+      2014: 1155
+      2016: 1204
+      2018: 992
+      2021: 1986
+      2022: 1455
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  happy:
+    item_id: happy
+    dataset: gss
+    text: Taken all together, how would you say things are these days--would you say that you are very
+      happy, pretty happy, or not too happy?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - very happy
+    - pretty happy
+    - not too happy
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: wellbeing
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2039
+      2012: 1964
+      2014: 2530
+      2016: 2859
+      2018: 2344
+      2021: 4014
+      2022: 3520
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  health:
+    item_id: health
+    dataset: gss
+    text: Would you say your own health, in general, is excellent, good, fair, or poor?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - excellent
+    - good
+    - fair
+    - poor
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: wellbeing
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1278
+      2012: 1306
+      2014: 1710
+      2016: 1885
+      2018: 1569
+      2021: 4023
+      2022: 3541
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  helpblk:
+    item_id: helpblk
+    dataset: gss
+    text: Some people think that Black people have been discriminated against for so long that the government
+      has a special obligation to help improve their living standards. Others believe that the government
+      should not be giving special treatment to Black people... Where would you place yourself on this
+      scale, or haven't you made up your mind on this?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - government should help
+    - '2'
+    - agree with both
+    - '4'
+    - no special treatment
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1322
+      2012: 1282
+      2014: 1622
+      2016: 1875
+      2018: 1493
+      2021: 2602
+      2022: 2283
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  helpful:
+    item_id: helpful
+    dataset: gss
+    text: Would you say that most of the time people try to be helpful, or that they are mostly just looking
+      out for themselves?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - try to be helpful
+    - looking out for themselves
+    - depends
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1370
+      2012: 1328
+      2014: 1682
+      2016: 1946
+      2018: 1553
+      2021: 0
+      2022: 1198
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  helpnot:
+    item_id: helpnot
+    dataset: gss
+    text: Some people think that the government in Washington is trying to do too many things that should
+      be left to individuals and private businesses. Others disagree and think that the government should
+      do even more to solve our country's problems. Still others have opinions somewhere in between...
+      Where would you place yourself on this scale, or haven't you made up your mind on this?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - government should do more
+    - '2'
+    - agree with both
+    - '4'
+    - government does too much
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1314
+      2012: 1289
+      2014: 1621
+      2016: 1858
+      2018: 1491
+      2021: 2609
+      2022: 2276
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  helpoth:
+    item_id: helpoth
+    dataset: gss
+    text: (If you had to choose, which thing on this list would you pick as the most important for a child
+      to learn to prepare him or her for life? Which comes next in importance? Which comes third? Which
+      comes fourth?) To help others when they need help.
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - most important
+    - 2nd important
+    - 3rd important
+    - 4th important
+    - least important
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1349
+      2012: 1323
+      2014: 1670
+      2016: 1934
+      2018: 1542
+      2021: 2573
+      2022: 2294
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  helppoor:
+    item_id: helppoor
+    dataset: gss
+    text: We would like to talk with you about issues some people tell us are important. Some people think
+      that the government in Washington should do everything possible to improve the standard of living
+      of all poor Americans; they are at Point 1 on the scale below. Other people think it is not the
+      government's responsibility, and that each person should take care of himself; they are at Point
+      5... Where would you place yourself on this scale, or haven't you made up your mind on this?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - government should help
+    - '2'
+    - agree with both
+    - '4'
+    - people should care for themselves
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1340
+      2012: 1294
+      2014: 1638
+      2016: 1887
+      2018: 1519
+      2021: 2633
+      2022: 2322
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  helpsick:
+    item_id: helpsick
+    dataset: gss
+    text: In general, some people think that it is the responsibility of the government in Washington
+      to see to it that people have help in paying for doctors and hospital bills. Others think that these
+      matters are not the responsibility of the federal government and that people should take care of
+      these things themselves... Where would you place yourself on this scale, or haven't you made up
+      your mind on this?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot2_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - government should help
+    - '2'
+    - agree with both
+    - '4'
+    - people should care for themselves
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1326
+      2012: 1297
+      2014: 1640
+      2016: 1896
+      2018: 1528
+      2021: 2627
+      2022: 2323
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  homosex:
+    item_id: homosex
+    dataset: gss
+    text: What about sexual relations between two adults of the same sex--do you think it is always wrong,
+      almost always wrong, wrong only sometimes, or not wrong at all?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - always wrong
+    - almost always wrong
+    - wrong only sometimes
+    - not wrong at all
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: sexual_morality
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1223
+      2012: 1239
+      2014: 1651
+      2016: 1806
+      2018: 1495
+      2021: 2611
+      2022: 2249
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [5]'
+  intlblks:
+    item_id: intlblks
+    dataset: gss
+    text: Now I have some questions about different groups in our society. I'm going to show you a seven-point
+      scale on which the characteristics of people in a group can be rated. In the first statement a score
+      of 1 means that you think almost all of the people in
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - 1-unintelligent
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - 7-intelligent
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1374
+      2012: 1254
+      2014: 1639
+      2016: 1845
+      2018: 1511
+      2021: 2671
+      2022: 2305
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: truncated
+    wording_note: codebook Label is 255 chars and ends 'nk almost all of the people in' — the question
+      is cut off mid-sentence in the PDF itself (SAS labels cap at 256 bytes)
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  intlwhts:
+    item_id: intlwhts
+    dataset: gss
+    text: Now I have some questions about different groups in our society. I'm going to show you a seven-point
+      scale on which the characteristics of people in a group can be rated. In the first statement a score
+      of 1 means that you think almost all of the people in
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - 1-unintelligent
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - 7-intelligent
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1381
+      2012: 1257
+      2014: 1643
+      2016: 1849
+      2018: 1512
+      2021: 2677
+      2022: 2304
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: truncated
+    wording_note: codebook Label is 255 chars and ends 'nk almost all of the people in' — the question
+      is cut off mid-sentence in the PDF itself (SAS labels cap at 256 bytes)
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  kidssol:
+    item_id: kidssol
+    dataset: gss
+    text: When your children are at the age you are now, do you think their standard of living will be
+      much better, somewhat better, about the same, somewhat worse, or much worse than yours is now?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - much better
+    - somewhat better
+    - about the same
+    - somewhat worse
+    - much worse
+    - no children
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1338
+      2012: 1304
+      2014: 1659
+      2016: 1915
+      2018: 1535
+      2021: 0
+      2022: 1152
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  letdie1:
+    item_id: letdie1
+    dataset: gss
+    text: When a person has a disease that cannot be cured, do you think doctors should be allowed by
+      law to end the patient's life by some painless means if the patient and his family request it?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: life_and_death
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1389
+      2012: 1250
+      2014: 1617
+      2016: 1832
+      2018: 1507
+      2021: 1316
+      2022: 1173
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: letdie1y
+    twin_answered_n_by_wave:
+      2021: 1356
+      2022: 1134
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  letin1a:
+    item_id: letin1a
+    dataset: gss
+    text: Do you think the number of immigrants to America nowadays should be...
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - increased a lot
+    - increased a little
+    - remain the same as it is
+    - reduced a little
+    - reduced a lot
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1393
+      2012: 1262
+      2014: 1624
+      2016: 1845
+      2018: 1520
+      2021: 2670
+      2022: 3440
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  libath:
+    item_id: libath
+    dataset: gss
+    text: (There are always some people whose ideas are considered bad or dangerous by other people. For
+      instance, somebody who is against all churches and religion…) If some people in your community suggested
+      that a book he wrote against churches and religion should be taken out of your public library, would
+      you favor removing this book, or not?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - remove
+    - not remove
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1259
+      2012: 1275
+      2014: 1690
+      2016: 1857
+      2018: 1538
+      2021: 1310
+      2022: 1139
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 2
+    reverse_coded: true
+    twin_variable: libathy
+    twin_answered_n_by_wave:
+      2021: 1349
+      2022: 1153
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  libcom:
+    item_id: libcom
+    dataset: gss
+    text: (Now, we would like to ask you some questions about a man who admits he is a Communist…) Suppose
+      he wrote a book which is in your public library. Somebody in your community suggests that the book
+      should be removed from the library. Would you favor removing it, or not?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - remove
+    - not remove
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1243
+      2012: 1254
+      2014: 1668
+      2016: 1830
+      2018: 1505
+      2021: 1303
+      2022: 1117
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 2
+    reverse_coded: true
+    twin_variable: libcomy
+    twin_answered_n_by_wave:
+      2021: 1337
+      2022: 1141
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  libhomo:
+    item_id: libhomo
+    dataset: gss
+    text: (And what about a man who admits that he is homosexual…) If somebody in your community suggests
+      that a book he wrote in favor of homosexuality should be taken out of your public library, would
+      you favor removing it, or not?
+    text_source: GSS 2021 ballot questionnaire, GSS2020_CrossSection_Ballot1_A4S.pdf — verbatim instrument
+      text, web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - remove
+    - not remove
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1258
+      2012: 1278
+      2014: 1688
+      2016: 1859
+      2018: 1544
+      2021: 1308
+      2022: 0
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 2
+    reverse_coded: true
+    twin_variable: libhomoy
+    twin_answered_n_by_wave:
+      2021: 1342
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  libmil:
+    item_id: libmil
+    dataset: gss
+    text: Suppose he wrote a book advocating doing away with elections and letting the military run the
+      country... Somebody in your community suggests that the book be removed from the public library.
+      Would you favor removing it, or not?
+    text_source: GSS 2021 ballot questionnaire, GSS2020_CrossSection_Ballot1_A4S.pdf — verbatim instrument
+      text, web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - remove
+    - not remove
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1258
+      2012: 1271
+      2014: 1677
+      2016: 1851
+      2018: 1537
+      2021: 1302
+      2022: 0
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 2
+    reverse_coded: true
+    twin_variable: libmily
+    twin_answered_n_by_wave:
+      2021: 1338
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  libmslm:
+    item_id: libmslm
+    dataset: gss
+    text: If some people in your community suggested that a book he wrote which preaches hatred of the
+      United States should be taken out of your public library, would you favor removing this book, or
+      not?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - remove
+    - not remove
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1268
+      2012: 1279
+      2014: 1689
+      2016: 1865
+      2018: 1551
+      2021: 1304
+      2022: 1139
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 2
+    reverse_coded: true
+    twin_variable: libmslmy
+    twin_answered_n_by_wave:
+      2021: 1342
+      2022: 1153
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  librac:
+    item_id: librac
+    dataset: gss
+    text: (Or consider a person who believes that Blacks are genetically inferior…) If some people in
+      your community suggested that a book he wrote which said Blacks are inferior should be taken out
+      of your public library, would you favor removing this book, or not
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - remove
+    - not remove
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1257
+      2012: 1262
+      2014: 1683
+      2016: 1850
+      2018: 1542
+      2021: 1301
+      2022: 1132
+    labels_source: dta value labels
+    role: excluded
+    role_reason: measured SNR 1.21, below the 1.5 gate (checklist §1.4)
+    wording_status: truncated
+    wording_note: codebook Label is 255 chars and ends 'vor removing this book, or not' — the question
+      is cut off mid-sentence in the PDF itself (SAS labels cap at 256 bytes)
+    tolerant_code: 2
+    reverse_coded: true
+    twin_variable: libracy
+    twin_answered_n_by_wave:
+      2021: 1343
+      2022: 1149
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  life:
+    item_id: life
+    dataset: gss
+    text: In general, do you find life exciting, pretty routine, or dull?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - exciting
+    - routine
+    - dull
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: wellbeing
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1266
+      2012: 1296
+      2014: 1700
+      2016: 1873
+      2018: 1555
+      2021: 2669
+      2022: 2332
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  liveblks:
+    item_id: liveblks
+    dataset: gss
+    text: Now we are going to ask you about different types of contact with various groups of people.
+      For the following situation, please indicate whether you would be very much in favor of it happening,
+      somewhat in favor, neither in favor nor opposed to it happening, somewhat opposed, or very much
+      opposed to it happening. Living in a neighborhood where half of your neighbors are Black people?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - strongly favor
+    - favor
+    - neither favor nor oppose
+    - oppose
+    - strongly oppose
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1417
+      2012: 1282
+      2014: 1662
+      2016: 1876
+      2018: 1544
+      2021: 2695
+      2022: 2353
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  marasian:
+    item_id: marasian
+    dataset: gss
+    text: How about having a close relative marry an Asian American person?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly favor
+    - favor
+    - neither favor nor oppose
+    - oppose
+    - strongly oppose
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1421
+      2012: 1288
+      2014: 1655
+      2016: 1876
+      2018: 1546
+      2021: 2689
+      2022: 2359
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  marhisp:
+    item_id: marhisp
+    dataset: gss
+    text: How about having a close relative marry a Hispanic or Latino person?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly favor
+    - favor
+    - neither favor nor oppose
+    - oppose
+    - strongly oppose
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1420
+      2012: 1285
+      2014: 1657
+      2016: 1875
+      2018: 1545
+      2021: 2690
+      2022: 2358
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  marwht:
+    item_id: marwht
+    dataset: gss
+    text: What about having a close relative marry a White person? Would you be very in favor of it happening,
+      somewhat in favor, neither in favor nor opposed to it happening, somewhat opposed, or very opposed
+      to it happening?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly favor
+    - favor
+    - neither favor nor oppose
+    - oppose
+    - strongly oppose
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1421
+      2012: 1296
+      2014: 1663
+      2016: 1884
+      2018: 1549
+      2021: 2694
+      2022: 2363
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  meovrwrk:
+    item_id: meovrwrk
+    dataset: gss
+    text: Family life often suffers because men concentrate too much on their work.
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly agree
+    - agree
+    - neither agree nor disagree
+    - disagree
+    - strongly disagree
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1421
+      2012: 1291
+      2014: 1667
+      2016: 1879
+      2018: 1546
+      2021: 2714
+      2022: 2358
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: false
+    notes: ''
+  nataid:
+    item_id: nataid
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Foreign aid
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 973
+      2012: 930
+      2014: 1209
+      2016: 1345
+      2018: 1089
+      2021: 1969
+      2022: 1702
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: nataidy
+    twin_answered_n_by_wave:
+      2010: 998
+      2012: 934
+      2014: 1228
+      2016: 1388
+      2018: 1107
+      2021: 2031
+      2022: 1716
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  natarms:
+    item_id: natarms
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) The military, armaments,
+      and defense
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 986
+      2012: 965
+      2014: 1230
+      2016: 1398
+      2018: 1141
+      2021: 1974
+      2022: 1735
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: natarmsy
+    twin_answered_n_by_wave:
+      2010: 981
+      2012: 934
+      2014: 1209
+      2016: 1377
+      2018: 1115
+      2021: 2033
+      2022: 1710
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  natchld:
+    item_id: natchld
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Assistance for childcare
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1894
+      2012: 1818
+      2014: 2351
+      2016: 2700
+      2018: 2215
+      2021: 3984
+      2022: 3413
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: false
+    notes: ''
+  natcity:
+    item_id: natcity
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Solving the problems
+      of big cities
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 909
+      2012: 881
+      2014: 1149
+      2016: 1315
+      2018: 1059
+      2021: 1949
+      2022: 1677
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: natcityy
+    twin_answered_n_by_wave:
+      2010: 879
+      2012: 803
+      2014: 1114
+      2016: 1277
+      2018: 1019
+      2021: 2014
+      2022: 1640
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  natcrime:
+    item_id: natcrime
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Halting the rising
+      crime rate
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 980
+      2012: 960
+      2014: 1232
+      2016: 1389
+      2018: 1133
+      2021: 1969
+      2022: 1738
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  natdrug:
+    item_id: natdrug
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Dealing with drug addiction
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 976
+      2012: 944
+      2014: 1218
+      2016: 1395
+      2018: 1150
+      2021: 1964
+      2022: 1738
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: natdrugy
+    twin_answered_n_by_wave:
+      2010: 950
+      2012: 885
+      2014: 1179
+      2016: 1358
+      2018: 1111
+      2021: 2023
+      2022: 1703
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  nateduc:
+    item_id: nateduc
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Improving the nation's
+      education system
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1000
+      2012: 985
+      2014: 1246
+      2016: 1421
+      2018: 1175
+      2021: 1976
+      2022: 1762
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: nateducy
+    twin_answered_n_by_wave:
+      2010: 1023
+      2012: 965
+      2014: 1246
+      2016: 1418
+      2018: 1151
+      2021: 2031
+      2022: 1755
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  natenrgy:
+    item_id: natenrgy
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Developing alternative
+      energy sources
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1961
+      2012: 1881
+      2014: 2441
+      2016: 2743
+      2018: 2234
+      2021: 4008
+      2022: 3424
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  natenvir:
+    item_id: natenvir
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Improving and protecting
+      the environment
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 976
+      2012: 971
+      2014: 1244
+      2016: 1401
+      2018: 1157
+      2021: 1979
+      2022: 1752
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  natfare:
+    item_id: natfare
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Welfare
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 980
+      2012: 957
+      2014: 1224
+      2016: 1385
+      2018: 1133
+      2021: 1970
+      2022: 1720
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: natfarey
+    twin_answered_n_by_wave:
+      2010: 996
+      2012: 935
+      2014: 1233
+      2016: 1403
+      2018: 1132
+      2021: 2038
+      2022: 1746
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  natheal:
+    item_id: natheal
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Improving and protecting
+      the nation's health
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 988
+      2012: 969
+      2014: 1240
+      2016: 1405
+      2018: 1156
+      2021: 1966
+      2022: 1747
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: nathealy
+    twin_answered_n_by_wave:
+      2010: 995
+      2012: 940
+      2014: 1227
+      2016: 1399
+      2018: 1138
+      2021: 2025
+      2022: 1739
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  natmass:
+    item_id: natmass
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Mass Transportation
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1941
+      2012: 1820
+      2014: 2374
+      2016: 2699
+      2018: 2195
+      2021: 3996
+      2022: 3403
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  natpark:
+    item_id: natpark
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Parks and recreation
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2002
+      2012: 1922
+      2014: 2489
+      2016: 2817
+      2018: 2288
+      2021: 4002
+      2022: 3478
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  natrace:
+    item_id: natrace
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Improving the conditions
+      of Blacks
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 899
+      2012: 877
+      2014: 1130
+      2016: 1294
+      2018: 1078
+      2021: 1959
+      2022: 1685
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: natracey
+    twin_answered_n_by_wave:
+      2010: 869
+      2012: 808
+      2014: 1088
+      2016: 1285
+      2018: 1026
+      2021: 2006
+      2022: 1652
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: false
+    notes: ''
+  natroad:
+    item_id: natroad
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Highways and bridges
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1986
+      2012: 1920
+      2014: 2482
+      2016: 2820
+      2018: 2309
+      2021: 4004
+      2022: 3488
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: true
+    notes: ''
+  natsci:
+    item_id: natsci
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Supporting scientific
+      research
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1900
+      2012: 1824
+      2014: 2361
+      2016: 2687
+      2018: 2209
+      2021: 3996
+      2022: 3387
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  natsoc:
+    item_id: natsoc
+    dataset: gss
+    text: (... are we spending too much, too little, or about the right amount on) Social Security
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1948
+      2012: 1877
+      2014: 2411
+      2016: 2756
+      2018: 2230
+      2021: 4002
+      2022: 3425
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  natspac:
+    item_id: natspac
+    dataset: gss
+    text: 'Let''s begin with some things people think about today. We are faced with many problems in
+      this country, none of which can be solved easily or inexpensively. For each of the following problems,
+      please indicate whether you think we''re spending too much money on it, too little money, or about
+      the right amount... First: The space exploration program ... are we spending too much, too little,
+      or about the right amount on The space exploration program?'
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - too little
+    - about right
+    - too much
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: spending_priorities
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 941
+      2012: 899
+      2014: 1150
+      2016: 1290
+      2018: 1029
+      2021: 1969
+      2022: 1685
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: natspacy
+    twin_answered_n_by_wave:
+      2010: 954
+      2012: 889
+      2014: 1167
+      2016: 1314
+      2018: 1057
+      2021: 2030
+      2022: 1666
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  news:
+    item_id: news
+    dataset: gss
+    text: How often do you read the newspaper--every day, a few times a week, once a week, less than once
+      a week, or never?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - every day
+    - a few times a week
+    - once a week
+    - less than once a week
+    - never
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1430
+      2012: 1301
+      2014: 1675
+      2016: 1885
+      2018: 1559
+      2021: 2696
+      2022: 2365
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  obey:
+    item_id: obey
+    dataset: gss
+    text: (If you had to choose, which thing on this list would you pick as the most important for a child
+      to learn to prepare him or her for life? Which comes next in importance? Which comes third? Which
+      comes fourth?) To obey
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - most important
+    - 2nd important
+    - 3rd important
+    - 4th important
+    - least important
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1349
+      2012: 1323
+      2014: 1670
+      2016: 1934
+      2018: 1542
+      2021: 2573
+      2022: 2294
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  parsol:
+    item_id: parsol
+    dataset: gss
+    text: Compared to your parents when they were the age you are now, do you think your own standard
+      of living now is much better, somewhat better, about the same, somewhat worse, or much worse than
+      theirs was?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - much better
+    - somewhat better
+    - about the same
+    - somewhat worse
+    - much worse
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1361
+      2012: 1308
+      2014: 1663
+      2016: 1932
+      2018: 1536
+      2021: 2653
+      2022: 2329
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  pillok:
+    item_id: pillok
+    dataset: gss
+    text: Do you strongly agree, agree, disagree, or strongly disagree that methods of birth control should
+      be available to teenagers between the ages of 14 and 16 if their parents do not approve?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly agree
+    - agree
+    - disagree
+    - strongly disagree
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1404
+      2012: 1269
+      2014: 1635
+      2016: 1844
+      2018: 1521
+      2021: 2691
+      2022: 2332
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  polabuse:
+    item_id: polabuse
+    dataset: gss
+    text: (Would you approve of a policeman striking a citizen who...) Had said vulgar and obscene things
+      to the policeman?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1346
+      2012: 1299
+      2014: 1656
+      2016: 1913
+      2018: 1524
+      2021: 1304
+      2022: 1182
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: polabusey
+    twin_answered_n_by_wave:
+      2021: 1351
+      2022: 1169
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: false
+    notes: ''
+  polattak:
+    item_id: polattak
+    dataset: gss
+    text: Was attacking the policeman with his fists?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1352
+      2012: 1314
+      2014: 1662
+      2016: 1925
+      2018: 1529
+      2021: 1303
+      2022: 1176
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: polattaky
+    twin_answered_n_by_wave:
+      2021: 1354
+      2022: 1163
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: false
+    notes: ''
+  polescap:
+    item_id: polescap
+    dataset: gss
+    text: Was attempting to escape from custody?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1314
+      2012: 1276
+      2014: 1595
+      2016: 1879
+      2018: 1469
+      2021: 2639
+      2022: 2322
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  polhitok:
+    item_id: polhitok
+    dataset: gss
+    text: Are there any situations you can imagine in which you would approve of a policeman striking
+      an adult male citizen?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1298
+      2012: 1279
+      2014: 1609
+      2016: 1876
+      2018: 1481
+      2021: 1300
+      2022: 1167
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: polhitoky
+    twin_answered_n_by_wave:
+      2021: 1347
+      2022: 1150
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  polmurdr:
+    item_id: polmurdr
+    dataset: gss
+    text: (Would you approve of a policeman striking a citizen who…) Was being questioned as a suspect
+      in a murder case?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1331
+      2012: 1298
+      2014: 1653
+      2016: 1904
+      2018: 1513
+      2021: 2634
+      2022: 2332
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: false
+    notes: ''
+  polviews:
+    item_id: polviews
+    dataset: gss
+    text: We hear a lot of talk these days about liberals and conservatives. Here is a seven-point scale
+      on which the political views that people might hold are arranged from extremely liberal—point 1—to
+      extremely conservative—point 7. Where would you place yourself on this scale?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - extremely liberal
+    - liberal
+    - slightly liberal
+    - moderate, middle of the road
+    - slightly conservative
+    - conservative
+    - extremely conservative
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    topic: politics
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1973
+      2012: 1874
+      2014: 2449
+      2016: 2756
+      2018: 2247
+      2021: 3964
+      2022: 3426
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  popespks:
+    item_id: popespks
+    dataset: gss
+    text: We are interested in what American Catholics think about religious matters. Please select the
+      answer from this card that comes closest to your own personal opinion about the following statement:...
+      Under certain conditions, the pope is infallible when he speaks on matters of faith and morals.
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - certainly true
+    - probably true
+    - i am uncertain whether this is true or false
+    - probably false
+    - certainly false
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 468
+      2012: 424
+      2014: 596
+      2016: 639
+      2018: 484
+      2021: 813
+      2022: 725
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  popular:
+    item_id: popular
+    dataset: gss
+    text: (If you had to choose, which thing on this list would you pick as the most important for a child
+      to learn to prepare him or her for life? Which comes next in importance? Which comes third? Which
+      comes fourth?) To be well-liked or popular
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - most important
+    - 2nd important
+    - 3rd important
+    - 4th important
+    - least important
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1349
+      2012: 1323
+      2014: 1670
+      2016: 1934
+      2018: 1542
+      2021: 2573
+      2022: 2294
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  pornlaw:
+    item_id: pornlaw
+    dataset: gss
+    text: Which of these statements comes closest to your feelings about pornography laws?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - there should be laws against the distribution of pornography whatever the age
+    - there should be laws against the distribution of pornography to persons under 18
+    - there should be no laws forbidding the distribution of pornography
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: sexual_morality
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1365
+      2012: 1323
+      2014: 1676
+      2016: 1938
+      2018: 1550
+      2021: 2652
+      2022: 2326
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  postlife:
+    item_id: postlife
+    dataset: gss
+    text: Do you believe there is a life after death?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: religion
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1803
+      2012: 1767
+      2014: 2242
+      2016: 2588
+      2018: 2123
+      2021: 0
+      2022: 1576
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  pray:
+    item_id: pray
+    dataset: gss
+    text: About how often do you pray?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - several times a day
+    - once a day
+    - several times a week
+    - once a week
+    - less than once a week
+    - never
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    topic: religion
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2023
+      2012: 1955
+      2014: 2519
+      2016: 2838
+      2018: 2333
+      2021: 3955
+      2022: 3501
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  prayer:
+    item_id: prayer
+    dataset: gss
+    text: The United States Supreme Court has ruled that no state or local government may require the
+      reading of the Lord's Prayer or Bible verses in public schools. What are your views on this--do
+      you approve or disapprove of the court ruling?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - approve
+    - disapprove
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1365
+      2012: 1253
+      2014: 1604
+      2016: 1810
+      2018: 1471
+      2021: 0
+      2022: 1144
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  premarsx:
+    item_id: premarsx
+    dataset: gss
+    text: There's been a lot of discussion about the way morals and attitudes about sex are changing in
+      this country. If a man and a woman have sexual relations before marriage, do you think it is always
+      wrong, almost always wrong, wrong only sometimes, or not wrong at all?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - always wrong
+    - almost always wrong
+    - wrong only sometimes
+    - not wrong at all
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: sexual_morality
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1404
+      2012: 1255
+      2014: 1648
+      2016: 1853
+      2018: 1529
+      2021: 2680
+      2022: 2324
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [5]'
+  racdif1:
+    item_id: racdif1
+    dataset: gss
+    text: On the average (Negroes/Blacks/African-Americans) have worse jobs, income, and housing than
+      white people. Do you think these differences are . . . Mainly due to discrimination?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1366
+      2012: 1248
+      2014: 1616
+      2016: 1813
+      2018: 1497
+      2021: 2681
+      2022: 1128
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  racdif2:
+    item_id: racdif2
+    dataset: gss
+    text: (On the average (Negroes/Blacks/African-Americans) have worse jobs, income, and housing than
+      white people. Do you think these differences are . . .) Because most (Negroes/Blacks/African-Americans)
+      have less in-born ability to learn?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1392
+      2012: 1271
+      2014: 1638
+      2016: 1857
+      2018: 1531
+      2021: 2689
+      2022: 1149
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  racdif3:
+    item_id: racdif3
+    dataset: gss
+    text: (On the average Black people have worse jobs, income, and housing than White people.)... Do
+      you think these differences are... Because most Black people don't have the chance for education
+      that it takes to rise out of poverty?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1387
+      2012: 1263
+      2014: 1638
+      2016: 1839
+      2018: 1519
+      2021: 2673
+      2022: 1134
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  racdif4:
+    item_id: racdif4
+    dataset: gss
+    text: (On the average Black people have worse jobs, income, and housing than White people.)... Do
+      you think these differences are... Because most Black people just don't have the motivation or will
+      power to pull themselves up out of poverty?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1357
+      2012: 1238
+      2014: 1620
+      2016: 1821
+      2018: 1493
+      2021: 2666
+      2022: 1117
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  raclive:
+    item_id: raclive
+    dataset: gss
+    text: Are there any (“whites” for black respondents, “blacks” for non-black respondents) living in
+      this neighborhood now?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1957
+      2012: 1891
+      2014: 2418
+      2016: 2743
+      2018: 2215
+      2021: 3587
+      2022: 3285
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  racwork:
+    item_id: racwork
+    dataset: gss
+    text: 'IF EMPLOYED: Are the people who work where you work all white, mostly white, about half and
+      half, mostly black, or all black?'
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - all white
+    - mostly white
+    - about half and half
+    - mostly black
+    - all black
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 725
+      2012: 739
+      2014: 1005
+      2016: 1086
+      2018: 903
+      2021: 1371
+      2022: 1260
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [6]'
+  reborn:
+    item_id: reborn
+    dataset: gss
+    text: Would you say you have been born again or have had a born again experience -- that is, a turning
+      point in your life when you committed yourself to Christ?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: religion
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2014
+      2012: 1932
+      2014: 2498
+      2016: 2798
+      2018: 2298
+      2021: 2600
+      2022: 3451
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  reliten:
+    item_id: reliten
+    dataset: gss
+    text: (ASK EVERYONE WITH ANY RELIGIOUS PREFERENCE NAMED IN RELIG) Would you call yourself a strong
+      (PREFERENCE NAMED IN RELIG) or a not very strong (PREFERENCE NAMED IN RELIG)?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strong
+    - not very strong
+    - somewhat strong (vol.)
+    - no religion
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1946
+      2012: 1955
+      2014: 2503
+      2016: 2837
+      2018: 2314
+      2021: 0
+      2022: 1758
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  relpersn:
+    item_id: relpersn
+    dataset: gss
+    text: To what extent do you consider yourself a religious person? Are you very religious, moderately
+      religious, slightly religious, or not religious at all?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - very religious
+    - moderately religious
+    - slightly religious
+    - not religious at all
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2030
+      2012: 1952
+      2014: 2520
+      2016: 2833
+      2018: 2328
+      2021: 3954
+      2022: 3504
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  satfin:
+    item_id: satfin
+    dataset: gss
+    text: We are interested in how people are getting along financially these days. So far as you and
+      your family are concerned, would you say that you are pretty well satisfied with your present financial
+      situation, more or less satisfied, or not satisfied at all?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - pretty well satisfied
+    - more or less satisfied
+    - not satisfied at all
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: personal_finance
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2038
+      2012: 1967
+      2014: 2532
+      2016: 2856
+      2018: 2338
+      2021: 4016
+      2022: 3526
+    labels_source: dta value labels
+    role: sanity
+    role_reason: income restated, not an opinion item; clusters are defined partly by education, so a
+      strong result here is the §F3 objection, not evidence (checklist 1.4b)
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  satjob:
+    item_id: satjob
+    dataset: gss
+    text: On the whole, how satisfied are you with the work you do -- would you say you are very satisfied,
+      moderately satisfied, a little dissatisfied, or very dissatisfied?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - very satisfied
+    - moderately satisfied
+    - a little dissatisfied
+    - very dissatisfied
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1528
+      2012: 1457
+      2014: 1895
+      2016: 1779
+      2018: 1739
+      2021: 2734
+      2022: 2463
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  savesoul:
+    item_id: savesoul
+    dataset: gss
+    text: Have you ever tried to encourage someone to believe in Jesus Christ or to accept Jesus Christ
+      as his or her savior?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2039
+      2012: 1965
+      2014: 2528
+      2016: 2855
+      2018: 2338
+      2021: 3949
+      2022: 3495
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: false
+    notes: ''
+  sexeduc:
+    item_id: sexeduc
+    dataset: gss
+    text: Would you be for or against sex education in the public schools?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - favor
+    - oppose
+    codes:
+    - 1
+    - 2
+    topic: sexual_morality
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1410
+      2012: 1274
+      2014: 1658
+      2016: 1868
+      2018: 1542
+      2021: 2688
+      2022: 2339
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [3]'
+  spanking:
+    item_id: spanking
+    dataset: gss
+    text: Do you strongly agree, agree, disagree, or strongly disagree that it is sometimes necessary
+      to discipline a child with a good, hard spanking?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - strongly agree
+    - agree
+    - disagree
+    - strongly disagree
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: family_childrearing
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1417
+      2012: 1277
+      2014: 1659
+      2016: 1866
+      2018: 1529
+      2021: 2684
+      2022: 2344
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  spkath:
+    item_id: spkath
+    dataset: gss
+    text: There are always some people whose ideas are considered bad or dangerous by other people. For
+      instance, somebody who is against all churches and religion... If such a person wanted to make a
+      speech in your community against churches and religion, should he be allowed to speak, or not?
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - yes, allowed to speak
+    - not allowed
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1268
+      2012: 1292
+      2014: 1696
+      2016: 1871
+      2018: 1562
+      2021: 1312
+      2022: 1147
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 1
+    reverse_coded: false
+    twin_variable: spkathy
+    twin_answered_n_by_wave:
+      2021: 1351
+      2022: 1159
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: true
+    notes: ''
+  spkcom:
+    item_id: spkcom
+    dataset: gss
+    text: Now,we would like to ask you some questions about a man who admits he is a Communist. Suppose
+      this admitted Communist wanted to make a speech in your community. Should he be allowed to speak,
+      or not?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - yes, allowed to speak
+    - not allowed
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1242
+      2012: 1257
+      2014: 1660
+      2016: 1823
+      2018: 1508
+      2021: 1305
+      2022: 1125
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 1
+    reverse_coded: false
+    twin_variable: spkcomy
+    twin_answered_n_by_wave:
+      2021: 1338
+      2022: 1144
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  spkhomo:
+    item_id: spkhomo
+    dataset: gss
+    text: And what about a man who admits that he is homosexual... Suppose this admitted homosexual wanted
+      to make a speech in your community. Should he be allowed to speak, or not?
+    text_source: GSS 2021 ballot questionnaire, GSS2020_CrossSection_Ballot1_A4S.pdf — verbatim instrument
+      text, web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - yes, allowed to speak
+    - not allowed
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1258
+      2012: 1277
+      2014: 1691
+      2016: 1862
+      2018: 1554
+      2021: 1304
+      2022: 0
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 1
+    reverse_coded: false
+    twin_variable: spkhomoy
+    twin_answered_n_by_wave:
+      2021: 1349
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  spkmil:
+    item_id: spkmil
+    dataset: gss
+    text: Consider a person who advocates doing away with elections and letting the military run the country...
+      If such a person wanted to make a speech in your community, should he be allowed to speak, or not?
+    text_source: GSS 2021 ballot questionnaire, GSS2020_CrossSection_Ballot1_A4S.pdf — verbatim instrument
+      text, web wording where the instrument differs by mode
+    scale_type: binary
+    labels:
+    - yes, allowed to speak
+    - not allowed
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1258
+      2012: 1282
+      2014: 1689
+      2016: 1861
+      2018: 1543
+      2021: 1301
+      2022: 0
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 1
+    reverse_coded: false
+    twin_variable: spkmily
+    twin_answered_n_by_wave:
+      2021: 1343
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: true
+    notes: ''
+  spkmslm:
+    item_id: spkmslm
+    dataset: gss
+    text: Now consider a Muslim clergyman who preaches hatred of the United States. If such a person wanted
+      to make a speech in your community preaching hatred of the United States, should he be allowed to
+      speak, or not?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - yes, allowed to speak
+    - not allowed
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1264
+      2012: 1282
+      2014: 1693
+      2016: 1856
+      2018: 1547
+      2021: 1307
+      2022: 1141
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 1
+    reverse_coded: false
+    twin_variable: spkmslmy
+    twin_answered_n_by_wave:
+      2021: 1346
+      2022: 1156
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  spkrac:
+    item_id: spkrac
+    dataset: gss
+    text: Or consider a person who believes that Blacks are genetically inferior. If such a person wanted
+      to make a speech in your community claiming that Blacks are inferior, should he be allowed to speak,
+      or not?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - yes, allowed to speak
+    - not allowed
+    codes:
+    - 1
+    - 2
+    topic: civil_liberties
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1259
+      2012: 1276
+      2014: 1692
+      2016: 1863
+      2018: 1539
+      2021: 1310
+      2022: 1143
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: 1
+    reverse_coded: false
+    twin_variable: spkracy
+    twin_answered_n_by_wave:
+      2021: 1342
+      2022: 1160
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: true
+    notes: ''
+  sprtprsn:
+    item_id: sprtprsn
+    dataset: gss
+    text: To what extent do you consider yourself a spiritual person? Are you very spiritual, moderately
+      spiritual, slightly spiritual, or not spiritual at all?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - very spiritual
+    - moderately spiritual
+    - slightly spiritual
+    - not spiritual at all
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 2022
+      2012: 1929
+      2014: 2516
+      2016: 2830
+      2018: 2318
+      2021: 3934
+      2022: 3492
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  suicide1:
+    item_id: suicide1
+    dataset: gss
+    text: (Do you think a person has the right to end his or her own life if this person . . .) Has an
+      incurable disease?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: life_and_death
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1377
+      2012: 1257
+      2014: 1632
+      2016: 1828
+      2018: 1497
+      2021: 1212
+      2022: 1127
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: investigate
+    leakage_resistant: true
+    notes: ''
+  suicide2:
+    item_id: suicide2
+    dataset: gss
+    text: (Do you think a person has the right to end his or her own life if this person . . .) Has gone
+      bankrupt?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1406
+      2012: 1271
+      2014: 1650
+      2016: 1869
+      2018: 1532
+      2021: 1298
+      2022: 1145
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  suicide3:
+    item_id: suicide3
+    dataset: gss
+    text: (Do you think a person has the right to end his or her own life if this person . . .) Has dishonored
+      his or her family?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1403
+      2012: 1271
+      2014: 1639
+      2016: 1864
+      2018: 1539
+      2021: 1317
+      2022: 1142
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  suicide4:
+    item_id: suicide4
+    dataset: gss
+    text: (Do you think a person has the right to end his or her own life if this person . . .) Is tired
+      of living and ready to die?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1389
+      2012: 1256
+      2014: 1636
+      2016: 1843
+      2018: 1522
+      2021: 1231
+      2022: 1141
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  tax:
+    item_id: tax
+    dataset: gss
+    text: Do you consider the amount of federal income tax which you have to pay as too high, about right,
+      or too low?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - too high
+    - about right
+    - too low
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1234
+      2012: 1268
+      2014: 1669
+      2016: 1833
+      2018: 1531
+      2021: 2634
+      2022: 2271
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [4]'
+  teensex:
+    item_id: teensex
+    dataset: gss
+    text: What if they are in their early teens, say 14 to 16 years old? In that case, do you think sex
+      relations before marriage are always wrong, almost always wrong, wrong only sometimes, or not wrong
+      at all?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - always wrong
+    - almost always wrong
+    - wrong only sometimes
+    - not wrong at all
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1419
+      2012: 1283
+      2014: 1666
+      2016: 1866
+      2018: 1534
+      2021: 2679
+      2022: 2331
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [5]'
+  thnkself:
+    item_id: thnkself
+    dataset: gss
+    text: (If you had to choose, which thing on this list would you pick as the most important for a child
+      to learn to prepare him or her for life? Which comes next in importance? Which comes third? Which
+      comes fourth?) To think for himself or herself
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - most important
+    - 2nd important
+    - 3rd important
+    - 4th important
+    - least important
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1349
+      2012: 1323
+      2014: 1670
+      2016: 1934
+      2018: 1542
+      2021: 2573
+      2022: 2294
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  trust:
+    item_id: trust
+    dataset: gss
+    text: Generally speaking, would you say that most people can be trusted or that you can't be too careful
+      in dealing with people?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - most people can be trusted
+    - can't be too careful
+    - depends
+    codes:
+    - 1
+    - 2
+    - 3
+    topic: wellbeing
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1372
+      2012: 1331
+      2014: 1683
+      2016: 1946
+      2018: 1556
+      2021: 0
+      2022: 1198
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  uswary:
+    item_id: uswary
+    dataset: gss
+    text: Do you expect the United States to fight in another world war within the next ten years?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 638
+      2012: 599
+      2014: 795
+      2016: 865
+      2018: 728
+      2021: 0
+      2022: 552
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  wlthwhts:
+    item_id: wlthwhts
+    dataset: gss
+    text: Now I have some questions about different groups in our society. I'm going to show you a seven-point
+      scale on which the characteristics of people in a group can be rated. In the first statement a score
+      of 1 means that you think almost all of the people in
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - 1 - rich
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - 7 - poor
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1390
+      2012: 1273
+      2014: 1649
+      2016: 1863
+      2018: 1160
+      2021: 1336
+      2022: 1178
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: truncated
+    wording_note: codebook Label is 255 chars and ends 'nk almost all of the people in' — the question
+      is cut off mid-sentence in the PDF itself (SAS labels cap at 256 bytes)
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  workblks:
+    item_id: workblks
+    dataset: gss
+    text: Now I have some questions about different groups in our society. I'm going to show you a seven-point
+      scale on which the characteristics of people in a group can be rated. In the first statement a score
+      of 1 means that you think almost all of the people in
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - 1 - hard-working
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - 7 - lazy
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1381
+      2012: 1259
+      2014: 1641
+      2016: 1853
+      2018: 1512
+      2021: 2677
+      2022: 2318
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: truncated
+    wording_note: codebook Label is 255 chars and ends 'nk almost all of the people in' — the question
+      is cut off mid-sentence in the PDF itself (SAS labels cap at 256 bytes)
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  workhard:
+    item_id: workhard
+    dataset: gss
+    text: (If you had to choose, which thing on this list would you pick as the most important for a child
+      to learn to prepare him or her for life? Which comes next in importance? Which comes third? Which
+      comes fourth?) To work hard
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - most important
+    - 2nd important
+    - 3rd important
+    - 4th important
+    - least important
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1349
+      2012: 1323
+      2014: 1670
+      2016: 1934
+      2018: 1542
+      2021: 2573
+      2022: 2294
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  workwhts:
+    item_id: workwhts
+    dataset: gss
+    text: Now I have some questions about different groups in our society. I'm going to show you a seven-point
+      scale on which the characteristics of people in a group can be rated. In the first statement a score
+      of 1 means that you think almost all of the people in
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - 1 - hard-working
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - 7 - lazy
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1385
+      2012: 1270
+      2014: 1646
+      2016: 1858
+      2018: 1521
+      2021: 2682
+      2022: 2320
+    labels_source: 'endpoint-anchored: poles from the .dta value labels, intermediate points from the
+      published codebook'
+    role: unassigned
+    role_reason: ''
+    wording_status: truncated
+    wording_note: codebook Label is 255 chars and ends 'nk almost all of the people in' — the question
+      is cut off mid-sentence in the PDF itself (SAS labels cap at 256 bytes)
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''
+  wrkwayup:
+    item_id: wrkwayup
+    dataset: gss
+    text: Do you agree strongly, agree somewhat, neither agree nor disagree, disagree somewhat, or disagree
+      strongly with the following statement:... Irish, Italian, Jewish and many other minorities overcame
+      prejudice and worked their way up. Black people should do the same without special favors.
+    text_source: GSS 2022 ballot questionnaire, GSS2022_Ballot1_English.pdf — verbatim instrument text,
+      web wording where the instrument differs by mode
+    scale_type: ordinal
+    labels:
+    - agree strongly
+    - agree somewhat
+    - neither agree nor disagree
+    - disagree somewhat
+    - disagree strongly
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1418
+      2012: 1277
+      2014: 1659
+      2016: 1865
+      2018: 1531
+      2021: 2688
+      2022: 2334
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: less_likely
+    leakage_resistant: false
+    notes: ''
+  xmarsex:
+    item_id: xmarsex
+    dataset: gss
+    text: What is your opinion about a married person having sexual relations with someone other than
+      the marriage partner--is it always wrong, almost always wrong, wrong only sometimes, or not wrong
+      at all?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: ordinal
+    labels:
+    - always wrong
+    - almost always wrong
+    - wrong only sometimes
+    - not wrong at all
+    codes:
+    - 1
+    - 2
+    - 3
+    - 4
+    topic: sexual_morality
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1263
+      2012: 1284
+      2014: 1697
+      2016: 1866
+      2018: 1553
+      2021: 2650
+      2022: 2292
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: null
+    twin_answered_n_by_wave: {}
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: likely
+    leakage_resistant: false
+    notes: 'codes defined in the .dta but not fielded in 2022, dropped from the scale: [5]'
+  xmovie:
+    item_id: xmovie
+    dataset: gss
+    text: Have you seen an X-rated movie in the last year?
+    text_source: GSS_2022_Codebook.pdf (Codebook and Unweighted Frequencies, Release 4)
+    scale_type: binary
+    labels:
+    - 'yes'
+    - 'no'
+    codes:
+    - 1
+    - 2
+    topic: other
+    waves:
+    - 2010
+    - 2012
+    - 2014
+    - 2016
+    - 2018
+    - 2021
+    - 2022
+    answered_n_by_wave:
+      2010: 1369
+      2012: 1334
+      2014: 1680
+      2016: 1946
+      2018: 1554
+      2021: 2656
+      2022: 1172
+    labels_source: dta value labels
+    role: unassigned
+    role_reason: ''
+    wording_status: verified
+    wording_note: ''
+    tolerant_code: null
+    reverse_coded: false
+    twin_variable: xmoviey
+    twin_answered_n_by_wave:
+      2022: 1112
+    heterogeneity: null
+    snr: null
+    mode_sensitivity: unknown
+    leakage_resistant: false
+    notes: ''

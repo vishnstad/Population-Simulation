@@ -1,0 +1,24 @@
+GROUP PROFILE
+
+Who this group is: {{ card.definition_text }}.
+Share of the US adult population: {{ card.pop_share | pct }}.
+
+{% if card.demo_marginals %}
+Within this group (these are composition figures, not requirements — the group
+contains people from every category listed):
+{% for field, shares in card.demo_marginals.items() %}
+  {{ field }}: {% for name, share in shares.items() %}{{ share | pct }} {{ name }}{% if not loop.last %}, {% endif %}{% endfor %}
+
+{% endfor %}
+{% endif %}
+{% if card.anchor_items %}
+How this group answered other survey questions
+(each figure is the percentage of this group choosing that option):
+{% for a in card.anchor_items %}
+{{ loop.index }}. {{ a.text }}
+{% for label in a.labels %}
+   - {{ label }}: {{ a.as_percentages()[loop.index0] }}%
+{% endfor %}
+
+{% endfor %}
+{% endif %}
